@@ -16,3 +16,12 @@
 [submodule "pages/source/docs/common/2.0"]
 	path = pages/source/docs/common/2.0
 	url = git://github.com/doctrine/common-documentation.git
+[submodule "pages/source/docs/mongodb-odm/1.0"]
+	path = pages/source/docs/mongodb-odm/1.0
+	url = git://github.com/doctrine/mongodb-odm-documentation.git
+[submodule "pages/source/docs/couchdb-odm/1.0"]
+	path = pages/source/docs/couchdb-odm/1.0
+	url = git://github.com/doctrine/couchdb-documentation.git
+[submodule "pages/source/docs/migrations/1.0"]
+	path = pages/source/docs/migrations/1.0
+	url = git://github.com/doctrine/migrations-documentation.git
