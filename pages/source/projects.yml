@@ -1,0 +1,383 @@
+orm:
+  slug: orm
+  title: 'Object Relational Mapper'
+  short_title: ORM
+  description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
+  latest_version: '2.1'
+  is_primary: true
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
+  browse_source_link: 'http://github.com/doctrine/doctrine2'
+  versions:
+    '1.2':
+      stability: stable
+      upgrade_file_path: source/orm1.2/UPGRADE_TO_1_2
+      releases:
+        1.2.0:
+          package_name: Doctrine-1.2.0.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.0'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.0.tgz'
+        1.2.1:
+          package_name: Doctrine-1.2.1.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.1'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.1.tgz'
+        1.2.2:
+          package_name: Doctrine-1.2.2.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.2'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.2.tgz'
+        1.2.3:
+          package_name: Doctrine-1.2.3.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.3'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.3.tgz'
+        1.2.4:
+          package_name: Doctrine-1.2.4.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine1.git doctrine-orm<br/>$ cd doctrine-orm<br/>$ git checkout 1.2.4'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.4.tgz'
+    '2.0':
+      stability: stable
+      upgrade_file_path: source/orm2.0/UPGRADE_TO_2_0
+      releases:
+        2.0.0-ALPHA1:
+          package_name: DoctrineORM-2.0.0-ALPHA1.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-ALPHA1'
+        2.0.0-ALPHA2:
+          package_name: DoctrineORM-2.0.0-ALPHA2.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-ALPHA2'
+        2.0.0-ALPHA3:
+          package_name: DoctrineORM-2.0.0-ALPHA3.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-ALPHA3'
+        2.0.0-ALPHA4:
+          package_name: DoctrineORM-2.0.0-ALPHA4.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-ALPHA4'
+        2.0.0BETA1:
+          package_name: DoctrineORM-2.0.0-BETA1.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-BETA1'
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA1'
+        2.0.0BETA2:
+          package_name: DoctrineORM-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineORM-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA3'
+        2.0.0BETA4:
+          package_name: DoctrineORM-2.0.0BETA4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA4'
+        2.0.0RC1:
+          package_name: DoctrineORM-2.0.0RC1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC1'
+        2.0.0RC2:
+          package_name: DoctrineORM-2.0.0RC2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC2'
+        2.0.0:
+          package_name: DoctrineORM-2.0.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0'
+        2.0.1:
+          package_name: DoctrineORM-2.0.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.1'
+        2.0.2:
+          package_name: DoctrineORM-2.0.2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.2'
+        2.0.3:
+          package_name: DoctrineORM-2.0.3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.3'
+        2.0.4:
+          package_name: DoctrineORM-2.0.4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.4'
+        2.0.5:
+          package_name: DoctrineORM-2.0.5-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.5<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.5'
+        2.0.6:
+          package_name: DoctrineORM-2.0.6-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.6<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.6'
+        2.0.7:
+          package_name: DoctrineORM-2.0.7-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.7<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.7'
+    '2.1':
+      stability: beta
+      upgrade_file_path: source/orm2.0/UPGRADE_TO_2_0
+      releases:
+        2.1.0BETA1:
+          package_name: DoctrineORM-2.1.0BETA1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0BETA1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0BETA1-beta'
+        2.1.0RC1:
+          package_name: DoctrineORM-2.1.0RC1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC1-beta'
+        2.1.0RC2:
+          package_name: DoctrineORM-2.1.0RC2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC2-beta'
+        2.1.0RC3:
+          package_name: DoctrineORM-2.1.0RC3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC3-beta'
+        2.1.0:
+          package_name: DoctrineORM-2.1.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0'
+        2.1.1:
+          package_name: DoctrineORM-2.1.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.1'
+dbal:
+  slug: dbal
+  title: 'Database Abstraction Layer'
+  short_title: DBAL
+  description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
+  latest_version: '2.1'
+  is_primary: true
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
+  browse_source_link: 'http://github.com/doctrine/dbal'
+  versions:
+    '2.0':
+      stability: stable
+      releases:
+        2.0.0BETA2:
+          package_name: DoctrineDBAL-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineDBAL-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA3'
+        2.0.0BETA4:
+          package_name: DoctrineDBAL-2.0.0BETA4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA4'
+        2.0.0RC3:
+          package_name: DoctrineDBAL-2.0.0RC3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC3'
+        2.0.0RC4:
+          package_name: DoctrineDBAL-2.0.0RC4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC4'
+        2.0.0RC5:
+          package_name: DoctrineDBAL-2.0.0RC5-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC5<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC5'
+        2.0.0:
+          package_name: DoctrineDBAL-2.0.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0'
+        2.0.1:
+          package_name: DoctrineDBAL-2.0.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.1'
+        2.0.2:
+          package_name: DoctrineDBAL-2.0.2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.2'
+        2.0.3:
+          package_name: DoctrineDBAL-2.0.3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.3'
+        2.0.4:
+          package_name: DoctrineDBAL-2.0.4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.4'
+        2.0.5:
+          package_name: DoctrineDBAL-2.0.5-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.5<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.5'
+        2.0.6:
+          package_name: DoctrineDBAL-2.0.6-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.6<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.6'
+        2.0.7:
+          package_name: DoctrineDBAL-2.0.7-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.7<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.7'
+        2.0.8:
+          package_name: DoctrineDBAL-2.0.8-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.8<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.8'
+    '2.1':
+      stability: stable
+      releases:
+        2.1.0BETA1:
+          package_name: DoctrineDBAL-2.1.0BETA1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-BETA1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0BETA1'
+        2.1.0RC1:
+          package_name: DoctrineDBAL-2.1.0RC1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC1'
+        2.1.0RC2:
+          package_name: DoctrineDBAL-2.1.0RC2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC2'
+        2.1.0:
+          package_name: DoctrineDBAL-2.1.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0'
+        2.1.1:
+          package_name: DoctrineDBAL-2.1.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.1'
+        2.1.2:
+          package_name: DoctrineDBAL-2.1.2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.2'
+mongodb_odm:
+  slug: mongodb_odm
+  title: 'MongoDB Object Document Mapper'
+  short_title: MongoDBODM
+  description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  namespace: Doctrine\ODM\MongoDB
+  issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
+  browse_source_link: 'http://github.com/doctrine/mongodb-odm'
+  versions:
+    '1.0':
+      stability: beta
+      releases:
+        1.0.0ALPHA1:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0ALPHA1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA1'
+        1.0.0ALPHA2:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0ALPHA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA2'
+        1.0.0BETA1:
+          package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA1'
+        1.0.0BETA2:
+          package_name: DoctrineMongoDBODM-1.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA2'
+        1.0.0BETA3:
+          package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA3'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA3'
+couchdb_odm:
+  slug: couchdb_odm
+  title: 'CouchDB Object Document Mapper'
+  short_title: CouchDBODM
+  description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
+  browse_source_link: 'http://github.com/doctrine/couchdb-odm'
+  namespace: Doctrine\ODM\CouchdbDB
+  versions:
+    '1.0':
+      stability: alpha
+      releases:
+        1.0.0ALPHA1:
+          package_name: CouchDBODM-1.0.0ALPHA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/couchdb-odm.git mongodb_odm<br/>$ cd couchdb_odm<br/>$ git checkout 1.0.0alpha1'
+          pear_install_command: 'pear install pear.doctrine-project.org/CouchDBODM-1.0.0alpha1'
+phpcr_odm:
+  slug: phpcr_odm
+  title: 'PHPCR Object Document Mapper'
+  short_title: PHPCRODM
+  description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  namespace: Doctrine\ODM\PHPCR
+  issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
+  browse_source_link: 'http://github.com/doctrine/phpcr-odm'
+  versions:
+    '1.0':
+      stability: alpha
+      releases: []
+migrations:
+  slug: migrations
+  title: 'Migrations'
+  short_title: Migrations
+  description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
+  latest_version: '2.0'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
+  browse_source_link: 'http://github.com/doctrine/migrations'
+  namespace: Doctrine\DBAL\Migrations
+  versions:
+    '2.0':
+      stability: alpha
+      releases: []
+common:
+  slug: common
+  title: 'Common'
+  short_title: Common
+  description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
+  latest_version: '2.1'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'http://github.com/doctrine/common'
+  versions:
+    '2.0':
+      stability: stable
+      releases:
+        2.0.0BETA2:
+          package_name: DoctrineCommon-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineCommon-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA3'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA3'
+        2.0.0BETA4:
+          package_name: DoctrineCommon-2.0.0BETA4.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA4'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA4'
+        2.0.0RC1:
+          package_name: DoctrineCommon-2.0.0RC1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC1'
+        2.0.0RC2:
+          package_name: DoctrineCommon-2.0.0RC2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC2'
+        2.0.0:
+          package_name: DoctrineCommon-2.0.0-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0'
+        2.0.1:
+          package_name: DoctrineCommon-2.0.1-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.1'
+        2.0.2:
+          package_name: DoctrineCommon-2.0.2-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.2'
+    '2.1':
+      stability: stable
+      releases:
+        2.1.0BETA1:
+          package_name: DoctrineCommon-2.1.0BETA1-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-BETA1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0BETA1'
+        2.1.0RC1:
+          package_name: DoctrineCommon-2.1.0RC1-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC1'
+        2.1.0RC2:
+          package_name: DoctrineCommon-2.1.0RC2-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC2'
+        2.1.0:
+          package_name: DoctrineCommon-2.1.0-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0'
+        2.1.1:
+          package_name: DoctrineCommon-2.1.1-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.1'
+          
