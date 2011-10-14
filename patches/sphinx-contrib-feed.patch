@@ -1,0 +1,69 @@
+diff -r e40644f465bb feed/sphinxcontrib/feed/__init__.py
+--- a/feed/sphinxcontrib/feed/__init__.py	Tue Oct 11 14:11:01 2011 +0900
++++ b/feed/sphinxcontrib/feed/__init__.py	Fri Oct 14 23:33:48 2011 +0200
+@@ -123,8 +123,13 @@
+     app.builder.env.feed_feed = feed
+     ordered_keys = feed_entries.keys()
+     ordered_keys.sort(reverse=True)
++    num = 0
+     for key in ordered_keys:
+-        feed.add_item(**feed_entries[key])     
++        num = num+1
++        if num <= 10:
++            feed.add_item(**feed_entries[key])     
++        else:
++            break
+     outfilename = os.path.join(app.builder.outdir,
+       app.config.feed_filename)
+     fp = open(outfilename, 'w')
+diff -r e40644f465bb feed/sphinxcontrib/feed/directives.py
+--- a/feed/sphinxcontrib/feed/directives.py	Tue Oct 11 14:11:01 2011 +0900
++++ b/feed/sphinxcontrib/feed/directives.py	Fri Oct 14 23:33:48 2011 +0200
+@@ -25,6 +25,14 @@
+         return 999
+     return int(argument)
+ 
++def parse_date(datestring):
++    try:
++        parser = parse_date.parser
++    except AttributeError:
++        import dateutil.parser
++        parser = dateutil.parser.parser()
++        parse_date.parser = parser
++    return parser.parse(datestring)
+ 
+ class Latest(Directive):
+     """
+@@ -95,10 +103,31 @@
+                     ret.append(self.state.document.reporter.warning(
+                         'toctree glob pattern %r didn\'t match any documents'
+                         % entry, line=self.lineno))
++
++        sorted_entries = {}
++        for entry in entries:
++            metadata = env.metadata.get(entry[1], {})
++            
++            if 'date' not in metadata:
++                continue
++            try:
++                pub_date = parse_date(metadata['date'])
++                env.metadata.get(entry[1], {})
++            except ValueError, exc:
++                continue
++
++            sorted_entries[pub_date.isoformat()] = entry
++
++        ordered_keys = sorted_entries.keys()
++        ordered_keys.sort(reverse=True)
++
+         subnode = addnodes.toctree()
+         subnode['parent'] = env.docname
+         # entries contains all entries (self references, external links etc.)
+-        subnode['entries'] = entries
++        subnode['entries'] = []
++        for date in ordered_keys:
++            subnode['entries'].append(sorted_entries[date])
++
+         # includefiles only entries that are documents
+         subnode['includefiles'] = includefiles
+         subnode['maxdepth'] = self.options.get('maxdepth', -1)

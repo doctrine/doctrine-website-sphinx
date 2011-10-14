@@ -9,11 +9,11 @@ You can read more about the projects below or view a list of all projects.
 * :doc:`Projects <projects>`
 * :doc:`Contribute <contribute>`
 * :doc:`About <about>`
+* :doc:`Blog <blog/index>`
 * :doc:`Community <community>`
 
 .. doctrine-projects::
     :file: projects.yml
     :type: top
-    
 
 
