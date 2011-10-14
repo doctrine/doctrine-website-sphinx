@@ -6,14 +6,36 @@ on providing persistence services and related functionality. Its prize projects 
 Object Relational Mapper and the Database Abstraction Layer it is built on top of.
 You can read more about the projects below or view a list of all projects.
 
-* :doc:`Projects <projects>`
-* :doc:`Contribute <contribute>`
 * :doc:`About <about>`
+* :doc:`Projects <projects>`
 * :doc:`Blog <blog/index>`
+* :doc:`Contribute <contribute>`
 * :doc:`Community <community>`
 
 .. doctrine-projects::
     :file: projects.yml
     :type: top
 
+.. toctree::
+   :hidden:
 
+   about
+   projects
+   projects/orm
+   projects/dbal
+   projects/common
+   projects/migrations
+   projects/mongodb_odm
+   projects/couchdb_odm
+   projects/phpcr_odm
+   blog/index
+   contribute
+   community
+   docs/orm/2.0/en/index
+   docs/orm/2.1/en/index
+   docs/dbal/2.0/en/index
+   docs/dbal/2.1/en/index
+   docs/common/2.0/en/index
+   docs/common/2.1/en/index
+   docs/mongodb-odm/1.0/en/index
+   docs/couchdb-odm/1.0/en/index

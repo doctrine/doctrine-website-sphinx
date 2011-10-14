@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Doctrine-Project.org'
+project = u'Doctrine'
 copyright = u'2011, Doctrine Project Team'
 
 # The version info for the project you're documenting, acts as replacement for

@@ -1,5 +1,5 @@
-Introduction
-============
+Contribute
+==========
 
 Welcome to the Doctrine Project Contributors Guide. This
 documentation aims to document how contributors and collaborators
