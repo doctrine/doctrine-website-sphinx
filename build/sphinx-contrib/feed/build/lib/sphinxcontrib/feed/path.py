@@ -767,7 +767,7 @@ class path(_base):
         """
         f = self.open('rb')
         try:
-            m = md5.new()
+            m = hashlib.new()
             while True:
                 d = f.read(8192)
                 if not d:
