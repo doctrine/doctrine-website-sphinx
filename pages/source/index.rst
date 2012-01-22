@@ -24,29 +24,9 @@ Latest Blog Posts
 
 :doc:`Read older blog posts <blog/index>`
 
+Doctrine Projects
+=================
+
 .. doctrine-projects::
     :file: projects.yml
-    :type: top
-
-.. toctree::
-   :hidden:
-
-   about
-   projects
-   projects/orm
-   projects/dbal
-   projects/common
-   projects/migrations
-   projects/mongodb-odm
-   projects/couchdb-odm
-   projects/phpcr-odm
-   blog/index
-   contribute
-   community
-   docs/orm/2.0/en/index
-   docs/orm/2.1/en/index
-   docs/dbal/2.0/en/index
-   docs/dbal/2.1/en/index
-   docs/common/2.1/en/index
-   docs/mongodb-odm/1.0/en/index
-   docs/couchdb-odm/1.0/en/index
+    :type: all
