@@ -8,6 +8,10 @@
 body { font:13px/1.231 "Lucida Grande",verdana,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
 body { background: #010410 url(images/bg-gradient.jpg) repeat-x top left; }
 
+body iframe {
+  margin: 10px;
+}
+
 button, label { cursor:default; cursor:pointer; zoom:1; display:block; }
 /* for images */
 .left { float:left; margin:5px 20px 5px 0; }
