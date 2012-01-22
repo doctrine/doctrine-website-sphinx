@@ -16,7 +16,7 @@
         </exec>
     </target>
 
-    <target name="build" depends="install-sphinx">
+    <target name="build">
         <exec executable="make" dir="pages/">
             <arg value="html" />
         </exec>
