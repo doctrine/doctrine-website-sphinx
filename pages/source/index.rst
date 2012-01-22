@@ -12,6 +12,18 @@ You can read more about the projects below or view a list of all projects.
 * :doc:`Contribute <contribute>`
 * :doc:`Community <community>`
 
+Latest Blog Posts
+=================
+
+.. latest::
+    :maxdepth: 3
+    :glob: 
+    :limit: 5
+
+    blog/*
+
+:doc:`Read older blog posts <blog/index>`
+
 .. doctrine-projects::
     :file: projects.yml
     :type: top

@@ -45,6 +45,7 @@ class Latest(Directive):
     final_argument_whitespace = False
     option_spec = {
         'maxdepth': int,
+        'limit': int,
         'glob': directives.flag,
         'hidden': directives.flag,
         'numbered': int_or_nothing,
@@ -55,6 +56,7 @@ class Latest(Directive):
         env = self.state.document.settings.env
         suffix = env.config.source_suffix
         glob = 'glob' in self.options
+        limit = 'limit' in self.options
 
         ret = []
         # (title, ref) pairs, where ref may be a document, or an external link,
@@ -127,6 +129,9 @@ class Latest(Directive):
         subnode['entries'] = []
         for date in ordered_keys:
             subnode['entries'].append(sorted_entries[date])
+
+        if limit:
+            del subnode['entries'][self.options.get('limit'):len(subnode['entries'])]
 
         # includefiles only entries that are documents
         subnode['includefiles'] = includefiles
