@@ -4,19 +4,13 @@
         <exec executable="easy_install">
             <arg value="sphinx" />
         </exec>
-        <mkdir dir="build" />
-        <exec executable="hg">
-            <arg value="clone" />
-            <arg value="https://bitbucket.org/birkenfeld/sphinx-contrib"/>
-            <arg value="build/sphinx-contrib" />
-        </exec>
         <exec executable="python" dir="build/sphinx-contrib/feed">
             <arg value="setup.py" />
             <arg value="install" />
         </exec>
     </target>
 
-    <target name="build" depends="install-sphinx">
+    <target name="build">
         <exec executable="make" dir="pages/">
             <arg value="html" />
         </exec>

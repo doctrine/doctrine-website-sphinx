@@ -6,9 +6,9 @@ The Doctrine Project is the home of a selected set of PHP libraries primarily fo
 Core Team
 ---------
 
-Jonathan H. Wage Developer
+Jonathan H. Wage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-Documentation, Project Manager, Website
+Developer, Documentation, Project Manager, Website
 
 Jonathan is a software developer who currently lives in Nashville, TN. He joined the Doctrine project as a contributor in early 2007 and has been involved in one way or another since. Jonathan currently works full-time as a software developer at ShopOpenSky, a social commerce platform that uses the Doctrine MongoDB ODM.
 

@@ -25,3 +25,6 @@
 [submodule "pages/source/docs/migrations/1.0"]
 	path = pages/source/docs/migrations/1.0
 	url = git://github.com/doctrine/migrations-documentation.git
+[submodule "pages/source/docs/phpcr-odm/1.0"]
+	path = pages/source/docs/phpcr-odm/1.0
+	url = git://github.com/doctrine/phpcr-odm-documentation.git

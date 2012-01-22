@@ -63,7 +63,7 @@ def visit_doctrineprojects_html(self, node):
     self.body.append('<p>%s</p>' % (node['project']['description']) )
     self.body.append('<ul>\n')
     self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
-    self.body.append('<li><a href="/projects/%s/current/docs/en">Documentation</a></li>\n' % (node['project']['slug']) )
+    self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
     self.body.append('<li><a href="/projects/%s.html">Download</a></li>\n' % (node['project']['slug']) )
     self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
     self.body.append('</ul></li>')

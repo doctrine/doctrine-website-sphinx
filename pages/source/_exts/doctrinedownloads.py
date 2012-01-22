@@ -56,13 +56,12 @@ class DoctrineDownloads(Directive):
         return utils.relative_path(None, path)
 
 def visit_doctrinedownloads_html(self, node):
-    self.body.append(self.starttag(node, 'div', CLASS='project'))
 
     self.body.append('<p>%s</p>' % node['project']['description']);
 
     self.body.append('<ul>')
     self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
-    self.body.append('<li><a href="/projects/%s/current/docs/en">Documentation</a></li>\n' % (node['project']['slug']) )
+    self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
     self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
     self.body.append('</ul>')
 
@@ -79,6 +78,9 @@ def visit_doctrinedownloads_html(self, node):
             self.body.append('<h4>%s</h4>' % release)
 
             self.body.append('<ul class="release">');
+
+            self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>' % (node['project']['slug'], version))
+
             if 'package_name' in releasedata:
                 self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
 
@@ -93,12 +95,12 @@ def visit_doctrinedownloads_html(self, node):
 
             self.body.append('</ul>');
 
-        self.body.append('</div>')
+        self.body.append('</div></div>')
 
     raise nodes.SkipNode
 
 def depart_doctrinedownloads_html(self, node):
-    self.body.append('</div>\n')
+    self.body.append('</div>')
 
 def visit_doctrinedownloads_latex(self, node):
     pass

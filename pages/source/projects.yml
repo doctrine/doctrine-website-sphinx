@@ -232,8 +232,8 @@ dbal:
           package_name: DoctrineDBAL-2.1.2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.2'
-mongodb_odm:
-  slug: mongodb_odm
+mongodb-odm:
+  slug: mongodb-odm
   title: 'MongoDB Object Document Mapper'
   short_title: MongoDBODM
   description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
@@ -266,8 +266,8 @@ mongodb_odm:
           package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA3'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA3'
-couchdb_odm:
-  slug: couchdb_odm
+couchdb-odm:
+  slug: couchdb-odm
   title: 'CouchDB Object Document Mapper'
   short_title: CouchDBODM
   description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
@@ -284,8 +284,8 @@ couchdb_odm:
           package_name: CouchDBODM-1.0.0ALPHA1.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/couchdb-odm.git mongodb_odm<br/>$ cd couchdb_odm<br/>$ git checkout 1.0.0alpha1'
           pear_install_command: 'pear install pear.doctrine-project.org/CouchDBODM-1.0.0alpha1'
-phpcr_odm:
-  slug: phpcr_odm
+phpcr-odm:
+  slug: phpcr-odm
   title: 'PHPCR Object Document Mapper'
   short_title: PHPCRODM
   description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
