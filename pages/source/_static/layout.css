@@ -79,7 +79,12 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 
 #footer p { padding:12px 0; text-align:center; font: 85% "Helvetica Neue", verdana, sans-serif; color: white; }
 #footer { text-align: center; margin-bottom: 20px; color: white; }
-#disqus_thread { padding: 30px; }
+#disqus_thread { color: #000000; padding: 30px; }
+#disqus_thread a { color: #000000; }
+
+.dsq-comment {
+  text-align: left;
+}
 
 #content em { color:#F06419; font-style:normal; }
 
