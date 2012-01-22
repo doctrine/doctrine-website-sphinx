@@ -1,6 +1,6 @@
-Database Abstraction Layer
+PHP Content Repository ODM
 ==========================
 
 .. doctrine-downloads::
     :file: ../projects.yml
-    :project: dbal
+    :project: phpcr-odm

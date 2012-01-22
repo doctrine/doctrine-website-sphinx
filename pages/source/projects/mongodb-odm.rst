@@ -1,6 +1,6 @@
-Migrations
-==========
+MongoDB ODM
+===========
 
 .. doctrine-downloads::
     :file: ../projects.yml
-    :project: orm
+    :project: mongodb-odm

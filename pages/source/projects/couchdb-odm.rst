@@ -1,6 +1,6 @@
-Migrations
-==========
+CouchDB ODM
+===========
 
 .. doctrine-downloads::
     :file: ../projects.yml
-    :project: orm
+    :project: couchdb-odm

@@ -25,9 +25,9 @@ You can read more about the projects below or view a list of all projects.
    projects/dbal
    projects/common
    projects/migrations
-   projects/mongodb_odm
-   projects/couchdb_odm
-   projects/phpcr_odm
+   projects/mongodb-odm
+   projects/couchdb-odm
+   projects/phpcr-odm
    blog/index
    contribute
    community
