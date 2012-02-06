@@ -39,7 +39,7 @@ orm:
       version_file: source/orm2.0/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.0/lib/Doctrine/ORM
       source_path: source/orm2.0
-      update_source_command: 'rm -rf source/orm2.0 && git clone git://github.com/doctrine/doctrine2.git source/orm2.0 && cd source/orm2.0 && git submodule init && git submodule update && git checkout 2.0.x'
+      update_source_command: 'rm -rf source/orm2.0 && git clone git://github.com/doctrine/doctrine2.git source/orm2.0 && cd source/orm2.0 && git checkout 2.0.x'
       git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/doctrine2.git doctrine2-orm'
       pear_install_command: 'pear install doctrine/DoctrineORM'
@@ -118,12 +118,12 @@ orm:
       version_file: source/orm2.1/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.1/lib/Doctrine/ORM
       source_path: source/orm2.1
-      update_source_command: 'rm -rf source/orm2.1 && git clone git://github.com/doctrine/doctrine2.git source/orm2.1 && cd source/orm2.1 && git submodule init && git submodule update && git checkout master'
+      update_source_command: 'rm -rf source/orm2.1 && git clone git://github.com/doctrine/doctrine2.git source/orm2.1 && cd source/orm2.1 && git submodule update && git checkout 2.1.x'
       git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/doctrine2.git doctrine2-orm'
       stability: stable
       issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-      browse_source_link: 'http://github.com/doctrine/doctrine2/tree/master/lib/Doctrine/ORM'
+      browse_source_link: 'http://github.com/doctrine/doctrine2'
       upgrade_file_path: source/orm2.1/UPGRADE_TO_2_1
       releases:
         2.1.0BETA1:
@@ -174,12 +174,12 @@ orm:
       version_file: source/orm2.2/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.2/lib/Doctrine/ORM
       source_path: source/orm2.2
-      update_source_command: 'rm -rf source/orm2.2 && git clone git://github.com/doctrine/doctrine2.git source/orm2.2 && cd source/orm2.1 && git submodule init && git submodule update && git checkout master'
+      update_source_command: 'rm -rf source/orm2.2 && git clone git://github.com/doctrine/doctrine2.git source/orm2.2 && cd source/orm2.2 && git checkout 2.2'
       git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/doctrine2.git doctrine2-orm'
       stability: stable
       issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-      browse_source_link: 'http://github.com/doctrine/doctrine2/tree/master/lib/Doctrine/ORM'
+      browse_source_link: 'http://github.com/doctrine/doctrine2'
       upgrade_file_path: source/orm2.2/UPGRADE_TO_2_2
       releases:
         2.2.0BETA1:

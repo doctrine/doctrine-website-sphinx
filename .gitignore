@@ -1,2 +1,5 @@
 pages/build
 *.pyc
+source
+api
+vendor

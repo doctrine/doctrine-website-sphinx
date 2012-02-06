@@ -1,0 +1,9 @@
+{
+    "hash": "6f6b13187be7602e136abe238340170a",
+    "packages": [
+        {
+            "package": "symfony\/yaml",
+            "version": "2.1.0-dev"
+        }
+    ]
+}

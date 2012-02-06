@@ -1,0 +1,6 @@
+{
+    "name": "doctrine/website",
+    "require": {
+        "symfony/yaml": "*"
+    }
+}
