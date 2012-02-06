@@ -330,7 +330,7 @@ dbal:
       version_file: source/dbal2.2/lib/Doctrine/DBAL/Version.php
       api_source_path: source/dbal2.2/lib
       source_path: source/dbal2.2
-      update_source_command: 'rm -rf source/dbal2.2 && git clone git://github.com/doctrine/dbal.git source/dbal2.2 && cd source/dbal2.1 && git submodule init && git submodule update'
+      update_source_command: 'rm -rf source/dbal2.2 && git clone git://github.com/doctrine/dbal.git source/dbal2.2 && cd source/dbal2.2 && git submodule init && git submodule update'
       stability: beta
       git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/dbal.git doctrine2-dbal'
