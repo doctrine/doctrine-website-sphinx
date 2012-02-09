@@ -375,6 +375,7 @@ mongodb_odm:
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/mongodb-odm.git mongodb_odm'
       pear_install_command: 'pear install doctrine/DoctrineMongoDBODM-beta'
       api_source_path: source/mongodb_odm1.0/lib
+      source_path: source/mongodb_odm1.0
       issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
       browse_source_link: 'http://github.com/doctrine/mongodb-odm'
       releases:
@@ -415,6 +416,7 @@ couchdb_odm:
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/couchdb-odm.git couchdb_odm'
       pear_install_command: 'pear install doctrine/DoctrineCouchDBODM-alpha'
       api_source_path: source/couchdb_odm1.0/lib
+      source_path: source/couchdb_odm1.0/
       issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
       browse_source_link: 'http://github.com/doctrine/couchdb-odm'
       releases:
