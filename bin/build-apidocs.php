@@ -23,7 +23,7 @@ $data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../pag
 foreach ($data as $project => $projectDetails) {
     foreach ($projectDetails['versions'] as $version => $versionData) {
 
-        if (isset($versionData['browse_source_link']) && count($versionData['releases']) && isset($versionData['source_path'])) {
+        if (isset($versionData['browse_source_link']) && count($versionData['releases'])) {
             $checkout = end(array_keys($versionData['releases']));
             $url = $versionData['browse_source_link'];
             $path = "source/$project";
