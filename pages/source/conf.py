@@ -99,6 +99,7 @@ html_theme_path = ['_theme']
 # documentation.
 html_theme_options = {
    "nosidebar": "true",
+   "body_leftmargin": "140"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
