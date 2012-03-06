@@ -37,14 +37,14 @@ foreach ($data as $project => $projectDetails) {
             echo "Executing $updateSourceCmd\n";
             shell_exec($updateSourceCmd);
 
-            $directory = $output . "/" . $versionData['source_path'];
+            $directory = $output . "/$project/$version";
             if (!file_exists($directory)) {
                 echo "Creating directory: $directory\n";
-                mkdir($directory);
+                mkdir($directory, 0777, true);
             }
 
             chdir(__DIR__ . "/../");
-            $apiDocs = sprintf('apigen -s %s -d %s/%s --main "%s" --title "%s"', $path.'/lib/Doctrine', $output, $versionData['source_path'], $projectDetails['slug'], $projectDetails['title'] );
+            $apiDocs = sprintf('apigen -s %s -d %s/%s --main "%s" --title "%s"', $path.'/lib/Doctrine', $output, "$project/$version", $projectDetails['slug'], $projectDetails['title'] );
             echo "Generating API Docs: $apiDocs\n";
             shell_exec($apiDocs);
         }
