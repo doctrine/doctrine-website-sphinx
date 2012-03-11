@@ -44,7 +44,7 @@ foreach ($data as $project => $projectDetails) {
             }
 
             chdir(__DIR__ . "/../");
-            $apiDocs = sprintf('apigen -s %s -d %s/%s --main "%s" --title "%s"', $path.'/lib/Doctrine', $output, "$project/$version", $projectDetails['slug'], $projectDetails['title'] );
+            $apiDocs = sprintf('apigen -s %s -d %s/%s --title "%s"', $path.'/lib/Doctrine', $output, "$project/$version", $projectDetails['title'] );
             echo "Generating API Docs: $apiDocs\n";
             shell_exec($apiDocs);
         }
