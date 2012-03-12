@@ -14,6 +14,7 @@
         <exec executable="make" dir="pages/">
             <arg value="html" />
         </exec>
+        <copy file="favicon.ico" tofile="pages/build/html/favicon.ico" />
         <mkdir dir="pages/build/api" />
         <exec executable="php" dir=".">
             <arg value="bin/build-apidocs.php" />
