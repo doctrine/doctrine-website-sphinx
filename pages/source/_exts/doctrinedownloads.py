@@ -1,12 +1,20 @@
 from docutils.parsers.rst import Directive, directives
 from docutils import nodes, utils
 from string import upper
+from pkg_resources import parse_version
 import os;
+
 from yaml import load as yaml_load
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
+
+def version_compare(a, b):
+    if parse_version(a) < parse_version(b):
+        return 1
+    else:
+        return -1
 
 class doctrinedownloads(nodes.General, nodes.Element):
     pass
@@ -71,8 +79,10 @@ def visit_doctrinedownloads_html(self, node):
 
         self.body.append('<h3>Download %s (%s)</h3>' % ( version, versiondata['stability'] ))
 
+        releaseVersions = sorted(versiondata['releases'].keys(), cmp=version_compare)
+
         self.body.append('<div class="releases">')
-        for release in versiondata['releases']:
+        for release in releaseVersions:
             releasedata = versiondata['releases'][release]
 
             self.body.append('<h4>%s</h4>' % release)

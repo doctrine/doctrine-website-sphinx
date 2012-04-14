@@ -58,27 +58,27 @@ orm:
         2.0.0-ALPHA4:
           package_name: DoctrineORM-2.0.0-ALPHA4.tgz
           svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-ALPHA4'
-        2.0.0BETA1:
+        2.0.0-BETA1:
           package_name: DoctrineORM-2.0.0-BETA1.tgz
           svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-BETA1'
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA1'
-        2.0.0BETA2:
+        2.0.0-BETA2:
           package_name: DoctrineORM-2.0.0BETA2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA2'
-        2.0.0BETA3:
+        2.0.0-BETA3:
           package_name: DoctrineORM-2.0.0BETA3.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA3'
-        2.0.0BETA4:
+        2.0.0-BETA4:
           package_name: DoctrineORM-2.0.0BETA4-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA4'
-        2.0.0RC1:
+        2.0.0-RC1:
           package_name: DoctrineORM-2.0.0RC1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC1'
-        2.0.0RC2:
+        2.0.0-RC2:
           package_name: DoctrineORM-2.0.0RC2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC2<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC2'
@@ -126,19 +126,19 @@ orm:
       browse_source_link: 'http://github.com/doctrine/doctrine2'
       upgrade_file_path: source/orm2.1/UPGRADE_TO_2_1
       releases:
-        2.1.0BETA1:
+        2.1.0-BETA1:
           package_name: DoctrineORM-2.1.0BETA1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0BETA1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0BETA1-beta'
-        2.1.0RC1:
+        2.1.0-RC1:
           package_name: DoctrineORM-2.1.0RC1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC1-beta'
-        2.1.0RC2:
+        2.1.0-RC2:
           package_name: DoctrineORM-2.1.0RC2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC2<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC2-beta'
-        2.1.0RC3:
+        2.1.0-RC3:
           package_name: DoctrineORM-2.1.0RC3-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC3<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC3-beta'
@@ -182,15 +182,15 @@ orm:
       browse_source_link: 'http://github.com/doctrine/doctrine2'
       upgrade_file_path: source/orm2.2/UPGRADE_TO_2_2
       releases:
-        2.2.0BETA1:
+        2.2.0-beta1:
           package_name: DoctrineORM-2.2.0-BETA1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-BETA1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0-BETA1-beta'
-        2.2.0BETA2:
+        2.2.0-beta2:
           package_name: DoctrineORM-2.2.0-BETA2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-BETA2<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0-BETA2-beta'
-        2.2.0-RC1:
+        2.2.0-rc1:
             package_name: DoctrineORM-2.2.0-RC1-full.tar.gz
             git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-RC1<br />$ git submodule update --init --recursive'
             pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0RC1-beta'
@@ -457,7 +457,7 @@ phpcr_odm:
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/phpcr-odm.git phpcr_odm'
       issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
       browse_source_link: 'http://github.com/doctrine/phpcr-odm'
-      releases: []
+      releases: {}
 
 migrations:
   slug: migrations
@@ -477,7 +477,7 @@ migrations:
       api_source_path: source/migrations2.0/lib
       issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
       browse_source_link: 'http://github.com/doctrine/migrations'
-      releases: []
+      releases: {}
 common:
   slug: common
   title: 'Common'

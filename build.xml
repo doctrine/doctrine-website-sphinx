@@ -1,9 +1,11 @@
 <?xml version="1.0" ?>
 <project name="Doctrine Website" default="build">
+
+    <!-- Has to be executed as root -->
     <target name="install-sphinx">
-        <exec executable="easy_install">
-            <arg value="sphinx" />
-        </exec>
+        <exec executable="apt-get"><arg value="install" /><arg value="python-pip" /></exec>
+        <exec executable="easy_install"><arg value="sphinx" /></exec>
+        <exec executable="easy_install"><arg value="distribute" /></exec>
         <exec executable="python" dir="build/sphinx-contrib/feed">
             <arg value="setup.py" />
             <arg value="install" />
