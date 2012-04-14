@@ -16,3 +16,6 @@ Are you looking for documentation?
 * `CouchDB Documentation
   <http://docs.doctrine-project.org/projects/doctrine-couchdb-odm/en/latest/>`_
 
+You reached this page from Google or any other search engine? Please open
+`a ticket on the website tracker <https://github.com/doctrine/doctrine-website-sphinx/issues>`.
+ and we look into rewriting urls to the current location of the docs.
