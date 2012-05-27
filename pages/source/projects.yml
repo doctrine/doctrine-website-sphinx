@@ -170,6 +170,10 @@ orm:
           package_name: DoctrineORM-2.1.6-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.6<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.6'
+        2.1.7:
+          package_name: DoctrineORM-2.1.7-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.7<br />$ git submodule update --init --recursive'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.7'
     '2.2':
       version_file: source/orm2.2/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.2/lib
@@ -334,6 +338,10 @@ dbal:
           package_name: DoctrineDBAL-2.1.6-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.6<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.6'
+        2.1.7:
+          package_name: DoctrineDBAL-2.1.7-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.7<br />$ git submodule update --init --recursive'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.7'
     '2.2':
       version_file: source/dbal2.2/lib/Doctrine/DBAL/Version.php
       api_source_path: source/dbal2.2/lib
