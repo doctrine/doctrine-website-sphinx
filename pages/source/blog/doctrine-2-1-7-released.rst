@@ -17,6 +17,8 @@ You can install the release through
 `PEAR <http://pear.doctrine-project.org>`_, download from the website or through
 `Composer <http://www.packagist.org>`_:
 
+.. code-block:: yaml
+
     {
         "require":
         {
