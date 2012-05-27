@@ -1,5 +1,3 @@
-
-
 :author: beberlei <kontakt@beberlei.de>
 :date: 2012-04-13 10:06:00
 
