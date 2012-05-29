@@ -17,10 +17,9 @@ Guilherme and Jeremy will give two talks:
 Additionally all of us will participate in the hackday on saturday.
 
 Doctrine 2.3 is around the corner (propably during July) and we still have some
-features that we want to finalize and work on together. Feel free to join us
-if you want to contribute. We are always looking for interested developers
-that help with tickets, support, documentatation or anything else.
+features that we want to finalize and work on together. Feel free to join us if
+you want to contribute. We are always looking for interested developers that
+help with tickets, support, documentatation or anything else.
 
-During the conference you can find us by looking for the [dark blue
-Doctrine
-t-shirts](http://distilleryimage8.instagram.com/30f1aa1ea9d311e1a92a1231381b6f02_7.jpg).
+During the conference you can find us by looking for the `dark blue Doctrine
+t-shirts <http://distilleryimage8.instagram.com/30f1aa1ea9d311e1a92a1231381b6f02_7.jpg>`_.
