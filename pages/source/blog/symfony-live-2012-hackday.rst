@@ -6,9 +6,15 @@ Symfony Live 2012 Hackday
 =========================
 
 Next week will be `Symfony Live 2012 <http://paris2012.live.symfony.com/>`_ in
-Paris and the Doctrine Team will be represented by Guilherme, Alexander, Marco
-and me. Guilherme will give his talk on "ORMs don't kill your database,
-developers do!" on Friday and we will all participate in the hackday.
+Paris and the Doctrine DBAL/ORM Team will be represented by Guilherme, Alexander, Marco
+and me. Jeremy is also there and knows the MongoDB ODM inside out.
+
+Guilherme and Jeremy will give two talks:
+
+- "Using MongoDB responsibly" Jeremy Mikola 
+- "ORMs don't kill your database, developers do!" Guilherme Blanco 
+
+Additionally all of us will participate in the hackday on saturday.
 
 Doctrine 2.3 is around the corner (propably during July) and we still have some
 features that we want to finalize and work on together. Feel free to join us
