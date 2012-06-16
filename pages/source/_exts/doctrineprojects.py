@@ -26,7 +26,7 @@ class DoctrineProjects(Directive):
         """
         # Get content and options
         file_path = self.options.get('file', None)
-        type = self.options.get('type', 'top')
+        type = self.options.get('type', 'all')
 
         if not file_path:
             return [self._report('file_path -option missing')]
@@ -42,6 +42,7 @@ class DoctrineProjects(Directive):
 
             node = doctrineprojects()
             node['project'] = project
+            node['type']    = type
             ret.append(node)
 
         return ret
@@ -60,14 +61,17 @@ class DoctrineProjects(Directive):
 
 def visit_doctrineprojects_html(self, node):
     self.body.append('<li class="project" id="%s"><h3><a href="/projects/%s.html">%s</a></h3>\n' % (node['project']['slug'], node['project']['slug'], node['project']['title']) )
-    self.body.append('<p>%s</p>' % (node['project']['description']) )
-    self.body.append('<ul>\n')
-    self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
-    self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
-    self.body.append('<li><a href="/api/%s/%s/index.html">API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
-    self.body.append('<li><a href="/projects/%s.html">Download</a></li>\n' % (node['project']['slug']) )
-    self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
-    self.body.append('</ul></li>')
+    if node['type'] != 'short':
+        self.body.append('<p>%s</p>' % (node['project']['description']) )
+        self.body.append('<ul>\n')
+        self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
+        self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
+        self.body.append('<li><a href="/api/%s/%s/index.html">API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
+        self.body.append('<li><a href="/projects/%s.html">Download</a></li>\n' % (node['project']['slug']) )
+        self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
+        self.body.append('</ul>')
+
+    self.body.append('</li>')
     raise nodes.SkipNode
 
 def depart_doctrineprojects_html(self, node):
