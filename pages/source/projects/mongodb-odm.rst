@@ -3,4 +3,4 @@ MongoDB ODM
 
 .. doctrine-downloads::
     :file: ../projects.yml
-    :project: mongodb-odm
+    :project: mongodb_odm
