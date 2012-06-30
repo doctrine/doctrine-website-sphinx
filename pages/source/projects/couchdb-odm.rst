@@ -3,4 +3,4 @@ CouchDB ODM
 
 .. doctrine-downloads::
     :file: ../projects.yml
-    :project: couchdb-odm
+    :project: couchdb_odm
