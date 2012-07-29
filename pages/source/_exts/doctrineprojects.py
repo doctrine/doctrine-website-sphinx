@@ -61,8 +61,9 @@ class DoctrineProjects(Directive):
 
 def visit_doctrineprojects_html(self, node):
     self.body.append('<li class="project" id="%s"><h3><a href="/projects/%s.html">%s</a></h3>\n' % (node['project']['slug'], node['project']['slug'], node['project']['title']) )
+    self.body.append('<p>%s</p>' % (node['project']['description']) )
+
     if node['type'] != 'short':
-        self.body.append('<p>%s</p>' % (node['project']['description']) )
         self.body.append('<ul>\n')
         self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
         self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
