@@ -669,6 +669,11 @@ common:
           composer: true
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.2'
+        2.2.3:
+          package_name: DoctrineCommon-2.2.3-full.tar.gz
+          composer: true
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.3'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.3'
     '2.3':
         version_file: source/common2.3/lib/Doctrine/Common/Version.php
         update_source_command: 'rm -rf source/common2.3 && git clone git://github.com/doctrine/common.git source/common2.3 && cd source/common2.3 && git submodule init && git submodule update'
