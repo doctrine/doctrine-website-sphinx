@@ -18,11 +18,10 @@ You can install the release through
 `PEAR <http://pear.doctrine-project.org>`_, download from the website or through
 `Composer <http://www.packagist.org>`_:
 
-.. code-block:: yaml
+.. code-block:: 
 
     {
-        "require":
-        {
+        "require": {
             "doctrine/orm": "2.2.2"
         }
     }

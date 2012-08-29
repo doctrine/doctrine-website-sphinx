@@ -5,6 +5,8 @@
 Doctrine 2.3 Beta
 =================
 
+**16.7.2012**
+
 We tagged the Doctrine 2.3 BETA1 release today. This includes tags for the
 Common, DBAL and ORM projects.
 
@@ -35,9 +37,10 @@ about issues that you find.
 
 You can install the Beta through `Github <https://github.com/doctrine/doctrine2>`_  or `Composer <http://www.packagist.org>`_:
 
+.. code-block:: 
+
     {
-        "require":
-        {
+        "require": {
             "doctrine/orm": "2.3.0-BETA1"
         }
     }
