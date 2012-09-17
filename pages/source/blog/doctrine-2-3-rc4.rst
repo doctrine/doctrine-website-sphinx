@@ -1,5 +1,5 @@
 :author: beberlei <kontakt@beberlei.de>
-:date: 2012-09-05 10:06:00
+:date: 2012-09-17 10:06:00
 
 ===========================
 Doctrine 2.3.0 RC4 released
