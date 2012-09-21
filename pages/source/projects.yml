@@ -3,7 +3,7 @@ orm:
   title: 'Object Relational Mapper'
   short_title: ORM
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
-  latest_version: '2.2'
+  latest_version: '2.3'
   is_primary: true
   issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
   browse_source_link: 'http://github.com/doctrine/doctrine2'
@@ -225,7 +225,7 @@ orm:
       update_source_command: 'rm -rf source/orm2.3 && git clone git://github.com/doctrine/doctrine2.git source/orm2.3 && cd source/orm2.3 && git checkout 2.3'
       git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/doctrine2.git doctrine2-orm'
-      stability: beta
+      stability: stable
       issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
       browse_source_link: 'http://github.com/doctrine/doctrine2'
       upgrade_file_path: source/orm2.3/UPGRADE.md
@@ -240,12 +240,17 @@ orm:
           package_name: DoctrineORM-2.3.0-RC1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.3.0-RC1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.3.0-RC1-beta'
+        2.3.0:
+          composer: true
+          package_name: DoctrineORM-2.3.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.3.0<br />$ git submodule update --init --recursive'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.3.0'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
   short_title: DBAL
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
-  latest_version: '2.2'
+  latest_version: '2.3'
   is_primary: true
   issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
   browse_source_link: 'http://github.com/doctrine/dbal'
@@ -420,7 +425,7 @@ dbal:
       api_source_path: source/dbal2.3/lib
       source_path: source/dbal2.3
       update_source_command: 'rm -rf source/dbal2.3 && git clone git://github.com/doctrine/dbal.git source/dbal2.3 && cd source/dbal2.3 && git submodule init && git submodule update'
-      stability: beta
+      stability: stable
       git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/dbal.git doctrine2-dbal'
       pear_install_command: 'pear install doctrine/DoctrineDBAL'
@@ -436,6 +441,11 @@ dbal:
           package_name: DoctrineDBAL-2.3.0-RC1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.3.0-rc1<br />$ git submodule update --init --recursive'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.3.0rc1'
+          composer: true
+        2.2.0:
+          package_name: DoctrineDBAL-2.3.0-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.3.0<br />$ git submodule update --init --recursive'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.3.0'
           composer: true
 mongodb_odm:
   slug: mongodb-odm
@@ -550,7 +560,7 @@ common:
   title: 'Common'
   short_title: Common
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
-  latest_version: '2.2'
+  latest_version: '2.3'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'http://github.com/doctrine/common'
@@ -677,7 +687,7 @@ common:
     '2.3':
         version_file: source/common2.3/lib/Doctrine/Common/Version.php
         update_source_command: 'rm -rf source/common2.3 && git clone git://github.com/doctrine/common.git source/common2.3 && cd source/common2.3 && git submodule init && git submodule update'
-        stability: beta
+        stability: stable
         git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
         svn_checkout_command: 'svn co http://svn.github.com/doctrine/common.git doctrine2-common'
         pear_install_command: 'pear install doctrine/DoctrineCommon'
@@ -689,3 +699,8 @@ common:
             git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.3.0-RC1'
             composer: true
             pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.3.0RC1'
+          2.3.0:
+            package_name: DoctrineCommon-2.3.0-full.tar.gz
+            git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.3.0'
+            composer: true
+            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.3.0'

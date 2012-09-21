@@ -44,7 +44,8 @@ features see the `DBAL <https://github.com/doctrine/dbal-documentation>`_ and
 `ORM <https://github.com/doctrine/orm-documentation>`_ documentation links on
 Github.
 
-You can install the Beta through `Github <https://github.com/doctrine/doctrine2>`_  or `Composer <http://www.packagist.org>`_:
+You can install the final release through `Github <https://github.com/doctrine/doctrine2>`_
+or `Composer <http://www.packagist.org>`_:
 
 .. code-block:: 
 
