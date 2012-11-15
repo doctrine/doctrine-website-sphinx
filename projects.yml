@@ -1,0 +1,123 @@
+ormold:
+  slug: ormold
+  title: 'Object Relational Mapper (1.2)'
+  short_title: ORMOLD
+  description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
+  latest_version: '1.2'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DC'
+  browse_source_link: 'http://github.com/doctrine/doctrine1'
+  versions:
+    '1.2':
+      stability: stable
+orm:
+  slug: orm
+  title: 'Object Relational Mapper'
+  short_title: ORM
+  description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
+  latest_version: '2.3'
+  is_primary: true
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
+  browse_source_link: 'http://github.com/doctrine/doctrine2'
+  versions:
+    '2.0':
+      upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#update-from-20-beta3-to-20-beta4"
+      stability: stable
+    '2.1':
+      upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-21"
+      stability: stable
+    '2.2':
+      upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-22"
+      stability: stable
+    '2.3':
+      stability: stable
+      upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-23"
+dbal:
+  slug: dbal
+  title: 'Database Abstraction Layer'
+  short_title: DBAL
+  description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
+  latest_version: '2.3'
+  is_primary: true
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
+  browse_source_link: 'http://github.com/doctrine/dbal'
+  versions:
+    '2.0':
+      stability: stable
+    '2.1':
+      stability: stable
+    '2.2':
+      stability: stable
+    '2.3':
+      stability: stable
+mongodb_odm:
+  slug: mongodb-odm
+  title: 'MongoDB Object Document Mapper'
+  short_title: MongoDBODM
+  description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
+  browse_source_link: 'http://github.com/doctrine/mongodb-odm'
+  versions:
+    '1.0':
+      stability: beta
+couchdb_odm:
+  slug: couchdb-odm
+  title: 'CouchDB Object Document Mapper'
+  short_title: CouchDBODM
+  description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  namespace: Doctrine\ODM\CouchdbDB
+  issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
+  browse_source_link: 'http://github.com/doctrine/couchdb-odm'
+  versions:
+    '1.0':
+      stability: alpha
+phpcr_odm:
+  slug: phpcr-odm
+  title: 'PHPCR Object Document Mapper'
+  short_title: PHPCRODM
+  description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  namespace: Doctrine\ODM\PHPCR
+  issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
+  browse_source_link: 'http://github.com/doctrine/phpcr-odm'
+  versions:
+    '1.0':
+      stability: alpha
+
+migrations:
+  slug: migrations
+  title: 'Migrations'
+  short_title: Migrations
+  description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
+  latest_version: '2.0'
+  is_primary: false
+  namespace: Doctrine\DBAL\Migrations
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
+  browse_source_link: 'http://github.com/doctrine/migrations'
+  versions:
+    '2.0':
+      stability: alpha
+common:
+  slug: common
+  title: 'Common'
+  short_title: Common
+  description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
+  latest_version: '2.3'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'http://github.com/doctrine/common'
+  versions:
+    '2.0':
+      stability: stable
+    '2.1':
+      stability: stable
+    '2.2':
+      stability: stable
+    '2.3':
+      stability: stable
+
