@@ -1,6 +1,41 @@
+ormold:
+  slug: ormold
+  repository: doctrine1
+  package: Doctrine
+  file: '%s-%s.tgz'
+  title: 'Object Relational Mapper (1.2)'
+  short_title: ORMOLD
+  description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
+  latest_version: '1.2'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DC'
+  browse_source_link: 'http://github.com/doctrine/doctrine1'
+  versions:
+    '1.2':
+      stability: stable
+      composer: false
+      releases:
+        1.2.3:
+          package_name: Doctrine-1.2.3.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/Doctrine-1.2.3'
+          composer: true
+        1.2.4PR1:
+          package_name: Doctrine-1.2.4PR1.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.4PR1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/Doctrine-1.2.4PR1'
+          composer: true
+        1.2.4:
+          package_name: Doctrine-1.2.4.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/Doctrine-1.2.4'
+          composer: true
 orm:
   slug: orm
+  repository: doctrine2
   title: 'Object Relational Mapper'
+  file: '%s-%s-full.tar.gz'
+  package: DoctrineORM
   short_title: ORM
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
   latest_version: '2.3'
@@ -8,233 +43,226 @@ orm:
   issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
   browse_source_link: 'http://github.com/doctrine/doctrine2'
   versions:
-    '1.2':
-      git_checkout_command: 'git clone git://github.com/doctrine/doctrine1.git doctrine1'
-      api_source_path: source/orm1.2/lib
-      stability: stable
-      upgrade_file_path: source/orm1.2/UPGRADE_TO_1_2
-      releases:
-        1.2.0:
-          package_name: Doctrine-1.2.0.tgz
-          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.0.tgz'
-        1.2.1:
-          package_name: Doctrine-1.2.1.tgz
-          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.1.tgz'
-        1.2.2:
-          package_name: Doctrine-1.2.2.tgz
-          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.2.tgz'
-        1.2.3:
-          package_name: Doctrine-1.2.3.tgz
-          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.3.tgz'
-        1.2.4:
-          package_name: Doctrine-1.2.4.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine1.git doctrine-orm<br/>$ cd doctrine-orm<br/>$ git checkout 1.2.4'
-          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.4.tgz'
     '2.0':
-      version_file: source/orm2.0/lib/Doctrine/ORM/Version.php
-      api_source_path: source/orm2.0/lib
-      source_path: source/orm2.0
-      update_source_command: 'rm -rf source/orm2.0 && git clone git://github.com/doctrine/doctrine2.git source/orm2.0 && cd source/orm2.0 && git checkout 2.0.x'
-      git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
-      pear_install_command: 'pear install doctrine/DoctrineORM'
+      upgrade_file: 'https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#update-from-20-beta3-to-20-beta4'
       stability: stable
-      upgrade_file_path: source/orm2.0/UPGRADE_TO_2_0
+      composer: false
       releases:
-        2.0.0-ALPHA1:
-          package_name: DoctrineORM-2.0.0-ALPHA1.tgz
-        2.0.0-ALPHA2:
-          package_name: DoctrineORM-2.0.0-ALPHA2.tgz
-        2.0.0-ALPHA3:
-          package_name: DoctrineORM-2.0.0-ALPHA3.tgz
-        2.0.0-ALPHA4:
-          package_name: DoctrineORM-2.0.0-ALPHA4.tgz
         2.0.0-BETA1:
-          package_name: DoctrineORM-2.0.0-BETA1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA1'
+          package_name: DoctrineORM-2.0.0-BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0-BETA1'
+          composer: true
         2.0.0-BETA2:
-          package_name: DoctrineORM-2.0.0BETA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA2'
+          package_name: DoctrineORM-2.0.0-BETA2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0-BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0-BETA2'
+          composer: true
         2.0.0-BETA3:
-          package_name: DoctrineORM-2.0.0BETA3.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA3'
+          package_name: DoctrineORM-2.0.0-BETA3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0-BETA3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0-BETA3'
+          composer: true
         2.0.0-BETA4:
-          package_name: DoctrineORM-2.0.0BETA4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA4'
-        2.0.0-RC1:
+          package_name: DoctrineORM-2.0.0-BETA4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0-BETA4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0-BETA4'
+          composer: true
+        2.0.0RC1:
           package_name: DoctrineORM-2.0.0RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC1'
-        2.0.0-RC2:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0RC1'
+          composer: true
+        2.0.0RC2:
           package_name: DoctrineORM-2.0.0RC2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0RC2'
+          composer: true
         2.0.0:
           package_name: DoctrineORM-2.0.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.0'
+          composer: true
         2.0.1:
           package_name: DoctrineORM-2.0.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.1'
+          composer: true
         2.0.2:
           package_name: DoctrineORM-2.0.2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.2'
+          composer: true
         2.0.3:
           package_name: DoctrineORM-2.0.3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.3'
+          composer: true
         2.0.4:
           package_name: DoctrineORM-2.0.4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.4'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.4'
+          composer: true
         2.0.5:
           package_name: DoctrineORM-2.0.5-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.5<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.5'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.5'
+          composer: true
         2.0.6:
           package_name: DoctrineORM-2.0.6-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.6<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.6'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.6'
+          composer: true
         2.0.7:
           package_name: DoctrineORM-2.0.7-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.7<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.7'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.0.7'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.0.7'
+          composer: true
     '2.1':
-      version_file: source/orm2.1/lib/Doctrine/ORM/Version.php
-      api_source_path: source/orm2.1/lib
-      source_path: source/orm2.1
-      update_source_command: 'rm -rf source/orm2.1 && git clone git://github.com/doctrine/doctrine2.git source/orm2.1 && cd source/orm2.1 && git submodule update && git checkout 2.1.x'
-      git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
+      upgrade_file: 'https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-21'
       stability: stable
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-      browse_source_link: 'http://github.com/doctrine/doctrine2'
-      upgrade_file_path: source/orm2.1/UPGRADE_TO_2_1
+      composer: false
       releases:
-        2.1.0-BETA1:
+        2.1.0BETA1:
           package_name: DoctrineORM-2.1.0BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0BETA1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0BETA1-beta'
-        2.1.0-RC1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.0BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.0BETA1'
+          composer: true
+        2.1.0RC1:
           package_name: DoctrineORM-2.1.0RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC1-beta'
-        2.1.0-RC2:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.0RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.0RC1'
+          composer: true
+        2.1.0RC2:
           package_name: DoctrineORM-2.1.0RC2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC2-beta'
-        2.1.0-RC3:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.0RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.0RC2'
+          composer: true
+        2.1.0RC3:
           package_name: DoctrineORM-2.1.0RC3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC3-beta'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.0RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.0RC3'
+          composer: true
         2.1.0:
           package_name: DoctrineORM-2.1.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.0'
+          composer: true
         2.1.1:
           package_name: DoctrineORM-2.1.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.1'
+          composer: true
         2.1.2:
           package_name: DoctrineORM-2.1.2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.2'
+          composer: true
         2.1.3:
           package_name: DoctrineORM-2.1.3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.3'
+          composer: true
         2.1.4:
           package_name: DoctrineORM-2.1.4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.4'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.4'
+          composer: true
         2.1.5:
           package_name: DoctrineORM-2.1.5-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.5<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.5'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.5'
+          composer: true
         2.1.6:
           package_name: DoctrineORM-2.1.6-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.6<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.6'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.6'
           composer: true
         2.1.7:
           package_name: DoctrineORM-2.1.7-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.7<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.7'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.1.7'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.1.7'
           composer: true
     '2.2':
-      version_file: source/orm2.2/lib/Doctrine/ORM/Version.php
-      api_source_path: source/orm2.2/lib
-      source_path: source/orm2.2
-      update_source_command: 'rm -rf source/orm2.2 && git clone git://github.com/doctrine/doctrine2.git source/orm2.2 && cd source/orm2.2 && git checkout 2.2'
-      git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
+      upgrade_file: 'https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-22'
       stability: stable
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-      browse_source_link: 'http://github.com/doctrine/doctrine2'
-      upgrade_file_path: source/orm2.2/UPGRADE_TO_2_2
       releases:
-        2.2.0-beta1:
-          composer: true
+        2.2.0-BETA1:
           package_name: DoctrineORM-2.2.0-BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-BETA1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0-BETA1-beta'
-        2.2.0-beta2:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.0-BETA1'
           composer: true
+        2.2.0-BETA2:
           package_name: DoctrineORM-2.2.0-BETA2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-BETA2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0-BETA2-beta'
-        2.2.0-rc1:
-            composer: true
-            package_name: DoctrineORM-2.2.0-RC1-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0-RC1<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0RC1-beta'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.0-BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.0-BETA2'
+          composer: true
+        2.2.0-RC1:
+          package_name: DoctrineORM-2.2.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.0-RC1'
+          composer: true
         2.2.0:
-            composer: true
-            package_name: DoctrineORM-2.2.0-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.0<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.0'
+          package_name: DoctrineORM-2.2.0-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.0'
+          composer: true
         2.2.1:
-            composer: true
-            package_name: DoctrineORM-2.2.1-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.1<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.1'
+          package_name: DoctrineORM-2.2.1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.1'
+          composer: true
         2.2.2:
-            package_name: DoctrineORM-2.2.2-full.tar.gz
-            composer: true
-            git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.2.2<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.2.2'
+          package_name: DoctrineORM-2.2.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.2'
+          composer: true
+        2.2.3:
+          package_name: DoctrineORM-2.2.3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.2.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.2.3'
+          composer: true
     '2.3':
-      version_file: source/orm2.3/lib/Doctrine/ORM/Version.php
-      api_source_path: source/orm2.3/lib
-      source_path: source/orm2.3
-      update_source_command: 'rm -rf source/orm2.3 && git clone git://github.com/doctrine/doctrine2.git source/orm2.3 && cd source/orm2.3 && git checkout 2.3'
-      git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       stability: stable
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-      browse_source_link: 'http://github.com/doctrine/doctrine2'
-      upgrade_file_path: source/orm2.3/UPGRADE.md
+      upgrade_file: 'https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-23'
       releases:
-        2.3.0-beta1:
-          composer: true
+        2.3.0-BETA1:
           package_name: DoctrineORM-2.3.0-BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.3.0-BETA1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.3.0-BETA1-beta'
-        2.3.0-rc1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0-BETA1'
           composer: true
+        2.3.0-RC1:
           package_name: DoctrineORM-2.3.0-RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.3.0-RC1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.3.0-RC1-beta'
-        2.3.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0-RC1'
           composer: true
+        2.3.0-RC2:
+          package_name: DoctrineORM-2.3.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0-RC2'
+          composer: true
+        2.3.0-RC3:
+          package_name: DoctrineORM-2.3.0-RC3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0-RC3'
+          composer: true
+        2.3.0-RC4:
+          package_name: DoctrineORM-2.3.0-RC4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0-RC4'
+          composer: true
+        2.3.0:
           package_name: DoctrineORM-2.3.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.3.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.3.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0'
+          composer: true
 dbal:
   slug: dbal
+  repository: dbal
   title: 'Database Abstraction Layer'
   short_title: DBAL
+  package: DoctrineDBAL
+  file: '%s-%s-full.tar.gz'
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
   latest_version: '2.3'
   is_primary: true
@@ -242,265 +270,322 @@ dbal:
   browse_source_link: 'http://github.com/doctrine/dbal'
   versions:
     '2.0':
-      version_file: source/dbal2.0/lib/Doctrine/DBAL/Version.php
-      api_source_path: source/dbal2.0/lib
-      source_path: source/dbal2.0
-      update_source_command: 'rm -rf source/dbal2.0 && git clone git://github.com/doctrine/dbal.git source/dbal2.0 && cd source/dbal2.0 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
-      pear_install_command: 'pear install doctrine/DoctrineDBAL'
+      composer: false
       releases:
-        2.0.0BETA2:
-          package_name: DoctrineDBAL-2.0.0BETA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA2'
-        2.0.0BETA3:
-          package_name: DoctrineDBAL-2.0.0BETA3.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA3'
-        2.0.0BETA4:
-          package_name: DoctrineDBAL-2.0.0BETA4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA4'
+        2.0-standalone-init:
+          package_name: DoctrineDBAL-2.0-standalone-init-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0-standalone-init'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0-standalone-init'
+          composer: true
+        2.0.0-BETA1:
+          package_name: DoctrineDBAL-2.0.0-BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0-BETA1'
+          composer: true
+        2.0.0-BETA2:
+          package_name: DoctrineDBAL-2.0.0-BETA2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0-BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0-BETA2'
+          composer: true
+        2.0.0-BETA3:
+          package_name: DoctrineDBAL-2.0.0-BETA3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0-BETA3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0-BETA3'
+          composer: true
+        2.0.0-BETA4:
+          package_name: DoctrineDBAL-2.0.0-BETA4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0-BETA4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0-BETA4'
+          composer: true
+        2.0.0-RC1:
+          package_name: DoctrineDBAL-2.0.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0-RC1'
+          composer: true
+        2.0.0RC2:
+          package_name: DoctrineDBAL-2.0.0RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0RC2'
+          composer: true
         2.0.0RC3:
           package_name: DoctrineDBAL-2.0.0RC3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0RC3'
+          composer: true
         2.0.0RC4:
           package_name: DoctrineDBAL-2.0.0RC4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC4'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0RC4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0RC4'
+          composer: true
         2.0.0RC5:
           package_name: DoctrineDBAL-2.0.0RC5-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC5<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC5'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0RC5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0RC5'
+          composer: true
         2.0.0:
           package_name: DoctrineDBAL-2.0.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.0'
+          composer: true
         2.0.1:
           package_name: DoctrineDBAL-2.0.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.1'
+          composer: true
         2.0.2:
           package_name: DoctrineDBAL-2.0.2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.2'
+          composer: true
         2.0.3:
           package_name: DoctrineDBAL-2.0.3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.3'
+          composer: true
         2.0.4:
           package_name: DoctrineDBAL-2.0.4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.4<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.4'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.4'
+          composer: true
         2.0.5:
           package_name: DoctrineDBAL-2.0.5-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.5<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.5'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.5'
+          composer: true
         2.0.6:
           package_name: DoctrineDBAL-2.0.6-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.6<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.6'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.6'
+          composer: true
         2.0.7:
           package_name: DoctrineDBAL-2.0.7-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.7<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.7'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.7'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.7'
+          composer: true
         2.0.8:
           package_name: DoctrineDBAL-2.0.8-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.8<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.8'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.8'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.8'
+          composer: true
+        2.0.9:
+          package_name: DoctrineDBAL-2.0.9-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.0.9'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.0.9'
+          composer: true
     '2.1':
-      version_file: source/dbal2.1/lib/Doctrine/DBAL/Version.php
-      api_source_path: source/dbal2.1/lib
-      source_path: source/dbal2.1
-      update_source_command: 'rm -rf source/dbal2.1 && git clone git://github.com/doctrine/dbal.git source/dbal2.1 && cd source/dbal2.1 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
-      pear_install_command: 'pear install doctrine/DoctrineDBAL'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
-      browse_source_link: 'http://github.com/doctrine/dbal'
+      composer: false
       releases:
-        2.1.0BETA1:
-          package_name: DoctrineDBAL-2.1.0BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-BETA1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0BETA1'
         2.1.0RC1:
           package_name: DoctrineDBAL-2.1.0RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.0RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.0RC1'
+          composer: true
         2.1.0RC2:
           package_name: DoctrineDBAL-2.1.0RC2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.0RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.0RC2'
+          composer: true
         2.1.0:
           package_name: DoctrineDBAL-2.1.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.0'
+          composer: true
         2.1.1:
           package_name: DoctrineDBAL-2.1.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.1'
+          composer: true
         2.1.2:
           package_name: DoctrineDBAL-2.1.2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.2'
+          composer: true
         2.1.3:
           package_name: DoctrineDBAL-2.1.3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.3<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.3'
+          composer: true
         2.1.5:
           package_name: DoctrineDBAL-2.1.5-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.5<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.5'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.5'
+          composer: true
         2.1.6:
           package_name: DoctrineDBAL-2.1.6-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.6<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.6'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.6'
+          composer: true
         2.1.7:
           package_name: DoctrineDBAL-2.1.7-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.7<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.7'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.1.7'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.1.7'
           composer: true
     '2.2':
-      version_file: source/dbal2.2/lib/Doctrine/DBAL/Version.php
-      api_source_path: source/dbal2.2/lib
-      source_path: source/dbal2.2
-      update_source_command: 'rm -rf source/dbal2.2 && git clone git://github.com/doctrine/dbal.git source/dbal2.2 && cd source/dbal2.2 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
-      pear_install_command: 'pear install doctrine/DoctrineDBAL'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
-      browse_source_link: 'http://github.com/doctrine/dbal'
       releases:
-        2.2.0BETA1:
-          package_name: DoctrineDBAL-2.2.0-beta1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0-beta1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0beta1'
-          composer: true
-        2.2.0BETA2:
+        2.2.0-BETA2:
           package_name: DoctrineDBAL-2.2.0-BETA2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0-beta2<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0beta2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0-BETA2'
+          composer: true
+        2.2.0-beta1:
+          package_name: DoctrineDBAL-2.2.0-beta1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-beta1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0-beta1'
+          composer: true
+        2.2.0-RC1:
+          package_name: DoctrineDBAL-2.2.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0-RC1'
+          composer: true
+        2.2.0-RC2:
+          package_name: DoctrineDBAL-2.2.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0-RC2'
           composer: true
         2.2.0-RC3:
-            package_name: DoctrineDBAL-2.2.0-RC3-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0-RC3<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0RC3-beta'
-            composer: true
+          package_name: DoctrineDBAL-2.2.0-RC3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0-RC3'
+          composer: true
         2.2.0:
-            package_name: DoctrineDBAL-2.2.0-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0<br />$ git submodule update --init --recursive'
-            composer: true
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0'
+          package_name: DoctrineDBAL-2.2.0-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.0'
+          composer: true
         2.2.1:
-            package_name: DoctrineDBAL-2.2.1-full.tar.gz
-            composer: true
-            git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.1<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.1'
+          package_name: DoctrineDBAL-2.2.1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.1'
+          composer: true
         2.2.2:
-            package_name: DoctrineDBAL-2.2.2-full.tar.gz
-            composer: true
-            git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.2<br />$ git submodule update --init --recursive'
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.2'
+          package_name: DoctrineDBAL-2.2.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.2.2'
+          composer: true
     '2.3':
-      version_file: source/dbal2.3/lib/Doctrine/DBAL/Version.php
-      api_source_path: source/dbal2.3/lib
-      source_path: source/dbal2.3
-      update_source_command: 'rm -rf source/dbal2.3 && git clone git://github.com/doctrine/dbal.git source/dbal2.3 && cd source/dbal2.3 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
-      pear_install_command: 'pear install doctrine/DoctrineDBAL'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
-      browse_source_link: 'http://github.com/doctrine/dbal'
       releases:
-        2.2.0BETA1:
+        2.3.0-BETA1:
           package_name: DoctrineDBAL-2.3.0-BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.3.0-beta1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.3.0beta1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0-BETA1'
           composer: true
-        2.2.0RC1:
+        2.3.0-RC1:
           package_name: DoctrineDBAL-2.3.0-RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.3.0-rc1<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.3.0rc1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0-RC1'
           composer: true
-        2.2.0:
+        2.3.0-RC2:
+          package_name: DoctrineDBAL-2.3.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0-RC2'
+          composer: true
+        2.3.0-RC3:
+          package_name: DoctrineDBAL-2.3.0-RC3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0-RC3'
+          composer: true
+        2.3.0-RC4:
+          package_name: DoctrineDBAL-2.3.0-RC4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0-RC4'
+          composer: true
+        2.3.0:
           package_name: DoctrineDBAL-2.3.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.3.0<br />$ git submodule update --init --recursive'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.3.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0'
           composer: true
 mongodb_odm:
   slug: mongodb-odm
+  package: DoctrineMongoDBODM
+  repository: mongodb-odm
+  file: '%s-%s.tgz'
   title: 'MongoDB Object Document Mapper'
   short_title: MongoDBODM
   description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
-  namespace: Doctrine\ODM\MongoDB
   issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
   browse_source_link: 'http://github.com/doctrine/mongodb-odm'
   versions:
     '1.0':
       stability: beta
-      git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm'
-      pear_install_command: 'pear install doctrine/DoctrineMongoDBODM-beta'
-      api_source_path: source/mongodb_odm1.0/lib
-      source_path: source/mongodb_odm1.0
-      issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
-      browse_source_link: 'http://github.com/doctrine/mongodb-odm'
       releases:
         1.0.0ALPHA1:
           package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0ALPHA1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA1'
-        1.0.0ALPHA2:
-          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0ALPHA2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA1'
+          composer: true
         1.0.0BETA1:
           package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA1'
+          composer: true
+        1.0.0ALPHA2:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA2'
+          composer: true
         1.0.0BETA2:
           package_name: DoctrineMongoDBODM-1.0.0BETA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA2'
+          composer: true
         1.0.0BETA3:
           package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0BETA3'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0BETA3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA3'
+          composer: true
+        1.0.0-BETA4:
+          package_name: DoctrineMongoDBODM-1.0.0-BETA4.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0-BETA4'
+          composer: true
+        1.0.0-BETA5:
+          package_name: DoctrineMongoDBODM-1.0.0-BETA5.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0-BETA5'
+          composer: true
+        1.0.0-BETA6:
+          package_name: DoctrineMongoDBODM-1.0.0-BETA6.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0-BETA6'
+          composer: true
 couchdb_odm:
   slug: couchdb-odm
+  package: CouchDBODM
+  repository: couchdb-odm
+  file: '%s-%s.tgz'
   title: 'CouchDB Object Document Mapper'
   short_title: CouchDBODM
   description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
-  namespace: Doctrine\ODM\CouchdbDB
   issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
   browse_source_link: 'http://github.com/doctrine/couchdb-odm'
   versions:
     '1.0':
       stability: alpha
-      git_checkout_command: 'git clone git://github.com/doctrine/couchdb-odm.git couchdb_odm'
-      pear_install_command: 'pear install doctrine/DoctrineCouchDBODM-alpha'
-      api_source_path: source/couchdb_odm1.0/lib
-      source_path: source/couchdb_odm1.0/
-      issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
-      browse_source_link: 'http://github.com/doctrine/couchdb-odm'
       releases:
-        1.0.0ALPHA1:
-          package_name: CouchDBODM-1.0.0ALPHA1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/couchdb-odm.git couchdb_odm<br/>$ cd couchdb_odm<br/>$ git checkout 1.0.0alpha1'
-          pear_install_command: 'pear install pear.doctrine-project.org/CouchDBODM-1.0.0alpha1'
         1.0.0ALPHA2:
           package_name: CouchDBODM-1.0.0ALPHA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/couchdb-odm.git couchdb_odm<br/>$ cd couchdb_odm<br/>$ git checkout 1.0.0ALPHA2'
-          pear_install_command: 'pear install pear.doctrine-project.org/CouchDBODM-1.0.0ALPHA2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/couchdb-odm.git couchdb-odm<br>$ cd couchdb-odm<br>$ git checkout 1.0.0ALPHA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/CouchDBODM-1.0.0ALPHA2'
+          composer: true
+        1.0.0alpha1:
+          package_name: CouchDBODM-1.0.0alpha1.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/couchdb-odm.git couchdb-odm<br>$ cd couchdb-odm<br>$ git checkout 1.0.0alpha1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/CouchDBODM-1.0.0alpha1'
+          composer: true
 phpcr_odm:
   slug: phpcr-odm
+  repository: phpcr-odm
   title: 'PHPCR Object Document Mapper'
   short_title: PHPCRODM
+  package: PHPCRODM
   description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
@@ -510,14 +595,11 @@ phpcr_odm:
   versions:
     '1.0':
       stability: alpha
-      git_checkout_command: 'git clone git://github.com/doctrine/phpcr-odm.git phpcr_odm'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
-      browse_source_link: 'http://github.com/doctrine/phpcr-odm'
-      releases: {}
-
 migrations:
   slug: migrations
-  title: 'Migrations'
+  repository: migrations
+  title: Migrations
+  file: '%s-%s-full.tar.gz'
   short_title: Migrations
   description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
   latest_version: '2.0'
@@ -528,14 +610,12 @@ migrations:
   versions:
     '2.0':
       stability: alpha
-      git_checkout_command: 'git clone git://github.com/doctrine/migrations.git migrations'
-      api_source_path: source/migrations2.0/lib
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
-      browse_source_link: 'http://github.com/doctrine/migrations'
-      releases: {}
 common:
   slug: common
-  title: 'Common'
+  repository: common
+  package: DoctrineCommon
+  file: '%s-%s-full.tar.gz'
+  title: Common
   short_title: Common
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
   latest_version: '2.3'
@@ -544,137 +624,191 @@ common:
   browse_source_link: 'http://github.com/doctrine/common'
   versions:
     '2.0':
-      update_source_command: 'rm -rf source/common2.0 && git clone git://github.com/doctrine/common.git source/common2.0 && cd source/common2.0 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
-      pear_install_command: 'pear install doctrine/DoctrineCommon'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-      browse_source_link: 'http://github.com/doctrine/common'
+      composer: false
       releases:
-        2.0.0BETA2:
-          package_name: DoctrineCommon-2.0.0BETA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA2'
-        2.0.0BETA3:
-          package_name: DoctrineCommon-2.0.0BETA3.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA3'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA3'
-        2.0.0BETA4:
-          package_name: DoctrineCommon-2.0.0BETA4.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA4'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA4'
-        2.0.0RC1:
-          package_name: DoctrineCommon-2.0.0RC1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC1'
-        2.0.0RC2:
-          package_name: DoctrineCommon-2.0.0RC2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC2'
+        2.0-standalone-init:
+          package_name: DoctrineCommon-2.0-standalone-init-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0-standalone-init'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0-standalone-init'
+          composer: true
+        2.0.0-BETA1:
+          package_name: DoctrineCommon-2.0.0-BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-BETA1'
+          composer: true
+        2.0.0-BETA2:
+          package_name: DoctrineCommon-2.0.0-BETA2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-BETA2'
+          composer: true
+        2.0.0-BETA3:
+          package_name: DoctrineCommon-2.0.0-BETA3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-BETA3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-BETA3'
+          composer: true
+        2.0.0-BETA4:
+          package_name: DoctrineCommon-2.0.0-BETA4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-BETA4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-BETA4'
+          composer: true
+        2.0.0-RC1:
+          package_name: DoctrineCommon-2.0.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-RC1'
+          composer: true
+        2.0.0-RC2:
+          package_name: DoctrineCommon-2.0.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0-RC2'
+          composer: true
         2.0.0:
-          package_name: DoctrineCommon-2.0.0-full.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0'
+          package_name: DoctrineCommon-2.0.0-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.0'
+          composer: true
         2.0.1:
-          package_name: DoctrineCommon-2.0.1-full.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.1'
+          package_name: DoctrineCommon-2.0.1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.1'
+          composer: true
         2.0.2:
-          package_name: DoctrineCommon-2.0.2-full.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.2'
+          package_name: DoctrineCommon-2.0.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.0.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.0.2'
+          composer: true
     '2.1':
-      update_source_command: 'rm -rf source/common2.1 && git clone git://github.com/doctrine/common.git source/common2.1 && cd source/common2.1 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
-      pear_install_command: 'pear install doctrine/DoctrineCommon'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-      browse_source_link: 'http://github.com/doctrine/common'
+      composer: false
       releases:
-        2.1.0BETA1:
-          package_name: DoctrineCommon-2.1.0BETA1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-BETA1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0BETA1'
+        2.1.0-BETA1:
+          package_name: DoctrineCommon-2.1.0-BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.0-BETA1'
+          composer: true
         2.1.0RC1:
           package_name: DoctrineCommon-2.1.0RC1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.0RC1'
+          composer: true
         2.1.0RC2:
           package_name: DoctrineCommon-2.1.0RC2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.0RC2'
+          composer: true
+        2.1.0RC3:
+          package_name: DoctrineCommon-2.1.0RC3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.0RC3'
+          composer: true
         2.1.0:
           package_name: DoctrineCommon-2.1.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.0'
+          composer: true
         2.1.1:
           package_name: DoctrineCommon-2.1.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.1'
+          composer: true
         2.1.2:
           package_name: DoctrineCommon-2.1.2-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.2'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.2'
+          composer: true
         2.1.3:
           package_name: DoctrineCommon-2.1.3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.3'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.3'
+          composer: true
+        2.1.4:
+          package_name: DoctrineCommon-2.1.4-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.1.4'
           composer: true
     '2.2':
-      version_file: source/common2.2/lib/Doctrine/Common/Version.php
-      update_source_command: 'rm -rf source/common2.2 && git clone git://github.com/doctrine/common.git source/common2.1 && cd source/common2.2 && git submodule init && git submodule update'
       stability: stable
-      git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
-      pear_install_command: 'pear install doctrine/DoctrineCommon'
-      issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-      browse_source_link: 'http://github.com/doctrine/common'
       releases:
-        2.2.0RC3:
+        2.2.0BETA1:
+          package_name: DoctrineCommon-2.2.0BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0BETA1'
+          composer: true
+        2.2.0BETA2:
+          package_name: DoctrineCommon-2.2.0BETA2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0BETA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0BETA2'
+          composer: true
+        2.2.0-RC1:
+          package_name: DoctrineCommon-2.2.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0-RC1'
+          composer: true
+        2.2.0-RC2:
+          package_name: DoctrineCommon-2.2.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0-RC2'
+          composer: true
+        2.2.0-RC3:
           package_name: DoctrineCommon-2.2.0-RC3-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.0-RC3'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0-RC3'
           composer: true
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.0RC3'
-        2.2.0RC4:
+        2.2.0-RC4:
           package_name: DoctrineCommon-2.2.0-RC4-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.0-RC4'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0-RC4'
           composer: true
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.0RC4'
+        2.2.0-RC5:
+          package_name: DoctrineCommon-2.2.0-RC5-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0-RC5'
+          composer: true
         2.2.0:
           package_name: DoctrineCommon-2.2.0-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.0'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.0'
           composer: true
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.0'
         2.2.1:
           package_name: DoctrineCommon-2.2.1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.1'
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.1'
           composer: true
         2.2.2:
           package_name: DoctrineCommon-2.2.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.2'
           composer: true
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.2'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.2'
         2.2.3:
           package_name: DoctrineCommon-2.2.3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.2.3'
           composer: true
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.3'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.3'
     '2.3':
-        version_file: source/common2.3/lib/Doctrine/Common/Version.php
-        update_source_command: 'rm -rf source/common2.3 && git clone git://github.com/doctrine/common.git source/common2.3 && cd source/common2.3 && git submodule init && git submodule update'
-        stability: stable
-        git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
-        pear_install_command: 'pear install doctrine/DoctrineCommon'
-        issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-        browse_source_link: 'http://github.com/doctrine/common'
-        releases:
-          2.3.0RC3:
-            package_name: DoctrineCommon-2.3.0-RC1-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.3.0-RC1'
-            composer: true
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.3.0RC1'
-          2.3.0:
-            package_name: DoctrineCommon-2.3.0-full.tar.gz
-            git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.3.0'
-            composer: true
-            pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.3.0'
+      stability: stable
+      releases:
+        2.3.0-BETA1:
+          package_name: DoctrineCommon-2.3.0-BETA1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.3.0-BETA1'
+          composer: true
+        2.3.0-RC1:
+          package_name: DoctrineCommon-2.3.0-RC1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.3.0-RC1'
+          composer: true
+        2.3.0-RC2:
+          package_name: DoctrineCommon-2.3.0-RC2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.3.0-RC2'
+          composer: true
+        2.3.0-RC3:
+          package_name: DoctrineCommon-2.3.0-RC3-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.3.0-RC3'
+          composer: true
+        2.3.0:
+          package_name: DoctrineCommon-2.3.0-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineCommon-2.3.0'
+          composer: true

@@ -5,7 +5,7 @@
  * Apigen (www.apigen.org) is required.
  */
 
-require_once __DIR__ . "/../vendor/.composer/autoload.php";
+require_once __DIR__ . "/../vendor/autoload.php";
 
 if (!isset($argv[1])) {
     echo "missing argument\n";

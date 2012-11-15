@@ -1,5 +1,8 @@
 ormold:
   slug: ormold
+  repository: doctrine1
+  package: 'Doctrine'
+  file: '%s-%s.tgz'
   title: 'Object Relational Mapper (1.2)'
   short_title: ORMOLD
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
@@ -10,9 +13,13 @@ ormold:
   versions:
     '1.2':
       stability: stable
+      composer: false
 orm:
   slug: orm
+  repository: doctrine2
   title: 'Object Relational Mapper'
+  file: '%s-%s-full.tar.gz'
+  package: 'DoctrineORM'
   short_title: ORM
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
   latest_version: '2.3'
@@ -23,9 +30,11 @@ orm:
     '2.0':
       upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#update-from-20-beta3-to-20-beta4"
       stability: stable
+      composer: false
     '2.1':
       upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-21"
       stability: stable
+      composer: false
     '2.2':
       upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-22"
       stability: stable
@@ -34,8 +43,11 @@ orm:
       upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#upgrade-to-23"
 dbal:
   slug: dbal
+  repository: dbal
   title: 'Database Abstraction Layer'
   short_title: DBAL
+  package: 'DoctrineDBAL'
+  file: '%s-%s-full.tar.gz'
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
   latest_version: '2.3'
   is_primary: true
@@ -44,14 +56,19 @@ dbal:
   versions:
     '2.0':
       stability: stable
+      composer: false
     '2.1':
       stability: stable
+      composer: false
     '2.2':
       stability: stable
     '2.3':
       stability: stable
 mongodb_odm:
   slug: mongodb-odm
+  package: DoctrineMongoDBODM
+  repository: mongodb-odm
+  file: '%s-%s.tgz'
   title: 'MongoDB Object Document Mapper'
   short_title: MongoDBODM
   description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
@@ -64,12 +81,14 @@ mongodb_odm:
       stability: beta
 couchdb_odm:
   slug: couchdb-odm
+  package: CouchDBODM
+  repository: couchdb-odm
+  file: '%s-%s.tgz'
   title: 'CouchDB Object Document Mapper'
   short_title: CouchDBODM
   description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
-  namespace: Doctrine\ODM\CouchdbDB
   issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
   browse_source_link: 'http://github.com/doctrine/couchdb-odm'
   versions:
@@ -77,8 +96,10 @@ couchdb_odm:
       stability: alpha
 phpcr_odm:
   slug: phpcr-odm
+  repository: phpcr-odm
   title: 'PHPCR Object Document Mapper'
   short_title: PHPCRODM
+  package: PHPCRODM
   description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
@@ -91,7 +112,9 @@ phpcr_odm:
 
 migrations:
   slug: migrations
+  repository: migrations
   title: 'Migrations'
+  file: '%s-%s-full.tar.gz'
   short_title: Migrations
   description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
   latest_version: '2.0'
@@ -104,6 +127,9 @@ migrations:
       stability: alpha
 common:
   slug: common
+  repository: common
+  package: 'DoctrineCommon'
+  file: '%s-%s-full.tar.gz'
   title: 'Common'
   short_title: Common
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
@@ -114,8 +140,10 @@ common:
   versions:
     '2.0':
       stability: stable
+      composer: false
     '2.1':
       stability: stable
+      composer: false
     '2.2':
       stability: stable
     '2.3':

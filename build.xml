@@ -13,6 +13,9 @@
     </target>
 
     <target name="build">
+        <exec executable="php" dir=".">
+            <arg value="bin/build-projects.php" />
+        </exec>
         <exec executable="make" dir="pages/">
             <arg value="html" />
         </exec>
