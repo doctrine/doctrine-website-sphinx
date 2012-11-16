@@ -595,6 +595,7 @@ phpcr_odm:
   versions:
     '1.0':
       stability: alpha
+      releases: []
 migrations:
   slug: migrations
   repository: migrations

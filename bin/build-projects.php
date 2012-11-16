@@ -13,7 +13,6 @@ $file        = __DIR__ . "/../projects.yml";
 $projects    = Yaml::parse($file);
 
 foreach ($projects as $projectName => $projectData) {
-    echo "Starting Project " . $projectName . "\n";
     $tagData = json_decode(file_get_contents("https://api.github.com/repos/doctrine/" . $projectData['repository'] . "/tags"), true);
 
     if ( ! $tagData) {
@@ -25,12 +24,9 @@ foreach ($projects as $projectName => $projectData) {
     });
 
     foreach ($projectData['versions'] as $version => $versionData) {
-        echo "Starting Branch " . $version . "\n";
-        $projectData['versions'][$version]['releases'] = array();
+        $projects[$projectName]['versions'][$version]['releases'] = array();
         foreach ($tagData as $tag) {
             if (strpos($tag['name'], $version) === 0) {
-                echo "Preparing " . $tag['name'] . "\n";
-
                 $release = array(
                     'package_name'         => sprintf($projectData['file'], $projectData['package'], $tag['name']),
                     'git_checkout_command' => '$ git clone git://github.com/doctrine/' . $projectData['repository'] . '.git ' . $projectData['slug'] . '<br>$ cd ' . $projectData['slug'] . '<br>$ git checkout ' . $tag['name'],
