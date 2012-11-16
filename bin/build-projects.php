@@ -46,6 +46,12 @@ foreach ($projects as $projectName => $projectData) {
 
 file_put_contents(__DIR__ . "/../pages/source/projects.yml", Yaml::dump($projects, 8, 2));
 
+/**
+ * Given a package and tag name "tests" how the build file is called
+ * using HEAD requests.
+ *
+ * Not necessary at the moment
+ */
 function get_package_name($package, $tag)
 {
     $downloadDir = "http://www.doctrine-project.org/downloads/";
