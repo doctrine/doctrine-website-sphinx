@@ -42,7 +42,8 @@ pretty similar:
 
 ::
 
-    [php]
+    <?php
+
     // invoking a repository
     $userRepository = $manager->getRepository('My\Entity');
 
