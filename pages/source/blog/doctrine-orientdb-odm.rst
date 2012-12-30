@@ -40,7 +40,7 @@ unfinished.
 Trying to adhere to the Doctrine2 ODMs standards, the code looks
 pretty similar:
 
-::
+.. code-block:: php
 
     <?php
 
