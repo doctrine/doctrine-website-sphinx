@@ -256,6 +256,16 @@ orm:
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.0'
           composer: true
+        2.3.1:
+          package_name: DoctrineORM-2.3.1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.1'
+          composer: true
+        2.3.2:
+          package_name: DoctrineORM-2.3.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineORM-2.3.2'
+          composer: true
 dbal:
   slug: dbal
   repository: dbal
@@ -498,6 +508,16 @@ dbal:
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.0'
           composer: true
+        2.3.1:
+          package_name: DoctrineDBAL-2.3.1-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.1'
+          composer: true
+        2.3.2:
+          package_name: DoctrineDBAL-2.3.2-full.tar.gz
+          git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineDBAL-2.3.2'
+          composer: true
 mongodb_odm:
   slug: mongodb-odm
   package: DoctrineMongoDBODM
@@ -514,15 +534,15 @@ mongodb_odm:
     '1.0':
       stability: beta
       releases:
-        1.0.0ALPHA1:
-          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
-          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA1'
-          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA1'
-          composer: true
         1.0.0BETA1:
           package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA1'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA1'
+          composer: true
+        1.0.0ALPHA1:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA1'
           composer: true
         1.0.0ALPHA2:
           package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
@@ -553,6 +573,11 @@ mongodb_odm:
           package_name: DoctrineMongoDBODM-1.0.0-BETA6.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA6'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0-BETA6'
+          composer: true
+        1.0.0-BETA7:
+          package_name: DoctrineMongoDBODM-1.0.0-BETA7.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA7'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0-BETA7'
           composer: true
 couchdb_odm:
   slug: couchdb-odm
@@ -595,7 +620,6 @@ phpcr_odm:
   versions:
     '1.0':
       stability: alpha
-      releases: []
 migrations:
   slug: migrations
   repository: migrations
@@ -611,6 +635,7 @@ migrations:
   versions:
     '2.0':
       stability: alpha
+      releases: {  }
 common:
   slug: common
   repository: common
