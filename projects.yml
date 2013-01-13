@@ -161,5 +161,5 @@ orientdb_odm:
   browse_source_link: 'http://github.com/doctrine/orientdb-odm'
   versions:
     '1.0':
-      stability: beta
+      stability: alpha
       composer: true
