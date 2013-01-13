@@ -78,7 +78,12 @@ def visit_doctrinedownloads_html(self, node):
         self.body.append(self.starttag(node, 'div', CLASS='version'))
         versiondata = node['project']['versions'][version];
 
-        self.body.append('<h3>Download %s (%s)</h3>' % ( version, versiondata['stability'] ))
+        if 'stability' in versiondata:
+            stability = versiondata['stability']
+        else:
+            stability = 'alpha'
+
+        self.body.append('<h3>Download %s (%s)</h3>' % ( version, stability ))
 
         self.body.append('<ul class="release">');
         self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation (%s)</a></li>' % (node['project']['slug'], version, version))
