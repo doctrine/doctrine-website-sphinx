@@ -78,6 +78,9 @@ def visit_doctrinedownloads_html(self, node):
         self.body.append(self.starttag(node, 'div', CLASS='version'))
         versiondata = node['project']['versions'][version];
 
+        if not version:
+            continue
+
         if 'stability' in versiondata:
             stability = versiondata['stability']
         else:
