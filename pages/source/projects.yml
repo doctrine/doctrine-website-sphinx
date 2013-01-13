@@ -534,25 +534,25 @@ mongodb_odm:
     '1.0':
       stability: beta
       releases:
-        1.0.0BETA1:
-          package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
-          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA1'
-          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA1'
-          composer: true
         1.0.0ALPHA1:
           package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA1'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA1'
           composer: true
-        1.0.0ALPHA2:
-          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
-          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA2'
-          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA2'
+        1.0.0BETA1:
+          package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA1'
           composer: true
         1.0.0BETA2:
           package_name: DoctrineMongoDBODM-1.0.0BETA2.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA2'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0BETA2'
+          composer: true
+        1.0.0ALPHA2:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineMongoDBODM-1.0.0ALPHA2'
           composer: true
         1.0.0BETA3:
           package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
