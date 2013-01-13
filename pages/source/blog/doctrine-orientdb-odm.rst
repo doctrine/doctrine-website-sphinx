@@ -11,7 +11,7 @@ end of 2011, especially after the explosion of
 Big Data associated with social networks.
 
 At the beginning of this year, a really promising
-GraphDB, `OrientDB <http://orientdb.org>`,
+GraphDB, `OrientDB <http://orientdb.org>`_,
 saw its first stable release (1.0.0) which finally 
 gave to the world a stable toy pretty different
 from the traditional RDBMS that we're used to see
@@ -23,7 +23,7 @@ interesting.
 Even before going stable, there were some companies
 already using OrientDB, thanks to the language-specific
 drivers created by the community surrounding this GraphDB:
-one of them, for PHP, was `Orient <http://github.com/congow/Orient>`,
+one of them, for PHP, was `Orient <http://github.com/congow/Orient>`_,
 a bunch of classes that wrapped PHP's native cURL functions
 to make queries against OrientDB's via the HTTP protocol.
 
@@ -74,13 +74,13 @@ pretty similar:
 The work done so far was interesting enough to think about
 an OrientDB ODM inside the Doctrine organization, thing that
 eventually happened today when the old repository has been
-moved to the `doctrine organization <https://github.com/doctrine/orientdb-odm>`
+moved to the `doctrine organization <https://github.com/doctrine/orientdb-odm>`_
 on Github.
 
 More news are going to come in the next weeks, as the target is to
 release a stable version of the OrientDB ODM this year: you can
-already `use it <https://packagist.org/packages/doctrine/orientdb-odm>`
-or even `fork it <https://github.com/doctrine/orientdb-odm>` if you want
+already `use it <https://packagist.org/packages/doctrine/orientdb-odm>`_
+or even `fork it <https://github.com/doctrine/orientdb-odm>`_ if you want
 to contribute or propose a patch.
 
 For further informations you can subscribe to the doctrine-dev
