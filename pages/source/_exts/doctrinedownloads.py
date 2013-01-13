@@ -84,6 +84,9 @@ def visit_doctrinedownloads_html(self, node):
         self.body.append('<li><a href="/docs/%s/%s/en/index.html">Documentation (%s)</a></li>' % (node['project']['slug'], version, version))
         self.body.append('</ul>');
 
+        if 'releases' not in versiondata:
+            continue
+
         releaseVersions = sorted(versiondata['releases'].keys(), cmp=version_compare)
 
         self.body.append('<div class="releases">')
