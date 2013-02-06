@@ -1,9 +1,9 @@
 :author: Benjamin Eberlei <kontakt@beberlei.de>
 :date: 2013-01-08 00:00:00
 
-======================
-Doctrine 2.3.2 relased
-======================
+=======================
+Doctrine 2.3.2 released
+=======================
 
 **08.01.2013**
 
