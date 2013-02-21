@@ -57,8 +57,6 @@ foreach ($data as $project => $projectDetails) {
         } else {
             $updateSourceCmd = sprintf("git clone %s.git %s && cd %s && git checkout %s", $url, $path, $path, $checkout);
         }
-        var_dump($updateSourceCmd);
-        continue;
 
         chdir(__DIR__ . "/../");
         echo "Executing $updateSourceCmd\n";
