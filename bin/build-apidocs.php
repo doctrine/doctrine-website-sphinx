@@ -21,6 +21,10 @@ if (!is_dir($output)) {
 $data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../pages/source/projects.yml"));
 
 foreach ($data as $project => $projectDetails) {
+    if ( ! isset($projectDetails['browse_source_link'])) {
+        continue;
+    }
+
     $tagData = json_decode(file_get_contents("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags"), true);
     if ( ! $tagData) {
         continue;
@@ -31,9 +35,6 @@ foreach ($data as $project => $projectDetails) {
     });
 
     foreach ($projectDetails['versions'] as $version => $versionData) {
-        if ( ! isset($versionData['browse_source_link'])) {
-            continue;
-        }
 
         $lastTag = array_reduce(
             array_filter($tagData, function($tag) use($version) {
@@ -54,6 +55,8 @@ foreach ($data as $project => $projectDetails) {
         } else {
             $updateSourceCmd = sprintf("git clone %s.git %s && cd %s && git checkout %s", $url, $path, $path, $checkout);
         }
+        var_dump($updateSourceCmd);
+        continue;
 
         chdir(__DIR__ . "/../");
         echo "Executing $updateSourceCmd\n";
