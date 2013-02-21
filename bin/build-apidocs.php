@@ -31,7 +31,7 @@ foreach ($data as $project => $projectDetails) {
     });
 
     foreach ($projectDetails['versions'] as $version => $versionData) {
-        if (isset($versionData['browse_source_link'])) {
+        if ( ! isset($versionData['browse_source_link'])) {
             continue;
         }
 
