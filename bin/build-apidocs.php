@@ -25,6 +25,8 @@ foreach ($data as $project => $projectDetails) {
         continue;
     }
 
+    $url = $projectDetails['browse_source_link'];
+
     $tagData = json_decode(file_get_contents("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags"), true);
     if ( ! $tagData) {
         continue;
@@ -48,7 +50,7 @@ foreach ($data as $project => $projectDetails) {
         );
         $checkout = $lastTag['name'];
 
-        $url = $versionData['browse_source_link'];
+
         $path = "source/$project";
         if (is_dir($path)) {
             $updateSourceCmd = sprintf("cd %s && git pull && git checkout %s", $path, $checkout);
