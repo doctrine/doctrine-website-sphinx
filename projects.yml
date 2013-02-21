@@ -9,7 +9,7 @@ ormold:
   latest_version: '1.2'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DC'
-  browse_source_link: 'http://github.com/doctrine/doctrine1'
+  browse_source_link: 'https://github.com/doctrine/doctrine1'
   versions:
     '1.2':
       stability: stable
@@ -25,7 +25,7 @@ orm:
   latest_version: '2.3'
   is_primary: true
   issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
-  browse_source_link: 'http://github.com/doctrine/doctrine2'
+  browse_source_link: 'https://github.com/doctrine/doctrine2'
   versions:
     '2.0':
       upgrade_file: "https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md#update-from-20-beta3-to-20-beta4"
@@ -52,7 +52,7 @@ dbal:
   latest_version: '2.3'
   is_primary: true
   issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
-  browse_source_link: 'http://github.com/doctrine/dbal'
+  browse_source_link: 'https://github.com/doctrine/dbal'
   versions:
     '2.0':
       stability: stable
@@ -75,7 +75,7 @@ mongodb_odm:
   latest_version: '1.0'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
-  browse_source_link: 'http://github.com/doctrine/mongodb-odm'
+  browse_source_link: 'https://github.com/doctrine/mongodb-odm'
   versions:
     '1.0':
       stability: beta
@@ -90,7 +90,7 @@ couchdb_odm:
   latest_version: '1.0'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
-  browse_source_link: 'http://github.com/doctrine/couchdb-odm'
+  browse_source_link: 'https://github.com/doctrine/couchdb-odm'
   versions:
     '1.0':
       stability: alpha
@@ -105,7 +105,7 @@ phpcr_odm:
   is_primary: false
   namespace: Doctrine\ODM\PHPCR
   issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
-  browse_source_link: 'http://github.com/doctrine/phpcr-odm'
+  browse_source_link: 'https://github.com/doctrine/phpcr-odm'
   versions:
     '1.0':
       stability: alpha
@@ -121,7 +121,7 @@ migrations:
   is_primary: false
   namespace: Doctrine\DBAL\Migrations
   issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
-  browse_source_link: 'http://github.com/doctrine/migrations'
+  browse_source_link: 'https://github.com/doctrine/migrations'
   versions:
     '2.0':
       stability: alpha
@@ -136,7 +136,7 @@ common:
   latest_version: '2.3'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-  browse_source_link: 'http://github.com/doctrine/common'
+  browse_source_link: 'https://github.com/doctrine/common'
   versions:
     '2.0':
       stability: stable
@@ -158,7 +158,7 @@ orientdb_odm:
   latest_version: '1.0'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/ORIENTODM'
-  browse_source_link: 'http://github.com/doctrine/orientdb-odm'
+  browse_source_link: 'https://github.com/doctrine/orientdb-odm'
   versions:
     '1.0':
       stability: alpha

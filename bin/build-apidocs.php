@@ -21,7 +21,27 @@ if (!is_dir($output)) {
 $data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../pages/source/projects.yml"));
 
 foreach ($data as $project => $projectDetails) {
+    $tagData = json_decode(file_get_contents("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags"), true);
+    if ( ! $tagData) {
+        continue;
+    }
+
+    usort($tagData, function($a, $b) {
+        return version_compare($a['name'], $b['name']);
+    });
+
     foreach ($projectDetails['versions'] as $version => $versionData) {
+        $lastTag = array_reduce(
+            array_filter($tagData, function($tag) use($version) {
+                return strpos($tag['name'], $version) === 0;
+            }),
+            function ($highestVersion, $testVersion) {
+                return version_compare($highestVersion['name'], $testVersion['name']) > 0
+                    ? $highestVersion
+                    : $testVersion;
+            }
+        );
+        $checkout = $lastTag['name'];
 
         if (isset($versionData['browse_source_link']) && count($versionData['releases'])) {
             $checkout = end(array_keys($versionData['releases']));
