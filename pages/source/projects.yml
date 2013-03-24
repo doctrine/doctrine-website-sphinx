@@ -887,15 +887,3 @@ orientdb_odm:
     '1.0':
       stability: alpha
       composer: true
-      downloadable: true
-      releases:
-        1.0.0-beta5:
-          package_name: DoctrineOrientDBODM-1.0.0-beta5.tgz
-          git_checkout_command: '$ git clone git://github.com/doctrine/orientdb-odm.git orientdb-odm<br>$ cd orientdb-odm<br>$ git checkout 1.0.0-beta5'
-          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineOrientDBODM-1.0.0-beta5'
-          composer: true
-        1.0.0-beta6:
-          package_name: DoctrineOrientDBODM-1.0.0-beta6.tgz
-          git_checkout_command: '$ git clone git://github.com/doctrine/orientdb-odm.git orientdb-odm<br>$ cd orientdb-odm<br>$ git checkout 1.0.0-beta6'
-          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/DoctrineOrientDBODM-1.0.0-beta6'
-          composer: true

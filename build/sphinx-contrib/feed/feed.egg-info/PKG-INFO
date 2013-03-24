@@ -1,6 +1,6 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: feed
-Version: 0.2dev-20120122
+Version: 0.2dev-20130324
 Summary: Sphinx extension feed
 Home-page: http://bitbucket.org/birkenfeld/sphinx-contrib
 Author: dan mackinlay

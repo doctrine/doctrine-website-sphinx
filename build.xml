@@ -12,20 +12,28 @@
         </exec>
     </target>
 
-    <target name="build">
+    <target name="regenerate-projects-yml">
         <exec executable="php" dir=".">
             <arg value="bin/build-projects.php" />
         </exec>
+    </target>
+
+    <target name="build-docs">
         <exec executable="make" dir="pages/">
             <arg value="html" />
         </exec>
         <copy file="favicon.ico" tofile="pages/build/html/favicon.ico" />
+    </target>
+
+    <target name="build-api">
         <mkdir dir="pages/build/api" />
         <exec executable="php" dir=".">
             <arg value="bin/build-apidocs.php" />
             <arg value="pages/build/api" />
         </exec>
     </target>
+
+    <target name="build" depends="regenerate-projects-yml,build-docs,build-api" />
 
     <target name="clean">
         <delete dir="pages/build" />
