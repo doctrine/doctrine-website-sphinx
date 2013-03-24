@@ -29,3 +29,5 @@ Please test this release with your existing applications to allow
 us to find BC breaks and remove them before the final release. The plan
 is to release the final version in the next 4-6 weeks.
 
+In these next weeks we will work to incorporate all changes in the
+documentation.
