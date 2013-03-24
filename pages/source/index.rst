@@ -29,4 +29,4 @@ Doctrine Projects
 
 .. doctrine-projects::
     :file: projects.yml
-    :type: short
+    :type: top

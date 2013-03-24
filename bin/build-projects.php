@@ -24,6 +24,11 @@ foreach ($projects as $projectName => $projectData) {
     });
 
     foreach ($projectData['versions'] as $version => $versionData) {
+        // default 'downloadable' to true
+        if ( !isset($projects[$projectName]['versions'][$version]['downloadable'])) {
+            $projects[$projectName]['versions'][$version]['downloadable'] = true;
+        }
+
         $projects[$projectName]['versions'][$version]['releases'] = array();
         foreach ($tagData as $tag) {
             if (strpos($tag['name'], $version) === 0) {

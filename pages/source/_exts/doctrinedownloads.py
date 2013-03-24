@@ -107,7 +107,7 @@ def visit_doctrinedownloads_html(self, node):
 
                 self.body.append('<ul class="release">');
 
-                if 'package_name' in releasedata:
+                if 'package_name' in releasedata and versiondata['downloadable']:
                     self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
 
                 if 'pear_install_command' in releasedata:
