@@ -12,10 +12,12 @@ the changes are listed in `this talk
 <https://speakerdeck.com/asm89/what-is-new-in-doctrine>`_ by Alexander
 and me from Symfony Live Berlin last year.
 
-You can install the release through `Github <https://github.com/doctrine/doctrine2>`_,
-download, PEAR or `Composer <http://www.packagist.org>`_:
+You can find a list of changes on `Jira
+<http://www.doctrine-project.org/jira/issues/?jql=project%20in%20(DDC%2C%20DBAL%2C%20DCOM)%20AND%20fixVersion%20%3D%20%222.4%22%20AND%20status%20%3D%20Resolved%20ORDER%20BY%20priority%20DESC>`_.
 
-.. code-block:: 
+You can install the release with `Composer <http://www.packagist.org>`_:
+
+::
 
     {
         "require": {
