@@ -1,5 +1,5 @@
 :author: Benjamin Eberlei <kontakt@beberlei.de>
-:date: 2013-03-24 00:00:00
+:date: 2013-03-24 06:00:00
 
 =======================
 Doctrine 2.3.3 released
