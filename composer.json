@@ -1,6 +1,7 @@
 {
     "name": "doctrine/website",
     "require": {
-        "symfony/yaml": "*"
+        "symfony/yaml":  "~2.0",
+        "apigen/apigen": "~2.8"
     }
 }
