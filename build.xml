@@ -49,10 +49,10 @@
     </target>
 
     <target name="build-api" depends="composer-install,check-github-token">
-        <mkdir dir="pages/build/api" />
+        <mkdir dir="pages/build/html/api" />
         <exec executable="php" dir=".">
             <arg value="bin/build-apidocs.php" />
-            <arg value="pages/build/api" />
+            <arg value="pages/build/html/api" />
         </exec>
     </target>
 
