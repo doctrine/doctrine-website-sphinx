@@ -71,6 +71,7 @@ def visit_doctrinedownloads_html(self, node):
     self.body.append('<li>Latest Version: %s</li>' % (node['project']['latest_version']))
     self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
     self.body.append('<li><a href="/docs/%s/%s/en/index.html">Latest Documentation</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
+    self.body.append('<li><a href="/api/%s/%s/index.html">Latest API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
     self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
     self.body.append('</ul>')
 
