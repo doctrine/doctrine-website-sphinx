@@ -18,6 +18,19 @@ if (!is_dir($output)) {
     exit(1);
 }
 
+if (!file_exists(__DIR__ . '/../github-token.json')) {
+    echo "Missing github-token.json!";
+    exit(1);
+}
+
+$tokenData = json_decode(file_get_contents(__DIR__ . '/../github-token.json'), true);
+$token     = $tokenData['token'];
+
+if (!is_string($token)) {
+    echo "Invalid github-token.json provided";
+    exit(1);
+}
+
 $data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../pages/source/projects.yml"));
 
 foreach ($data as $project => $projectDetails) {
@@ -26,8 +39,19 @@ foreach ($data as $project => $projectDetails) {
     }
 
     $url = $projectDetails['browse_source_link'];
+    $ch  = curl_init("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags");
 
-    $tagData = json_decode(file_get_contents("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags"), true);
+
+    curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: token $token"));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+
+    $tagData = json_decode($response, true);
+
     if ( ! $tagData) {
         continue;
     }
@@ -69,7 +93,13 @@ foreach ($data as $project => $projectDetails) {
         }
 
         chdir(__DIR__ . "/../");
-        $apiDocs = sprintf('apigen -s %s -d %s/%s --title "%s"', $path.'/lib/Doctrine', $output, "$project/$version", $projectDetails['title'] );
+        $apiDocs = sprintf(
+            './vendor/bin/apigen.php -s %s -d %s/%s --title "%s"',
+            $path . '/lib/Doctrine',
+            $output,
+            "$project/$version",
+            $projectDetails['title']
+        );
         echo "Generating API Docs: $apiDocs\n";
         shell_exec($apiDocs);
     }
