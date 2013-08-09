@@ -2,5 +2,5 @@ echo "Type the github username for which you wish to generate the token file fol
 
 read username
 
-curl -u "$username" -d '{"scopes":["public_repo"],"note":"Doctrine Project website build task"}' \
+curl -u "$username" -d '{"scopes":[],"note":"Doctrine Project website build task"}' \
     https://api.github.com/authorizations > github-token.json
