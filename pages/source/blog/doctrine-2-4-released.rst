@@ -91,6 +91,11 @@ links to their documentation.
   See the `documentation
   <http://docs.doctrine-project.org/en/latest/reference/native-sql.html#resultsetmappingbuilder>`_
   for more details.
+- Introduced a factory for repositories that can be overwritten in the
+  ``Doctrine\ORM\Configuration``.
+- Added an interface for ``EntityManager`` called
+  ``Doctrine\ORM\EntityManagerInterface`` and a decorator base class
+  ``Doctrine\ORM\Decorator\EntityManagerDecorator``.
 
 Documentation
 -------------
