@@ -96,6 +96,7 @@ links to their documentation.
 - Added an interface for ``EntityManager`` called
   ``Doctrine\ORM\EntityManagerInterface`` and a decorator base class
   ``Doctrine\ORM\Decorator\EntityManagerDecorator``.
+- Support for proxy objects for entities with public properties.
 
 Documentation
 -------------
