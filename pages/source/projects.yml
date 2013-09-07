@@ -273,8 +273,12 @@ orm:
           composer: true
     '2.4':
       downloadable: false
-      stability: beta
-      releases: {  }
+      stability: stable
+      releases:
+          2.4.0:
+            package_name: DoctrineORM-2.4.0-full.tar.gz
+            git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout v2.4.0'
+            composer: true
 dbal:
   slug: dbal
   repository: dbal
@@ -534,7 +538,11 @@ dbal:
     '2.4':
       downloadable: false
       stability: beta
-      releases: {  }
+      releases:
+          2.4.0:
+            package_name: DoctrineDBAL-2.4.0-full.tar.gz
+            git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout v2.4.0'
+            composer: true
 mongodb_odm:
   slug: mongodb-odm
   package: DoctrineMongoDBODM
