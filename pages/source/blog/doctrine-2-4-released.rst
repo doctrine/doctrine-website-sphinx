@@ -97,6 +97,10 @@ links to their documentation.
   ``Doctrine\ORM\EntityManagerInterface`` and a decorator base class
   ``Doctrine\ORM\Decorator\EntityManagerDecorator``.
 - Support for proxy objects for entities with public properties.
+- Add support for composite primary keys in DQL ``IDENTITY()`` function.
+  See the `documentation
+  <http://docs.doctrine-project.org/en/latest/reference/dql-doctrine-query-language.html#dql-select-examples>`_
+  for more details.
 
 Documentation
 -------------
