@@ -101,6 +101,8 @@ links to their documentation.
   See the `documentation
   <http://docs.doctrine-project.org/en/latest/reference/dql-doctrine-query-language.html#dql-select-examples>`_
   for more details.
+- Introduced ANSI SQL Quoting Strategy that does not attempt to quote and modify
+  columns during SQL generation.
 
 Documentation
 -------------
