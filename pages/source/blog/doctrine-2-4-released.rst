@@ -103,6 +103,8 @@ links to their documentation.
   for more details.
 - Introduced ANSI SQL Quoting Strategy that does not attempt to quote and modify
   columns during SQL generation.
+- Joins between arbitrary entities are now possible in DQL by using the syntax
+  ``FROM Foo f JOIN Bar b WITH f.id = b.id``.
 
 Documentation
 -------------
