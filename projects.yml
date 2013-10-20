@@ -114,7 +114,7 @@ phpcr_odm:
   browse_source_link: 'https://github.com/doctrine/phpcr-odm'
   versions:
     '1.0':
-      stability: alpha
+      stability: stable
 
 migrations:
   slug: migrations
