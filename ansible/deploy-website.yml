@@ -44,7 +44,7 @@
       command: >
         php bin/build-projects.php
         chdir=${document_root}
-    - name: Build Documentation
+    - name: Build Website
       command: >
         make html
         chdir=${document_root}/pages
@@ -52,7 +52,7 @@
       file: >
         path=${document_root}/pages/build/html/api
         state=directory
-    - name: Build API
+    - name: Generate API Documentation
       command: >
         php bin/build-apidocs.php pages/build/html/api
         chdir=${document_root}
