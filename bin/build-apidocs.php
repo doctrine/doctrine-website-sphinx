@@ -77,9 +77,9 @@ foreach ($data as $project => $projectDetails) {
 
         $path = "source/$project";
         if (is_dir($path)) {
-            $updateSourceCmd = sprintf("cd %s && git checkout master && git fetch && git checkout origin/%s", $path, $checkout);
+            $updateSourceCmd = sprintf("cd %s && git checkout master && git fetch && git checkout %s", $path, $checkout);
         } else {
-            $updateSourceCmd = sprintf("git clone %s.git %s && cd %s && git checkout origin/%s", $url, $path, $path, $checkout);
+            $updateSourceCmd = sprintf("git clone %s.git %s && cd %s && git checkout %s", $url, $path, $path, $checkout);
         }
 
         chdir(__DIR__ . "/../");
