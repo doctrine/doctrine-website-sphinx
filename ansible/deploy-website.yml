@@ -57,12 +57,14 @@
         php bin/build-apidocs.php pages/build/html/api
         chdir=${document_root}
     - name: Copy Favicon
-      copy: >
-        src=${document_root}/favicon.ico
-        dest=${document_root}/pages/build/html/favicon.ico
+      command: >
+        cp favicon.ico /pages/build/html/favicon.ico
+        chdir=${document_root}
     - name: Move Pages to Document Root
-      copy: >
-        src=${document_root}/pages/build/html
-        dest=${document_root}/pages/build/current
-        owner=www-data
-        group=www-data
+      command: >
+        cp pages/build/html pages/build/current
+        chdir=${document_root}
+    - name: Make www-data owner
+      command: >
+        chown www-data.www-data pages/build/current -R
+        chdir=${document_root}
