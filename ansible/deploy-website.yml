@@ -1,5 +1,5 @@
 ---
-- hosts: doctrine-website
+- hosts: webservers
   sudo: yes
   vars:
     document_root: /var/www/doctrine-website-sphinx
@@ -47,6 +47,11 @@
     - name: Build Documentation
       command: >
         make html
+        chdir=${document_root}/pages
+    - name: Create API Directory
+      file: >
+        path=${document_root}/pages/build/html/api
+        state=directory
     - name: Build API
       command: >
         php bin/build-apidocs.php pages/build/html/api
