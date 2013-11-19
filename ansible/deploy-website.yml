@@ -1,0 +1,63 @@
+---
+- hosts: doctrine-website
+  sudo: yes
+  vars:
+    document_root: /var/www/doctrine-website-sphinx
+  tasks:
+    - name: Checkout Website
+      git: >
+        repo=git@github.com:doctrine/doctrine-website-sphinx.git
+        dest=${document_root}
+    - name: Install Sphinx Dependencies
+      apt: >
+        pkg=${item}
+      with_items:
+        - python-pip
+        - python-yaml
+    - name: Install Sphinx
+      easy_install: >
+        name=${item}
+      with_items:
+        - sphinx
+        - distribute
+    - name: Install Sphinx Feed Extension
+      command: >
+        python setup.py install
+        chdir=${document_root}/build/sphinx-contrib/feed
+    - name: Delete Build Pages
+      file: >
+        path=${document_root}/pages/build/html
+        state=absent
+    - name: Delete Build Pages
+      file: >
+        path=${document_root}/pages/build/doctrees
+        state=absent
+    - name: Download Composer
+      get_url: >
+        dest=${document_root}/composer.phar
+        url=http://getcomposer.org/composer.phar
+    - name: Update Composer
+      command: >
+        php composer.phar update 
+        chdir=${document_root}
+    - name: Regenerate projects.yml from Github Data
+      command: >
+        php bin/build-projects.php
+        chdir=${document_root}
+    - name: Build Documentation
+      command: >
+        make html
+    - name: Build API
+      command: >
+        php bin/build-apidocs.php pages/build/html/api
+        chdir=${document_root}
+    - name: Copy Favicon
+      copy: >
+        src=${document_root}/favicon.ico
+        dest=${document_root}/pages/build/html/favicon.ico
+    - name: Move Pages to Document Root
+      copy: >
+        src=${document_root}/pages/build/html
+        dest=${document_root}/pages/build/current
+        owner=www-data
+        group=www-data
