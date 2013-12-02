@@ -56,6 +56,11 @@ foreach ($data as $project => $projectDetails) {
         continue;
     }
 
+    // Fix versions starting with "v", such as "v1.2.5"
+    foreach ($tagData as $key => $tag) {
+        $tagData[$key]['name'] = str_replace('v', '', $tag['name']);
+    }
+
     usort($tagData, function($a, $b) {
         return version_compare($a['name'], $b['name']);
     });
