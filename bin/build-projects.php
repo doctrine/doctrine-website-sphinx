@@ -44,7 +44,7 @@ foreach ($projects as $projectName => $projectData) {
 
     // Fix versions starting with "v", such as "v1.2.5"
     foreach ($tagData as $key => $tag) {
-        $tagData[$key] = str_replace('v', $tag['name']);
+        $tagData[$key] = str_replace('v', '', $tag['name']);
     }
 
     usort($tagData, function($a, $b) {
