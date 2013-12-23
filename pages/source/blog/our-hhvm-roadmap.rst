@@ -39,9 +39,11 @@ projects currently have full HHVM support from us:
 - `Lexer <https://travis-ci.org/doctrine/lexer>`_
 
 Guilherme is working on getting `Annotations
-<https://travis-ci.org/doctrine/annotations>`_ working and the `Common
-<https://travis-ci.org/doctrine/common>`_ mainproject will be evaluated after
-that. `DBAL <https://travis-ci.org/doctrine/dbal>`_ and `ORM
+<https://travis-ci.org/doctrine/annotations>`_ and `Cache
+<https://travis-ci.org/doctrine/cache>`_ working and the `Common
+<https://travis-ci.org/doctrine/common>`_ mainproject will be evaluated shortly
+after all the common projects succeed. `DBAL
+<https://travis-ci.org/doctrine/dbal>`_ and `ORM
 <https://travis-ci.org/doctrine/doctrine2>`_ will be much more work, but we are
 very confident to achieve this goal.
 
