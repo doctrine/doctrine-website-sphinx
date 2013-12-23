@@ -5,14 +5,19 @@
 Our HHVM Roadmap
 ================
 
-Facebook has been pushing HHVM much lately, helping big open source projects to
-get their test-suite running 100%. HHVM is particularly interesting for
-Doctrine, because of the performance gains that the very complex PHP algorithms
-in ORM would probably get. With the tests not yet passing on the ORM, we cannot
-measure how big that performance improvement will be.
+Facebook has been `pushing HHVM alot lately
+<http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16>`_, helping open
+source projects to get their test-suite running 100%. For Doctrine HHVM is
+particularly interesting, because of the performance gains that the complex PHP
+algorithms inside ORM would probably get. However with the tests not yet
+passing on the ORM, we can only imagine how big that performance improvement
+will be.
 
-Now with Travis CI support for HHVM now available we think it is time to
-announce our HHVM Roadmap as Doctrine project.
+One roadblock for us to investigate HHVM in more detail was missing CI support.
+But then Travis CI `announced support for HHVM
+<http://about.travis-ci.org/blog/2013-12-16-test-php-code-with-the-hiphop-vm>`_
+last week. With automated testing support available, we think it is time to
+announce our official HHVM roadmap.
 
 One of our goals for 2014 is running DBAL and ORM on HHVM with 100% of the
 testsuites passing. Every Doctrine subproject targeting to support HHVM will
