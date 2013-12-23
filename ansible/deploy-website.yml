@@ -62,7 +62,7 @@
         chdir=${document_root}
     - name: Move Pages to Document Root
       command: >
-        cp pages/build/html pages/build/current -R
+        cp pages/build/html/* pages/build/current -R
         chdir=${document_root}
     - name: Make www-data owner
       command: >
