@@ -17,17 +17,15 @@ that performance improvement will be.
 One roadblock for us to investigate HHVM in more detail was missing CI support.
 But then Travis CI `announced support for HHVM
 <http://about.travis-ci.org/blog/2013-12-16-test-php-code-with-the-hiphop-vm>`_
-last week. With automated testing support available, we think it is time to
+last week. With automated testing support available we think it is time to
 announce our official HHVM roadmap.
 
 One of our goals for 2014 is running DBAL and ORM on HHVM with 100% of the
 testsuites passing. Every Doctrine subproject targeting to support HHVM will
 start running the tests against HHVM with ``allow_failure`` enabled on Travis
-CI.
-
-Whenever a Doctrine subproject passes all its tests on HHVM, we will remove the
-``allow_failure`` and the project will be officially supporting HHVM from that
-version on.
+CI. Whenever a Doctrine subproject passes all its tests on HHVM, we will
+remove the ``allow_failure`` and the project will be officially supporting HHVM
+from that version on.
 
 So far we have been working on the Common projects to run on HHVM for several
 months now and Guilherme and Alexander are contributing to HHVM itself to get
@@ -49,8 +47,8 @@ very confident to achieve this goal.
 
 If you want to help us with this goal, you can check the current Travis failure
 reports of the projects and come up with ideas how to fix them in the Doctrine
-code or with bug reports for HHVM. We are glad to help you discuss through
-these issues on Freenode IRC in channel "#doctrine-dev".
+code or with bug reports for HHVM. We are glad to discuss these issues on
+Freenode IRC in channel "#doctrine-dev".
 
 With this announcement we hope that other PHP projects, frameworks and
 libraries will follow to make HHVM an official build target in the future.
