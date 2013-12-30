@@ -78,9 +78,21 @@ foreach ($data as $project => $projectDetails) {
             }
         );
         $checkout = $lastTag['name'];
-
-
+        $directory = $output . "/$project/$version";
+        $lastCommitFile = $directory . '/.gitcommit';
         $path = "source/$project";
+
+        if (!file_exists($directory)) {
+            echo "Creating directory: $directory\n";
+            mkdir($directory, 0777, true);
+        }
+
+        $lastCommit = (file_exists($lastCommitFile))
+            ? trim(file_get_contents($lastCommitFile))
+            : null;
+
+        $currentCommitCmd = sprintf("cd %s && git log -1 --oneline", $path);
+
         if (is_dir($path)) {
             $updateSourceCmd = sprintf("cd %s && git checkout master && git fetch && git checkout %s", $path, $checkout);
         } else {
@@ -91,10 +103,11 @@ foreach ($data as $project => $projectDetails) {
         echo "Executing $updateSourceCmd\n";
         shell_exec($updateSourceCmd);
 
-        $directory = $output . "/$project/$version";
-        if (!file_exists($directory)) {
-            echo "Creating directory: $directory\n";
-            mkdir($directory, 0777, true);
+        $currentCommit = trim(current(explode(" ", shell_exec($currentCommitCmd))));
+
+        if ($currentCommit === $lastCommit) {
+            echo "API Docs for $project @ $checkout is already up to date.\n";
+            continue;
         }
 
         chdir(__DIR__ . "/../");
@@ -107,6 +120,8 @@ foreach ($data as $project => $projectDetails) {
         );
         echo "Generating API Docs: $apiDocs\n";
         shell_exec($apiDocs);
+
+        file_put_contents($lastCommitFile, $currentCommit);
     }
 }
 
