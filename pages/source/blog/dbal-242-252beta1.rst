@@ -31,7 +31,7 @@ and peak at 250 in mid November, unable to do much about it due to time
 constraints. During the last two months however we have worked hard to lower
 the number of open pull-requests on DBAL from 50 to only 7 and push the number
 of open issues on DBAL+ORM down to 188 from 250. This has been a tremendous
-effort and it would not have been possible with our two new core team members
+effort and it would not have been possible without our two new core team members
 `deeky666 <https://github.com/deeky666>`_ and `kimhemsoe
 <https://github.com/kimhemsoe>`_.
 
