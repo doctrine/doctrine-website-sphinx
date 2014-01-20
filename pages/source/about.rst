@@ -1,83 +1,425 @@
 About
 =====
 
-The Doctrine Project is the home of a selected set of PHP libraries primarily focused on providing persistence services and related functionality.
+The Doctrine Project is the home of a selected set of PHP libraries primarily focused
+on providing persistence services and related functionality. Its prize projects are a
+Object Relational Mapper and the Database Abstraction Layer it is built on top of.
+You can read more about what Doctrine has to offer below.
 
-Core Team
----------
+Common Shared Libraries
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Jonathan H. Wage
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-Developer, Documentation, Project Manager, Website
+`doctrine/common <http://github.com/doctrine/common>`_
 
-Jonathan is a software developer who currently lives in Nashville, TN. He joined the Doctrine project as a contributor in early 2007 and has been involved in one way or another since. Jonathan currently works full-time as a software developer at ShopOpenSky, a social commerce platform that uses the Doctrine MongoDB ODM.
+Doctrine Common contains some base functionality and interfaces you need
+in order to create a Doctrine style object mapper. All of our mapper
+projects follow the same ``Doctrine\Common\Persistence`` interfaces.
+Here are the ``ObjectManager`` and ``ObjectRepository`` interfaces:
 
-It all began at the age of 12 when he first got his hands on the tools to build his first website. From then on he hopped from one thing to another learning the various aspects of programming in several different languages. He enjoys working on Doctrine as it is a daily challenge and allows him to explore uncharted territories in PHP.
+.. code-block:: php
 
-jonwage@gmail.com
+    <?php
 
-Guilherme Blanco
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+    namespace Doctrine\Common\Persistence
 
-Developer, Documentation
+    interface ObjectManager
+    {
+        public function find($className, $id);
+        public function persist($object);
+        public function remove($object);
+        public function merge($object);
+        public function clear($objectName = null);
+        public function detach($object);
+        public function refresh($object);
+        public function flush();
+        public function getRepository($className);
+    }
 
-Guilherme Blanco was born in 09/19/1983 and lives in Brazil. He has a bachelors degree in Computer Science from the Federal University of São Carlos and works in the web development industry. He is currently employed by his company named Bisna and holds a blog at http://blog.bisna.com.
+    interface ObjectRepository
+    {
+        public function find($id);
+        public function findAll();
+        public function findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null);
+        public function findOneBy(array $criteria);
+    }
 
-He has worked with Java, .NET and the majority of server/client side languages and decided to pick PHP as his default development language. Instead of reinventing the wheel after he planned an entire ORM tool, he decided to jump on board the Doctrine project in November of 2007 and put his efforts in to help it move forward.
+`doctrine/collections <http://github.com/doctrine/collections>`_
 
-He also enjoys watching movies and playing Age of Empires in his spare time. guilhermeblanco@hotmail.com
+Doctrine Collections is a library that contains classes for working with
+arrays of data. Here is an example using the simple
+``Doctrine\Common\Collections\ArrayCollection`` class:
 
-Benjamin Eberlei
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: php
 
-ORM & DBAL Team Leader, Developer
+    <?php
 
-Benjamin studied economics, outgrew his profession and is now a software developer based in Bonn, Germany. He has been developing PHP applications for almost ten years and currently works for the SimpleThings GmbH.
+    $data = new \Doctrine\Common\Collections\ArrayCollection(array(1, 2, 3));
+    $data = $data->filter(function($count) { return $count > 1; });
 
-As a contributor to the Zend Framework he was the lead to propose and prototype an ORM package, which was discontinued in October 2009 in favor of a full integration with the Doctrine ORM. Since then he has become a member of the core Doctrine team, working on many parts of the second generation and planing the integration between both projects.
+`doctrine/annotations <http://github.com/doctrine/annotations>`_
 
-kontakt@beberlei.de
+Doctrine Annotations is a library that allows you to parse structured
+information out of a doc block.
 
-Bulat Shakirzyanov
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Imagine you have a class with a doc block like the following:
 
-MongoDB ODM Developer
+.. code-block:: php
 
-Bulat Shakirzyanov a.k.a. avalanche123 is software alchemist at OpenSky, member of the Doctrine Project core team, holds a black belt in test-fu, Symfony2 fan and contributor, geek and talks about himself in third person. mallluhuct@gmail.com
+    <?php
 
-Juozas Kaziukėnas 
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /** @Foo(bar="value") */
+    class User
+    {
 
-Developer, Evangelist
+    }
 
-Juozas "Joe" Kaziukenas is a software developer from Edinburgh, UK, originally born in Lithuania. He has joined Doctrine Core team in November, 2010 previously working on Microsoft SQL Server support in Doctrine 2. Joe can be found speaking at various PHP conferences and working on open source projects to improve interoperability and platform independence.
+You can parse the information out of the doc block for ``User`` easily.
+Define a new annotation object:
 
-juozas@juokaz.com
+.. code-block:: php
 
-Other Contributors
-------------------
+    <?php
 
-* Ian P. Christian (pookey), Developer, Documentation, Hosts Website.
+    /**
+     * @Annotation
+     * @Target("CLASS")
+     */
+    class Foo
+    {
+        /** @var string */
+        public $bar;
+    }
 
-* Fabien Potencier (fabpot), Api Documentation Code.
+Now you can get instances of ``Foo`` defined on the ``User``:
 
-* Lukas Smith (lsmith), Developer, Documentation.
+.. code-block:: php
 
-* Takeshi Amano (moksahero), Japanese translation.
+    <?php
 
-* Giorgio Sironi (piccoloprincipe), Development, Documentation. Doctrine 2 contributor. Contributed implementation and tests for lazy-loading in Doctrine 2.
+    $reflClass = new ReflectionClass('User');
+    $reader = new \Doctrine\Common\Annotations\AnnotationReader();
+    $classAnnotations = $reader->getClassAnnotations($reflClass);
 
-* Kris Wallsmith (kris.wallsmith), Developer, Documentation.
+    foreach ($classAnnotations AS $annot) {
+        if ($annot instanceof Foo) {
+            echo $annot->bar; // prints "value";
+        }
+    }
 
-* David Abdemoulaie (hobodave), Developer, Git Guru/Manager.
+`doctrine/inflector <http://github.com/doctrine/inflector>`_
 
-* Konsta Vesterinen (zYne-),  Developer, Documentation, Founder. Konsta is the founder of the Doctrine project and responsible for most of the code that makes up Doctrine 1.
+Doctrine Inflector is a library that can perform string manipulations
+with regard to upper/lowercase and singular/plural forms of words.
 
-* Roman S. Borschel (romanb), Developer, Documentation. Roman is a software developer from Berlin, Germany who originally joined the project as a user in its early stages in 2006. These days he is mainly a Scala/Java developer with the occasional bit of .NET. His strange passion for object-relational mapping, and object persistence in general culminated in the Doctrine 2 project which he led up to the 2.0 final release in the fall of 2010.
+.. code-block:: php
 
-* Bjarte Stien Karlsen (bjartek), Developer, Documentation.
+    <?php
 
-* Janne Vanhala (jepso), Developer, Documentation. Janne Vanhala contributed the initial draft and implementation of the Doctrine 2 DQL Lexer and Parser.
+    $camelCase = 'camelCase';
+    $table = \Doctrine\Common\Inflector::tableize($camelCase);
+    echo $table; // camel_case
 
-* Phu Son Nguyen (phuson), Web Design. Phu Son Nguyen created the design of the Doctrine website.
+`doctrine/lexer <http://github.com/doctrine/lexer>`_
 
+Doctrine Lexer is a library that can be used in Top-Down, Recursive
+Descent Parsers. This lexer is used in Doctrine Annotations and in
+Doctrine ORM (DQL).
+
+Here is what the ``AbstractLexer`` provided by Doctrine looks like:
+
+.. code-block:: php
+
+    <?php
+
+    namespace Doctrine\Common\Lexer;
+
+    abstract class AbstractLexer
+    {
+        public function setInput($input);
+        public function reset();
+        public function resetPeek();
+        public function resetPosition($position = 0);
+        public function isNextToken($token);
+        public function isNextTokenAny(array $tokens);
+        public function moveNext();
+        public function skipUntil($type);
+        public function isA($value, $token);
+        public function peek();
+        public function glimpse();
+        public function getLiteral($token);
+
+        abstract protected function getCatchablePatterns();
+        abstract protected function getNonCatchablePatterns();
+        abstract protected function getType(&$value);
+    }
+
+To implement a lexer just extend the
+``Doctrine\Common\Lexer\AbstractParser`` class and implement the
+``getCatchablePatterns``, ``getNonCatchablePatterns``, and ``getType``
+methods. Here is a very simple example lexer implementation named
+``CharacterTypeLexer``. It tokenizes a string to ``T_UPPER``,
+``T_LOWER`` and ``T_NUMER``:
+
+.. code-block:: php
+
+    <?php
+
+    use Doctrine\Common\Lexer\AbstractParser;
+
+    class CharacterTypeLexer extends AbstractLexer
+    {
+        const T_UPPER =  1;
+        const T_LOWER =  2;
+        const T_NUMBER = 3;
+
+        protected function getCatchablePatterns()
+        {
+            return array(
+                '[a-bA-Z0-9]',
+            );
+        }
+
+        protected function getNonCatchablePatterns()
+        {
+            return array();
+        }
+
+        protected function getType(&$value)
+        {
+            if (is_numeric($value)) {
+                return self::T_NUMBER;
+            }
+
+            if (strtoupper($value) === $value) {
+                return self::T_UPPER;
+            }
+
+            if (strtolower($value) === $value) {
+                return self::T_LOWER;
+            }
+        }
+    }
+
+Use ``CharacterTypeLexer`` to extract an array of upper case characters:
+
+.. code-block:: php
+
+    <?php
+
+    class UpperCaseCharacterExtracter
+    {
+        private $lexer;
+
+        public function __construct(CharacterTypeLexer $lexer)
+        {
+            $this->lexer = $lexer;
+        }
+
+        public function getUpperCaseCharacters($string)
+        {
+            $this->lexer->setInput($string);
+            $this->lexer->moveNext();
+
+            $upperCaseChars = array();
+            while (true) {
+                if (!$this->lexer->lookahead) {
+                    break;
+                }
+
+                $this->lexer->moveNext();
+
+                if ($this->lexer->token['type'] === CharacterTypeLexer::T_UPPER) {
+                    $upperCaseChars[] = $this->lexer->token['value'];
+                }
+            }
+
+            return $upperCaseChars;
+        }
+    }
+
+    $upperCaseCharacterExtractor = new UpperCaseCharacterExtracter(new CharacterTypeLexer());
+    $upperCaseCharacters = $upperCaseCharacterExtractor->getUpperCaseCharacters('1aBcdEfgHiJ12');
+
+    print_r($upperCaseCharacters);
+
+The variable ``$upperCaseCharacters`` contains all of the upper case
+characters:
+
+.. code-block:: php
+
+    Array
+    (
+        [0] => B
+        [1] => E
+        [2] => H
+        [3] => J
+    )
+
+`doctrine/cache <http://github.com/doctrine/cache>`_
+
+Doctrine Cache is a library that provides an interface for caching data.
+It comes with implementations for some of the most popular caching data
+stores. Here is what the ``Cache`` interface looks like:
+
+.. code-block:: php
+
+    <?php
+
+    namespace Doctrine\Common\Cache;
+
+    interface Cache
+    {
+        function fetch($id);
+        function contains($id);
+        function save($id, $data, $lifeTime = 0);
+        function delete($id);
+        function getStats();
+    }
+
+Here is an example using memcache:
+
+.. code-block:: php
+
+    <?php
+
+    $memcache = new \Memcache();
+    $cache = new \Doctrine\Common\Cache\MemcacheCache();
+    $cache->setMemcache($memcache);
+
+    $cache->set('key', 'value');
+
+    echo $cache->get('key') // prints "value"
+
+Other supported drivers are:
+
+-  APC
+-  Couchbase
+-  Filesystem
+-  Memcached
+-  MongoDB
+-  PhpFile
+-  Redis
+-  Riak
+-  WinCache
+-  Xcache
+-  ZendData
+
+Database Abstraction Layers
+---------------------------
+
+`doctrine/dbal <http://github.com/doctrine/dbal>`_
+
+Doctrine DBAL is a library that provides an abstraction layer for
+relational databases in PHP. Read `Doctrine DBAL: PHP Database
+Abstraction
+Layer <http://jwage.com/post/31080076112/doctrine-dbal-php-database-abstraction-layer>`_
+blog post for more information on the DBAL.
+
+.. code-block:: php
+
+    <?php
+
+    $config = new \Doctrine\DBAL\Configuration();
+    //..
+    $connectionParams = array(
+        'dbname' => 'mydb',
+        'user' => 'user',
+        'password' => 'secret',
+        'host' => 'localhost',
+        'driver' => 'pdo_mysql',
+    );
+    $conn = DriverManager::getConnection($connectionParams, $config);
+
+    $articles = $conn->fetchAll('select * from articles');
+
+    $count = $conn->executeUpdate('UPDATE user SET username = ? WHERE id = ?', array('jwage', 1));
+
+    $conn->insert('user', array('username' => 'jwage'));
+
+    $conn->update('user', array('username' => 'jwage'), array('id' => 1));
+
+    $qb = $conn->createQueryBuilder()
+        ->select('u.id')
+        ->addSelect('p.id')
+        ->from('users', 'u')
+        ->leftJoin('u', 'phonenumbers', 'u.id = p.user_id');
+
+    $results = $qb->getQuery()->execute();
+
+`doctrine/mongodb <http://github.com/doctrine/mongodb>`_
+
+Doctrine MongoDB is a library that provides an abstraction layer on top
+of the `PHP MongoDB PECL extension <http://pecl.php.net/package/mongo>`_. It provides some additional
+functionality and abstractions to make working with MongoDB easier.
+
+.. code-block:: php
+
+    <?php
+
+    $conn = new \Doctrine\MongoDB\Connection();
+    $database = $conn->selectDatabase('dbname');
+    $collection = $database->selectCollection('collname');
+
+    $qb = $collection->createQueryBuilder()
+        ->field('username')->equals('jwage')
+        ->field('status')->in(array('active', 'test'));
+
+    $user = $qb->getQuery()->getSingleResult();
+
+`doctrine/couchdb-client <http://github.com/doctrine/couchdb-client>`_
+
+Doctrine CouchDB Client is a library that provides a connection
+abstraction to CouchDB by wrapping around the CouchDB HTTP API.
+
+.. code-block:: php
+
+    <?php
+
+    $client = \Doctrine\CouchDB\CouchDBClient::create();
+
+    array($id, $rev) = $client->postDocument(array('foo' => 'bar'));
+    $client->putDocument(array('foo' => 'baz'), $id, $rev);
+
+    $doc = $client->findDocument($id);
+
+Object Mappers
+--------------
+
+The object mappers are where all the pieces come together. The object
+mappers provide transparent persistence for PHP objects. As mentioned
+above, they all implement the common interfaces from ``Doctrine\Common``
+so working with each of them is generally the same. You have an
+``ObjectManager`` to manage the persistent state of your domain objects:
+
+.. code-block:: php
+
+    <?php
+
+    $user = new User();
+    $user->setId(1);
+    $user->setUsername('jwage');
+
+    $om = $this->getYourObjectManager();
+    $om->persist($user);
+    $om->flush(); // insert the new document
+
+Then you can find that object later and modify it:
+
+.. code-block:: php
+
+    <?php
+
+    $user = $om->find('User', 1);
+    echo $user->getUsername(); // prints "jwage"
+
+    $user->setUsername('jonwge'); // change the obj in memory
+
+    $om->flush(); // updates the object in the database
+
+Check out one of the supported object mappers below:
+
+- `ORM <http://github.com/doctrine/doctrine2>`_
+- `CouchDB ODM <http://github.com/doctrine/couchdb-odm>`_
+- `MongoDB ODM <http://github.com/doctrine/mongodb-odm>`_
+- `PHPCR ODM <http://github.com/doctrine/phpcr-odm>`_
+- `OrientDB ODM <http://github.com/doctrine/orientdb-odm>`_
