@@ -1,0 +1,10 @@
+{%- extends "layout.html" -%}
+
+{%- block body -%}
+    {{ post_meta(metadata) }}
+    {{ body }}
+{%- endblock -%}
+
+{%- block comments_section -%}
+    {{ comments }} 
+{%- endblock -%}
