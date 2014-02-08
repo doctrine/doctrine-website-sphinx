@@ -1,3 +1,0 @@
-Sphinx>=0.6
-python-dateutil<2
-html5lib
