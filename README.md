@@ -1,29 +1,15 @@
 # Doctrine-Project.org Website
 
-We built our complete website with Sphinx, which includes some sophisticated plugins that generate
-project details and hooks into Github.
+We built our complete website with [Tinkerer](http://tinkerer.me), which includes some sophisticated
+plugins that generate project details and hooks into Github.
 
-## Installation
+The contents of the page are located in `site/` directory.
 
-To use this project, you will need [ANT](http://ant.apache.org/). You can install it by running:
+To write a new blog post just `cd site/` and then call the following to create a draft:
 
-```sh
-sudo apt-get install ant
-```
+    $ tinker -d "Title of Post"
 
-You can install additionally required dependencies by running
+Open a pull request with the draft and we will publish it once accepted.
 
-```sh
-sudo ant install-sphinx
-```
-
-You will also need to generate an API token for github in order to fetch tag/release information
-from the github repositories:
-
-```sh
-./bin/generate-github-token.sh
-```
-
-## Build
-
-To build the website, simply run `ant` in the root of your cloned repository.
+You can build and view the page by callling `tinker -b` in the `site/` directory.
+Make sure to `sudo pip install tinkerer` to get the required dependencies.

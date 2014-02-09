@@ -43,15 +43,6 @@
 {%- set rss_symbol = rss_symbol is not defined or rss_symbol -%}
 
 {%- macro script() -%}
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '{{ url_root }}',
-        VERSION:     '{{ release|e }}',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
-        HAS_SOURCE:  {{ has_source|lower }}
-      };
-    </script>
     {%- for scriptfile in script_files -%}
         {#- Hack to filter out jquery.js auto-included by Sphinx since jquery is
            already included in head. -#}
@@ -167,13 +158,6 @@
     {%- endif -%}
 
     {%- block headjs -%}
-    <script type="text/javascript" src="{{ pathto('_static/jquery.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/configurationblock.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/underscore.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/configurationblock.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/doctools.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/configurationblock.js', 1) }}"></script>
-    <script src="{{ pathto('_static/bootstrap/js/bootstrap.min.js', 1) }}"></script>
     {% endblock -%}
 
     {%- if use_opensearch -%}
@@ -247,9 +231,8 @@
               </div>
             </div>
           {%- endblock %}
-
-          <div class="clearer"></div>
         </div>
+        <div class="clearer"></div>
 
         {%- block footer %}
           <div class="footer">
@@ -261,10 +244,9 @@
             {%- if last_updated %}
               {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
             {%- endif %}
-            {%- if show_sphinx %}
-              {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-            {%- endif %}
+
             <br/>
+
             <a target="_BLANK" href="http://www.servergrove.com"><img src="http://www.doctrine-project.org/images/servergrove.jpg" /></a>      <br/><br/>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_s-xclick" />

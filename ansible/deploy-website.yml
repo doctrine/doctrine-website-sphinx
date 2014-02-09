@@ -60,6 +60,12 @@
         cp favicon.ico site/blog/html/favicon.ico
         chdir={{ document_root }}
 
+    - name: Link RSS Feed to .xml file
+      file: >
+        src={{ document_root }}/site/blog/html/rss.html
+        dest={{ document_root }}/site/blog/html/rss.xml
+        state=link
+
     - name: Move Pages to Document Root
       shell: >
         cp site/blog/html/* pages/build/current -R
