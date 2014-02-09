@@ -1,0 +1,62 @@
+{%- extends "page.html" -%}
+
+{%- set archive_title = archive_title is not defined and ' Blog Archive ' or archive_title -%}
+
+{%- block body -%}
+<div class="section" id="welcome-to-the-doctrine-project">
+    <h1>Welcome to the Doctrine Project<a class="headerlink" href="#welcome-to-the-doctrine-project" title="Permalink to this headline"></a></h1>
+
+    <p>
+        The Doctrine Project is the home to several PHP libraries primarily
+        focused on database storage and object mapping. The core projects are a
+        <a href="/projects/orm.html">Object Relational Mapper (ORM)</a> and the
+        <a href="/projects/dbal.html">Database Abstraction Layer (DBAL)</a> it is
+        built upon.
+    </p>
+
+    <h4>Why use Doctrine?</h4>
+
+    <ul>
+        <li>Around since 2006 with very stable, high-quality codebase.</li>
+        <li>Extremely flexible and powerful object-mapping and query features.</li>
+        <li>Support for both high-level and low-level database programming for all your use-cases.</li>
+        <li>Large Community and integrations with many different frameworks (Symfony,
+            Zend Framework, CodeIgniter, FLOW3, Lithium and more)</li>
+    </ul>
+
+</div>
+
+<div class="section" id="latest-blog-posts">
+    <h1>Latest Blog Posts<a class="headerlink" href="#latest-blog-posts" title="Permalink to this headline"></a></h1>
+    <div class="toctree-wrapper compound">
+        <ul>
+        {%- for metadata in posts -%}
+            <li><a href="{{ metadata.link }}.html">{{ metadata.title }}</a> ({{ metadata.formatted_date_short }})</li>
+        {%- endfor -%}
+        </ul>
+
+        <p class="centered">
+            <a class="reference internal" href="{{ pathto('archive') }}">Read older blog posts</a>
+        </p>
+    </div>
+
+    <h1>Projects</h1>
+
+    <ul>
+        <li><a class="reference internal" href="/projects/orm.html">Object-Relational Mapper (ORM)</a></li>
+        <li><a class="reference internal" href="/projects/orm.html">Database Abstraction Layer (DBAL)</a></li>
+        <li><a class="reference internal" href="/projects/mongodb-odm.html">MongoDB Document Mapper</a></li>
+        <li><a class="reference internal" href="/projects/phpcr-odm.html">PHPCR Document Mapper</a></li>
+        <li><a class="reference internal" href="/projects/common.html">Common Libraries</a></li>
+    </ul>
+
+    <p class="centered">
+        <a class="reference internal" href="/projects.html">More Projects</a>
+    </p>
+</div>
+
+<div class="section" id="getting-started">
+    <h1>Getting Started</h1>
+</div>
+
+{%- endblock -%}

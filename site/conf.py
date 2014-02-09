@@ -34,7 +34,7 @@ website = 'http://www.doctrine-project.org/'
 disqus_shortname = 'doctrineproject'
 
 # Change your favicon (new favicon goes in _static directory)
-html_favicon = 'tinkerer.ico'
+html_favicon = 'doctrine.ico'
 
 # Pick another Tinkerer theme or use your own
 html_theme = "doctrine"
@@ -50,7 +50,7 @@ rss_service = None
 rss_generate_full_posts = True
 
 # Number of blog posts per page
-posts_per_page = 10
+posts_per_page = 5
 
 # Character use to replace non-alphanumeric characters in slug
 slug_word_separator = '_'

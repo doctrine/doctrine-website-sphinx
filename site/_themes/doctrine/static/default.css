@@ -985,10 +985,10 @@ div.jsactive pre
 
 #welcome-to-the-doctrine-project {
     float: left;
-    width: 500px;
+    width: 400px;
 }
 #latest-blog-posts {
-    width: 300px;
+    width: 400px;
     float: left;
 }
 #doctrine-projects {
@@ -1034,4 +1034,7 @@ div.jsactive pre
   #content div.body h6 {
       background:none;
   }
+}
+p.centered {
+    text-align: center;
 }

@@ -218,23 +218,13 @@
       </div>
       <div id="nav" class="cls">
         <div class="tl cls">
-            <!--<ul>
-            <li><a target="_top" href="/">home</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/about">about</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/projects.html">projects</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/projects/orm">orm</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/projects/dbal">dbal</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/blog">blog</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/jira">development</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/contribute">contribute</a></li>
-            <li><a class="" target="_top" href="http://www.doctrine-project.org/community">community</a></li>
-        </ul>-->
           <ul>
             {% for page in pages -%}
               <li class="main-nav">
                 <a href="{{ pathto(page[0]) }}">{{ page[1]|e }}</a>
               </li>
             {% endfor -%}
+            <li><a target="_top" href="http://www.doctrine-project.org/jira">development</a></li>
           </ul>
         </div>
       </div>

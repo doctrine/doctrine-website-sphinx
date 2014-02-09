@@ -1,4 +1,5 @@
 ormold:
+  sort: 100
   slug: ormold
   repository: doctrine1
   package: 'Doctrine'
@@ -15,6 +16,7 @@ ormold:
       stability: stable
       composer: false
 orm:
+  sort: 0
   slug: orm
   repository: doctrine2
   title: 'Object Relational Mapper'
@@ -45,6 +47,7 @@ orm:
       downloadable: false
       stability: stable
 dbal:
+  sort: 10
   slug: dbal
   repository: dbal
   title: 'Database Abstraction Layer'
@@ -71,6 +74,7 @@ dbal:
       downloadable: false
       stability: stable
 mongodb_odm:
+  sort: 20
   slug: mongodb-odm
   package: DoctrineMongoDBODM
   repository: mongodb-odm
@@ -86,6 +90,7 @@ mongodb_odm:
     '1.0':
       stability: beta
 couchdb_odm:
+  sort: 50
   slug: couchdb-odm
   package: CouchDBODM
   repository: couchdb-odm
@@ -101,6 +106,7 @@ couchdb_odm:
     '1.0':
       stability: alpha
 phpcr_odm:
+  sort: 40
   slug: phpcr-odm
   repository: phpcr-odm
   title: 'PHPCR Object Document Mapper'
@@ -117,6 +123,7 @@ phpcr_odm:
       stability: stable
 
 migrations:
+  sort: 80
   slug: migrations
   repository: migrations
   title: 'Migrations'
@@ -132,6 +139,7 @@ migrations:
     '2.0':
       stability: alpha
 common:
+  sort: 30
   slug: common
   repository: common
   package: 'DoctrineCommon'
@@ -158,6 +166,7 @@ common:
       downloadable: false
       stability: stable
 orientdb_odm:
+  sort: 200
   slug: orientdb-odm
   package: DoctrineOrientDBODM
   repository: orientdb-odm

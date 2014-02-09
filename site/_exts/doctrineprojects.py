@@ -1,7 +1,8 @@
 from docutils.parsers.rst import Directive, directives
 from docutils import nodes, utils
 from string import upper
-import os;
+import operator
+import os
 from yaml import load as yaml_load
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
@@ -43,7 +44,10 @@ class DoctrineProjects(Directive):
             node = doctrineprojects()
             node['project'] = project
             node['type']    = type
+            node['sort']    = project['sort']
             ret.append(node)
+
+        ret.sort(key=operator.itemgetter('sort'))
 
         return ret
 
