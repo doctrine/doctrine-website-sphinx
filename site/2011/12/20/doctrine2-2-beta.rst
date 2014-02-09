@@ -33,7 +33,7 @@ You can install the Beta through `Github <https://github.com/doctrine/doctrine2>
         }
     }
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

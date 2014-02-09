@@ -17,7 +17,7 @@ fix was backported to 2.0 and a new 2.0.9 version was released.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

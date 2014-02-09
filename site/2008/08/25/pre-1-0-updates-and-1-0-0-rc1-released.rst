@@ -57,7 +57,7 @@ primarily to the homepage.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

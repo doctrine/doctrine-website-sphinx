@@ -118,7 +118,7 @@ faster when running under PHP 5.3!
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

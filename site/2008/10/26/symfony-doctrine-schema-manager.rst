@@ -31,7 +31,7 @@ about it as well as screen shots can be found
 
 .. |sfDoctrineManagerPlugin| image:: http://www.symfony-project.org/uploads/plugins/5e25c2c7775a8ed169e2d9a6de8e2d1d98ffd110.png
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

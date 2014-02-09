@@ -15,7 +15,7 @@ As always you can find information about this new version on the
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

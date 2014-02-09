@@ -7,7 +7,7 @@ Doctrine itself. We all owe him a big thanks.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

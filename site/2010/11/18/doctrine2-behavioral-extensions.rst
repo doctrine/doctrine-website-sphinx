@@ -892,7 +892,7 @@ have detected.
 
 
 
-.. author:: gmorkevicius <gediminas.morkevicius@gmail.com>
+.. author:: gmorkevicius 
 .. categories:: none
 .. tags:: none
 .. comments::

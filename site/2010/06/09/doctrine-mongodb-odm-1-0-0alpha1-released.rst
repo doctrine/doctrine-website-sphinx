@@ -120,7 +120,7 @@ checkout the documentation for our
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

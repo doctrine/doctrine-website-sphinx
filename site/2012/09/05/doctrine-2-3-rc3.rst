@@ -36,7 +36,7 @@ When no blocking issues occur we will release the 2.3.0 final
 on the weekend.
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -132,7 +132,7 @@ please drop us a message!
 
 
 
-.. author:: guilhermeblanco <guilhermeblanco@gmail.com>
+.. author:: guilhermeblanco 
 .. categories:: none
 .. tags:: none
 .. comments::

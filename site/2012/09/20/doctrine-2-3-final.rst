@@ -53,7 +53,7 @@ or `Composer <http://www.packagist.org>`_:
 
 The downloadable packages will be available later today.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -80,7 +80,7 @@ Doctrine greedily steals your precious class constructor!
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -227,7 +227,7 @@ features of MongoDB with the Doctrine Object Document Mapper
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

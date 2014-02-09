@@ -22,7 +22,7 @@ is located at pear.phpdoctrine.org and can be discovered by running
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -13,7 +13,7 @@ one year later on September 1st 2009.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -83,7 +83,7 @@ that results out of other choices.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
+.. author:: romanb 
 .. categories:: none
 .. tags:: none
 .. comments::

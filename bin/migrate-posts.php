@@ -3,6 +3,8 @@
 $dir = __DIR__ . '/../pages/source/blog';
 $posts = scandir($dir);
 $tinkerDir = realpath(__DIR__ . '/../site/');
+$redirects = array();
+$files = array();
 
 foreach ($posts as $post) {
     if (strpos($post, ".") === 0) {
@@ -90,6 +92,8 @@ POST;
     @mkdir(dirname($fileName), 0775, true);
     file_put_contents($tinkerDir . "/" . $fileName, $newContent);
     $files[] = $fileName;
+
+    $redirects['/blog/' . str_replace('.rst', '.html', $post)] = '/' . $fileName;
 }
 
 rsort($files, SORT_NATURAL);
@@ -107,3 +111,12 @@ DATA;
 $master .= '   ' .str_replace('.rst', '', implode("\n   ", $files)) . "\n";
 
 file_put_contents($tinkerDir . '/master.rst', $master);
+
+$htaccess = "";
+
+foreach ($redirects as $original => $newUrl) {
+    $htaccess .= "redirect 301 $original $newUrl\n";
+}
+
+file_put_contents($tinkerDir . '/.htaccess', $htaccess);
+

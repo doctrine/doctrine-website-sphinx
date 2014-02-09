@@ -56,7 +56,7 @@ questions you can send it to one of our
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

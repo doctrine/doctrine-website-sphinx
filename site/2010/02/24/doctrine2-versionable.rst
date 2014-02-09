@@ -289,7 +289,7 @@ behaviours, like Taggable, Blamable, Commentable.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -33,7 +33,7 @@ thing and Doctrine will have grown with many new versions.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -66,7 +66,7 @@ for information about how you can get involved!
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -8,7 +8,7 @@ We released a new round of maintenance releases for the 2.1 branch. DBAL and ORM
 
 As usual code is available via Download, PEAR, Packagist/Composer or from Github.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

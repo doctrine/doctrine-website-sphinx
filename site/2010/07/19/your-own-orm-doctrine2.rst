@@ -465,7 +465,7 @@ Doctrine2, however not many changes were required in the end.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

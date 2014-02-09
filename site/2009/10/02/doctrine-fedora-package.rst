@@ -14,7 +14,7 @@ Enjoy and let us know if you have any issues. Thanks
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

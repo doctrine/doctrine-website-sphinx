@@ -34,7 +34,7 @@ release management knowledge. Thanks.
 
 
 
-.. author:: guilhermeblanco <guilhermeblanco@gmail.com>
+.. author:: guilhermeblanco 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -28,7 +28,7 @@ to see a list of all the changes be sure to check the
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

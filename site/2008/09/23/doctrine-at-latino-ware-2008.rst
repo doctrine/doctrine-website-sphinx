@@ -2,7 +2,7 @@ Doctrine at LatinoWare 2008
 ===========================
 
 
-.. author:: guilhermeblanco <guilhermeblanco@gmail.com>
+.. author:: guilhermeblanco 
 .. categories:: none
 .. tags:: none
 .. comments::

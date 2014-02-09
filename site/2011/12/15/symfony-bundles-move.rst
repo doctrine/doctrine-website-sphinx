@@ -104,7 +104,7 @@ And the Kernel:
         new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
     );
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

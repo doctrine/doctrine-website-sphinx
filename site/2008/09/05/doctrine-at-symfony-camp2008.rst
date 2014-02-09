@@ -10,7 +10,7 @@ registration closes soon so sign up now!
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

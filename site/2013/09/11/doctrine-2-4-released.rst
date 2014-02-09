@@ -113,7 +113,7 @@ Besides fixes and additions of all the new features, we tried to improve the
 style of the documentation. Many of the chapters have been refactored completly
 and hopefully address many of the valid concers of our users.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

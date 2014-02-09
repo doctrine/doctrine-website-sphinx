@@ -16,7 +16,7 @@ via `PEAR <http://pear.doctrine-project.org>`_ or `Git <https://github.com/doctr
 
 Please update your installations.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

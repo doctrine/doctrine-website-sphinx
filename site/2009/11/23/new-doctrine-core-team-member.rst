@@ -14,7 +14,7 @@ You can read a little more about Benjamin on his
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

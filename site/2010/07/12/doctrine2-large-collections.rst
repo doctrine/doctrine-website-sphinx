@@ -94,7 +94,7 @@ extending the LargeCollection a little bit more.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

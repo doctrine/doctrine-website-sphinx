@@ -65,7 +65,7 @@ what else is new in Doctrine 1.2
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

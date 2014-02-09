@@ -10,7 +10,7 @@ Get the package from `PEAR <http://pear.doctrine-project.org>`_ ,
 `Downloads <http://www.doctrine-project.org/projects>`_ or from
 `Github <https://github.com/doctrine/doctrine2>`_.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

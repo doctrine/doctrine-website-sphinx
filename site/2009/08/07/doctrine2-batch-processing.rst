@@ -244,7 +244,7 @@ I hope that clears up some questionmarks.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
+.. author:: romanb 
 .. categories:: none
 .. tags:: none
 .. comments::

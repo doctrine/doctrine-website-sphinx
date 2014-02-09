@@ -139,7 +139,7 @@ Last words
 I would really appreciate people starting to test the `PersistentObject` if they
 like too and give us feedback.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

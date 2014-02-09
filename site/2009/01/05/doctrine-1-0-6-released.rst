@@ -30,7 +30,7 @@ the `upgrade <http://www.doctrine-project.org/upgrade/1_1>`_ file.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

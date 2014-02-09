@@ -32,7 +32,7 @@ Grab the new code in the downloads section or on our
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

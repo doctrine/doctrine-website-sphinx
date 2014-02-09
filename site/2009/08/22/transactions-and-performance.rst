@@ -137,7 +137,7 @@ recommend this excellent page from the Hibernate project:
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
+.. author:: romanb 
 .. categories:: none
 .. tags:: none
 .. comments::

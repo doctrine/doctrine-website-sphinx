@@ -16,7 +16,7 @@ time. Thanks for your patience while we work through these issues.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

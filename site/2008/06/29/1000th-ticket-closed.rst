@@ -9,7 +9,7 @@ and Doctrine would not be able to move forward without it.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

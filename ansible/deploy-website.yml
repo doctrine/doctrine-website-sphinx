@@ -7,69 +7,66 @@
     - name: Checkout Website
       git: >
         repo=git@github.com:doctrine/doctrine-website-sphinx.git
-        dest=${document_root}
+        dest={{ document_root }}
+
     - name: Install Sphinx Dependencies
       apt: >
-        pkg=${item}
+        pkg={{ item }}
       with_items:
         - python-pip
         - python-yaml
-    - name: Install Sphinx
-      easy_install: >
-        name=${item}
-      with_items:
-        - sphinx
-        - distribute
-    - name: Install Sphinx Feed Extension
-      command: >
-        python setup.py install
-        chdir=${document_root}/build/sphinx-contrib/feed
-    - name: Delete Build Pages
-      file: >
-        path=${document_root}/pages/build/html
-        state=absent
-    - name: Delete Build Pages
-      file: >
-        path=${document_root}/pages/build/doctrees
-        state=absent
+
+    - name: Install Tinkerer
+      pip: name=tinkerer
+
     - name: Download Composer
       get_url: >
-        dest=${document_root}/composer.phar
+        dest={{ document_root }}/composer.phar
         url=http://getcomposer.org/composer.phar
+
     - name: Update Composer
       command: >
-        php composer.phar update 
-        chdir=${document_root}
+        php composer.phar update
+        chdir={{ document_root }}
+
     - name: Regenerate projects.yml from Github Data
       command: >
         php bin/build-projects.php
-        chdir=${document_root}
+        chdir={{ document_root }}
+
     - name: Build Website
       command: >
-        make html
-        chdir=${document_root}/pages
+        tinker -b
+        chdir={{ document_root }}/site
+
     - name: Create API Directory
       file: >
-        path=${document_root}/pages/build/api
+        path={{ document_root }}/pages/build/api
         state=directory
+
     - name: Generate API Documentation
       command: >
         php bin/build-apidocs.php pages/build/api
-        chdir=${document_root}
+        chdir={{ document_root }}
+
     - name: Symlink API to HTML root
       file: >
-        src=${document_root}/pages/build/api
-        dest=${document_root}/pages/build/html/api
+        src={{ document_root }}/pages/build/api
+        dest={{ document_root }}/site/blog/html/api
         state=link
+
     - name: Copy Favicon
       command: >
-        cp favicon.ico pages/build/html/favicon.ico
-        chdir=${document_root}
+        cp favicon.ico site/blog/html/favicon.ico
+        chdir={{ document_root }}
+
     - name: Move Pages to Document Root
       shell: >
-        cp pages/build/html/* pages/build/current -R
-        chdir=${document_root}
+        cp site/blog/html/* pages/build/current -R
+        chdir={{ document_root }}
+
     - name: Make www-data owner
       command: >
         chown www-data.www-data pages/build/current -R
-        chdir=${document_root}
+        chdir={{ document_root }}
+

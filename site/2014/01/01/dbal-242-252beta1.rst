@@ -67,7 +67,7 @@ contents:
         }
     }
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

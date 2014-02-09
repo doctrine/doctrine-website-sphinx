@@ -87,7 +87,7 @@ Dozens of commits and over 70 closed tickets
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

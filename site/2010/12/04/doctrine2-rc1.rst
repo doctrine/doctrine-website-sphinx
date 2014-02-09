@@ -17,7 +17,7 @@ We want to thank everybody for their contributions and help.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

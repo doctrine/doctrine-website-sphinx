@@ -48,7 +48,7 @@ candidate) status.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
-.. categories:: none
+.. author:: romanb 
+.. categories:: Release
 .. tags:: none
 .. comments::

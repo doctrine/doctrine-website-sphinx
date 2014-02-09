@@ -82,7 +82,7 @@ to contribute or propose a patch.
 For further informations you can subscribe to the doctrine-dev
 google group or join the IRC channel #doctrine-dev on Freenode.
 
-.. author:: odino <alessandro.nadalin@gmail.com>
+.. author:: odino 
 .. categories:: none
 .. tags:: none
 .. comments::

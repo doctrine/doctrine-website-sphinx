@@ -2,7 +2,7 @@ Doctrine 1.1 Development Begins
 ===============================
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -46,7 +46,7 @@ Sphinx/ReST in the next days.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -30,7 +30,7 @@ primarily be bug fix releases only. Make some hype please, thanks.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

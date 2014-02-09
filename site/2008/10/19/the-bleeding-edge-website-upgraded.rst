@@ -100,7 +100,7 @@ Edit a blog post entry using markdown syntax.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

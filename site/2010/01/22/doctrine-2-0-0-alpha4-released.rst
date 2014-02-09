@@ -37,7 +37,7 @@ scheduled for March 1st, 2010.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
-.. categories:: none
+.. author:: romanb 
+.. categories:: Release
 .. tags:: none
 .. comments::

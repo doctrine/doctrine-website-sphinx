@@ -132,7 +132,7 @@ structure and contribute with lots of tests!
 
 
 
-.. author:: guilhermeblanco <guilhermeblanco@gmail.com>
+.. author:: guilhermeblanco 
 .. categories:: none
 .. tags:: none
 .. comments::

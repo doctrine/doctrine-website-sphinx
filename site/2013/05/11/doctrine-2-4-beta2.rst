@@ -38,7 +38,7 @@ to make some backwards compatibility breaks to fix nasty bugs:
 - `ORM <https://github.com/doctrine/doctrine2/blob/master/UPGRADE.md>`_
 
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

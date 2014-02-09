@@ -306,7 +306,7 @@ definitely not the last one.
 
 
 
-.. author:: avalanche123 <mallluhuct@gmail.com>
+.. author:: avalanche123 
 .. categories:: none
 .. tags:: none
 .. comments::

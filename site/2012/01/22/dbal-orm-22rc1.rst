@@ -15,7 +15,7 @@ As usual you can grab the code from:
 
 Please test this code with your applications. If no bugs or backwards-compatible breaks are reported in the next days we will release the final version on friday.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

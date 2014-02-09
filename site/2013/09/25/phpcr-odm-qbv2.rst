@@ -154,7 +154,7 @@ The documentation is now online and is made up of both a guide and a reference:
 * Guide: http://docs.doctrine-project.org/projects/doctrine-phpcr-odm/en/latest/reference/query-builder.html
 * Reference: http://docs.doctrine-project.org/projects/doctrine-phpcr-odm/en/latest/reference/query-builder-reference.html
 
-.. author:: dantleech <daniel@dantleech.com>
+.. author:: dantleech 
 .. categories:: none
 .. tags:: none
 .. comments::

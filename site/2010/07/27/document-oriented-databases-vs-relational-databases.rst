@@ -79,7 +79,7 @@ kinds of problems. At OpenSky we use both MySQL and MongoDB.
 
 
 
-.. author:: avalanche123 <mallluhuct@gmail.com>
+.. author:: avalanche123 
 .. categories:: none
 .. tags:: none
 .. comments::

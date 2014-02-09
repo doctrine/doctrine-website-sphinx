@@ -172,7 +172,7 @@ You will start to see more posts on the blog related to Doctrine
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

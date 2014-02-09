@@ -118,7 +118,7 @@ test-cases for this feature:
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

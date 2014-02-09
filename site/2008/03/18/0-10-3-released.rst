@@ -13,7 +13,7 @@ easier and provide a failing test case for your issues. Thanks.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

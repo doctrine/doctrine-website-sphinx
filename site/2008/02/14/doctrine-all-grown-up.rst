@@ -73,7 +73,7 @@ continue developing in trunk towards 1.0 while maintaining the
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

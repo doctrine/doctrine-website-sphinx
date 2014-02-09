@@ -32,7 +32,7 @@ View more presentations from Jonathan Wage.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

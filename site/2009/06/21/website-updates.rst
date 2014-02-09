@@ -41,7 +41,7 @@ e-mail at jonwage [at] gmail.com
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

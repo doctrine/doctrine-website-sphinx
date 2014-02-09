@@ -18,7 +18,7 @@ can read the full blog article on the symfony-project.org blog.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

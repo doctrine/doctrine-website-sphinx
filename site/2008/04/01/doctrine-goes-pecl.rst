@@ -9,7 +9,7 @@ performs 4 times as fast and brings unbelievable results. Enjoy!
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

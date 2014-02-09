@@ -52,7 +52,7 @@ Enjoy!
 
 
 
-.. author:: richardfullmer <richardfullmer@gmail.com>
+.. author:: richardfullmer 
 .. categories:: none
 .. tags:: none
 .. comments::

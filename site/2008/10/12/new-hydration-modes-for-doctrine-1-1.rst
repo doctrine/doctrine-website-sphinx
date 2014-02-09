@@ -55,7 +55,7 @@ on how many issues arise and depending on the feedback.
    
 
 
-.. author:: romanb <r.borschel@gmx.net>
+.. author:: romanb 
 .. categories:: none
 .. tags:: none
 .. comments::

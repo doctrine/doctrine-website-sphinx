@@ -20,7 +20,7 @@ help with tickets, support, documentatation or anything else.
 During the conference you can find us by looking for the `dark blue Doctrine
 t-shirts <http://distilleryimage8.instagram.com/30f1aa1ea9d311e1a92a1231381b6f02_7.jpg>`_.
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

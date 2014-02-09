@@ -24,7 +24,7 @@ download, PEAR or `Composer <http://www.packagist.org>`_:
     }
 
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

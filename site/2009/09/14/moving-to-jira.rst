@@ -56,7 +56,7 @@ account and start creating issues and explore the features.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
+.. author:: romanb 
 .. categories:: none
 .. tags:: none
 .. comments::

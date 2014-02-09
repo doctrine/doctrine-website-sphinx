@@ -26,7 +26,7 @@ contact me at jonathan.wage@sensio.com so we can discuss details.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -32,7 +32,7 @@ http://www.phpdoctrine.org/svnweb
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

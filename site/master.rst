@@ -222,6 +222,3 @@ Sitemap
    2007/11/02/beta-2
    2007/10/14/new-coverage-report
    2007/10/09/new-website
-   pages/projects
-   pages/contribute
-   pages/community

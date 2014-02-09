@@ -28,7 +28,7 @@ document to find out what has changed in 1.1.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

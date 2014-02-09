@@ -140,7 +140,7 @@ View more Microsoft Word documents from jwage.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

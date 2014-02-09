@@ -23,7 +23,7 @@ You can install the release with `PEAR <http://pear.doctrine-project.org>`_ or w
         }
     }
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

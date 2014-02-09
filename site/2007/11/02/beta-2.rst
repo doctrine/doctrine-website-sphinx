@@ -14,7 +14,7 @@ comfortable with releasing a true RC1.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

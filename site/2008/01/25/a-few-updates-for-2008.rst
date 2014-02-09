@@ -28,7 +28,7 @@ expect stability in the area of releases, branches and BC breaks!
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

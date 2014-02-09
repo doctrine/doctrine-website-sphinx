@@ -22,7 +22,7 @@ on September 1st will be given soon. Make some noise!
    
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -54,7 +54,7 @@ Jira and attach a patch or just discuss your ideas.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

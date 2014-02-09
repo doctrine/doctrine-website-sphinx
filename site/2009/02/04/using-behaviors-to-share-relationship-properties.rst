@@ -411,7 +411,7 @@ through the ``Administrator->User->Entity`` relations.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

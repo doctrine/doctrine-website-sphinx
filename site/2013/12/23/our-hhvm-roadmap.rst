@@ -49,7 +49,7 @@ Freenode IRC in channel "#doctrine-dev".
 With this announcement we hope that other PHP projects, frameworks and
 libraries will follow to make HHVM an official build target in the future.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
+.. author:: Benjamin Eberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

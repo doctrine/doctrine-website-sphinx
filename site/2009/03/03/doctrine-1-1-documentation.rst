@@ -22,7 +22,7 @@ new tickets in `trac <http://trac.doctrine-project.org>`_ under the
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

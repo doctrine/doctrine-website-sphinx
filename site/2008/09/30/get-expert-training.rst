@@ -52,7 +52,7 @@ can learn more about the available training sessions here.
    
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

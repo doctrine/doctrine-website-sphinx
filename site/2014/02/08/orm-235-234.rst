@@ -33,7 +33,7 @@ contents:
 Please report any issues you may have with the update on the mailing list or on
 `Jira <http://www.doctrine-project.org/jira>`_.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

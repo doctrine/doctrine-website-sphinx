@@ -30,7 +30,7 @@ is to release the final version in the next 4-6 weeks.
 In these next weeks we will work to incorporate all changes in the
 documentation.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

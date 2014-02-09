@@ -373,7 +373,7 @@ of sync due to race-conditions and concurrent access.
 
 
 
-.. author:: beberlei <kontakt@beberlei.de>
+.. author:: beberlei 
 .. categories:: none
 .. tags:: none
 .. comments::

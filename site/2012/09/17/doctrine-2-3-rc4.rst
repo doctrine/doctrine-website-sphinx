@@ -35,7 +35,7 @@ If you find any problems with your applications please report them on our
 We hope to release the final version of Doctrine 2.3 after this release
 candidate. Please test your applications with this.
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

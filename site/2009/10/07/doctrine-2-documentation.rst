@@ -38,7 +38,7 @@ Doctrine 2 and that you enjoy it! :)
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -41,7 +41,7 @@ Like always, you can grab the package for these new versions on the
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -136,7 +136,7 @@ and it is much faster than executing a normal query in most cases.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

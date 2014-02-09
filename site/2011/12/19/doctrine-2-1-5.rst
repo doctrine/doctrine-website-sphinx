@@ -11,7 +11,7 @@ You can get the code from `PEAR <http://pear.doctrine-project.org>`_ , the
 download section or directly from
 `Github <https://github.com/doctrine/doctrine2/tree/2.1.5`_.
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -170,7 +170,7 @@ You can read more about the Query Builder API in the
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

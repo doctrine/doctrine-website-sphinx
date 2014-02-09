@@ -18,7 +18,7 @@ You can install the release with `Composer <http://www.packagist.org>`_:
         }
     }
 
-.. author:: Benjamin Eberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: Benjamin Eberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

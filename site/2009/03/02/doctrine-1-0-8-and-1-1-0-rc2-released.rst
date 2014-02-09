@@ -49,7 +49,7 @@ release candidate for the 1.1 version of Doctrine.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::

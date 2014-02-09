@@ -10,7 +10,7 @@ chapters/sections, blog posts, and api documentation classes.
 
 
 
-.. author:: jwage <jonwage@gmail.com>
+.. author:: jwage 
 .. categories:: none
 .. tags:: none
 .. comments::

@@ -35,7 +35,7 @@ is ultimately frozen until the stable release.
 
 
 
-.. author:: romanb <r.borschel@gmx.net>
-.. categories:: none
+.. author:: romanb 
+.. categories:: Release
 .. tags:: none
 .. comments::

@@ -35,7 +35,7 @@ If you find any problems with your applications please report them on our
 When no blocking issues occur we will release the 2.3.0 final
 on next Monday.
 
-.. author:: beberlei <kontakt@beberlei.de>
-.. categories:: none
+.. author:: beberlei 
+.. categories:: Release
 .. tags:: none
 .. comments::

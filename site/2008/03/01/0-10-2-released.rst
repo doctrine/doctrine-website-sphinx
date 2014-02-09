@@ -8,7 +8,7 @@ branch is completely phased out. Thanks for using Doctrine :)
 
 
 
-.. author:: jwage <jonwage@gmail.com>
-.. categories:: none
+.. author:: jwage 
+.. categories:: Release
 .. tags:: none
 .. comments::
