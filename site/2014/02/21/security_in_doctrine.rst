@@ -2,7 +2,7 @@ Security in Doctrine
 ====================
 
 When using Doctrine in a project it is always a security critical component
-bcause it talks directly to your database. As such security is very important
+because it talks directly to your database. As such security is very important
 to us. In security however, context is important and providing you with query
 capabilities we have to expose you to the risk of SQL injections.
 
@@ -38,7 +38,7 @@ the assumptions we make about tables and columns and our reasoning:
    case-sensitive. Even more weird, Oracle unquoted identifiers are uppercased,
    PostgreSQL unquoted identifires are lowercased. MySQL casing is based on a
    config option. Doctrine 1.* had various unfixable bugs because of identifier
-   quotoing, which is why we decided that Doctrine will not use automatic
+   quoting, which is why we decided that Doctrine will not use automatic
    identifier quoting.
 
 2. The APIs of ``Connection#insert()``, ``Connection#update()`` and
@@ -46,7 +46,7 @@ the assumptions we make about tables and columns and our reasoning:
    identifiers, because quoting is the users choice.
 
 3. A mechanism to detect SQL injection in strings that can be either quoted
-   or unquoted is impossible to write completly seceure. There are too many
+   or unquoted is impossible to write completly secure. There are too many
    edge cases to consider and there is a realistic chance to miss one of them.
 
 4. If you provide an API that is just secure in 99.999% of all cases, then
@@ -58,7 +58,7 @@ SQL injection is possible by using PDO wrong. I can enumerate lots of libraries
 where security is the developers responsibility: Template engines,
 authentication libraries and so on.
 
-A proper secured system requires knowledge about the context. Thta is why any
+A proper secured system requires knowledge about the context. That is why any
 kind of database abstraction layers can never fully protect you from SQL
 injection, because it does not know the context you are using it in.
 
