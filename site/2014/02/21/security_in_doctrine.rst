@@ -34,23 +34,23 @@ higher risk than using just the ORM.
 You might think we are nuts by just claiming a non issue, but consider
 the assumptions we make about tables and columns and our reasoning:
 
-1. Quoting identifiers is bad, because it changes them from case-insensitive to
-   case-sensitive. Even more weird, Oracle unquoted identifiers are uppercased,
-   PostgreSQL unquoted identifires are lowercased. MySQL casing is based on a
-   config option. Doctrine 1.* had various unfixable bugs because of identifier
-   quoting, which is why we decided that Doctrine will not use automatic
-   identifier quoting.
+- Quoting identifiers is bad, because it changes them from case-insensitive to
+  case-sensitive. Even more weird, Oracle unquoted identifiers are uppercased,
+  PostgreSQL unquoted identifires are lowercased. MySQL casing is based on a
+  config option. Doctrine 1.* had various unfixable bugs because of identifier
+  quoting, which is why we decided that Doctrine will not use automatic
+  identifier quoting.
 
-2. The APIs of ``Connection#insert()``, ``Connection#update()`` and
-   ``Connection#delete()`` therfore accept both quoted and unquoted table/column
-   identifiers, because quoting is the users choice.
+- The APIs of ``Connection#insert()``, ``Connection#update()`` and
+  ``Connection#delete()`` therfore accept both quoted and unquoted table/column
+  identifiers, because quoting is the users choice.
 
-3. A mechanism to detect SQL injection in strings that can be either quoted
-   or unquoted is impossible to write completly secure. There are too many
-   edge cases to consider and there is a realistic chance to miss one of them.
+- A mechanism to detect SQL injection in strings that can be either quoted
+  or unquoted is impossible to write completly secure. There are too many
+  edge cases to consider and there is a realistic chance to miss one of them.
 
-4. If you provide an API that is just secure in 99.999% of all cases, then
-   you should not claim it is secure at all.
+- If you provide an API that is just secure in 99.999% of all cases, then
+  you should not claim it is secure at all.
 
 At this point you can still think we are wrong releasing insecure software,
 however let me ask back: Isn't PHP shipping insecure software by providing PDO?
