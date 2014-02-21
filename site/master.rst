@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/02/21/security_in_doctrine
    2014/02/21/doctrine_2_5_beta3
    2014/02/08/orm-235-234
    2014/01/01/dbal-242-252beta1
