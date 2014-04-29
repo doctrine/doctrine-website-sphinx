@@ -67,7 +67,7 @@ to be completly explicit about these issues. Both DBAL and ORM now contain a
 `SECURITY.md` file, which contains basic information about security and links
 to much more detailed documentation chapters on Doctrine security.
 
-We have made an effort to list all the functions and operations that are save
+We have made an effort to list all the functions and operations that are safe
 from SQL injection. There are not very many of them in the DBAL, because it is
 such a low level library. The ORM however is pretty secure, except when
 concatenating user input into DQL and SQL queries.
