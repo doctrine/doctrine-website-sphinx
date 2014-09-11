@@ -3,7 +3,6 @@ pages/build
 /source
 api
 vendor
-composer.lock
 composer.phar
 github-token.json
 site/blog
