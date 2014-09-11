@@ -1,11 +1,7 @@
-:author: Marco Pivetta <ocramius@gmail.com>
-:date: 2014-08-13 14:00:00
-
-====================================
 Doctrine Instantiator 1.0.0 released
 ====================================
 
-Today we released `Doctrine Instantiator 1.0.0`_.
+We released `Doctrine Instantiator 1.0.0`_ several weeks ago.
 
 This project has been migrated from `ocramius/instantiator`_ into the doctrine organization to
 have better maintenance, support as well as handling of security related issues, which is a
@@ -40,3 +36,8 @@ contents:
 .. _was partially solved in PHP 5.6.0-RC3: https://github.com/php/php-src/pull/733
 .. _DDC-3120: http://www.doctrine-project.org/jira/browse/DDC-3120
 .. _serialization hack: http://www.doctrine-project.org/2010/03/21/doctrine-2-give-me-my-constructor-back.html
+
+.. author:: Marco Pivetta <ocramius@gmail.com>
+.. categories:: none
+.. tags:: none
+.. comments::
