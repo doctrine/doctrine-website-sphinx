@@ -1,6 +1,5 @@
 ---
 - hosts: webservers
-  sudo: yes
   vars:
     document_root: /var/www/doctrine-website-sphinx
   tasks:
@@ -59,8 +58,3 @@
         src={{ document_root }}/site/blog/html/rss.html
         dest={{ document_root }}/site/blog/html/rss.xml
         state=link
-
-    - name: Make www-data owner
-      command: >
-        chown www-data.www-data site/blog/html -R
-        chdir={{ document_root }}
