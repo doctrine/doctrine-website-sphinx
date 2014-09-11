@@ -28,6 +28,11 @@
         php composer.phar update
         chdir={{ document_root }}
 
+    - name: Update Composer for Apigen
+      command: >
+        php ../../../composer.phar update
+        chdir={{ document_root }}/vendor/apigen/apigen
+
     - name: Regenerate projects.yml from Github Data
       command: >
         php bin/build-projects.php
