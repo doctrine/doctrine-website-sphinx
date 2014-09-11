@@ -111,7 +111,7 @@ foreach ($data as $project => $projectDetails) {
 
         chdir(__DIR__ . "/../");
         $apiDocs = sprintf(
-            './vendor/bin/apigen.php -s %s -d %s/%s --title "%s"',
+            './vendor/bin/apigen -s %s -d %s/%s --title "%s"',
             $path . '/lib/Doctrine',
             $output,
             "$project/$version",
