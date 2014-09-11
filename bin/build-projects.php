@@ -73,7 +73,6 @@ foreach ($projects as $projectName => $projectData) {
     }
 }
 
-file_put_contents(__DIR__ . "/../pages/source/projects.yml", Yaml::dump($projects, 8, 2));
 file_put_contents(__DIR__ . "/../site/projects.yml", Yaml::dump($projects, 8, 2));
 
 /**

@@ -31,7 +31,7 @@ if (!is_string($token)) {
     exit(1);
 }
 
-$data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../pages/source/projects.yml"));
+$data = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . "/../site/projects.yml"));
 
 foreach ($data as $project => $projectDetails) {
     if ( ! isset($projectDetails['browse_source_link'])) {
@@ -40,7 +40,6 @@ foreach ($data as $project => $projectDetails) {
 
     $url = $projectDetails['browse_source_link'];
     $ch  = curl_init("https://api.github.com/repos/doctrine/" . $projectDetails['repository'] . "/tags");
-
 
     curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
     curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: token $token"));
