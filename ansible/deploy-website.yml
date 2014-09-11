@@ -41,19 +41,13 @@
 
     - name: Create API Directory
       file: >
-        path={{ document_root }}/pages/build/api
+        path={{ document_root }}/site/blog/html/api
         state=directory
 
     - name: Generate API Documentation
       command: >
-        php bin/build-apidocs.php pages/build/api
+        php bin/build-apidocs.php site/blog/html/api
         chdir={{ document_root }}
-
-    - name: Symlink API to HTML root
-      file: >
-        src={{ document_root }}/pages/build/api
-        dest={{ document_root }}/site/blog/html/api
-        state=link
 
     - name: Copy Favicon
       command: >
@@ -66,13 +60,7 @@
         dest={{ document_root }}/site/blog/html/rss.xml
         state=link
 
-    - name: Move Pages to Document Root
-      shell: >
-        cp site/blog/html/* pages/build/current -R
-        chdir={{ document_root }}
-
     - name: Make www-data owner
       command: >
-        chown www-data.www-data pages/build/current -R
+        chown www-data.www-data site/blog/html -R
         chdir={{ document_root }}
-
