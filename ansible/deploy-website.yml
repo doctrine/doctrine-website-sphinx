@@ -23,14 +23,14 @@
         dest={{ document_root }}/composer.phar
         url=http://getcomposer.org/composer.phar
 
-    - name: Update Composer
+    - name: Install Composer Dependencies
       command: >
-        php composer.phar update
+        php composer.phar install
         chdir={{ document_root }}
 
     - name: Update Composer for Apigen
       command: >
-        php ../../../composer.phar update
+        php ../../../composer.phar install
         chdir={{ document_root }}/vendor/apigen/apigen
 
     - name: Regenerate projects.yml from Github Data
