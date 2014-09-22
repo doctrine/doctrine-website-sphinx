@@ -6,7 +6,7 @@ minor regression introduced by `DDC-2996 <http://www.doctrine-project.org/jira/b
 
 You can find all the changes on JIRA:
 
-- `ORM 2.3.5 <http://www.doctrine-project.org/jira/browse/DDC/fixforversion/10720>`_ - 1 issue fixed
+- `ORM 2.4.4 <http://www.doctrine-project.org/jira/browse/DDC/fixforversion/10720>`_ - 1 issue fixed
 
 You can install the ORM using Composer and the following ``composer.json``
 contents:
