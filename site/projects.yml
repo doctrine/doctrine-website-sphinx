@@ -747,7 +747,7 @@ phpcr_odm:
   short_title: PHPCRODM
   package: PHPCRODM
   description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
-  latest_version: '1.0'
+  latest_version: '1.2'
   is_primary: false
   namespace: Doctrine\ODM\PHPCR
   issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
@@ -826,6 +826,84 @@ phpcr_odm:
           package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.0.1'
           pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.0.1'
+          composer: true
+    '1.1':
+      stability: stable
+      downloadable: true
+      releases:
+        1.1.0-beta1:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.0-beta1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.0-beta1'
+          composer: true
+        1.1.0-beta2:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.0-beta2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.0-beta2'
+          composer: true
+        1.1.0-RC1:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.0-RC1'
+          composer: true
+        1.1.0-RC2:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.0-RC2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.0-RC2'
+          composer: true
+        1.1.0:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.0'
+          composer: true
+        1.1.1:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.1'
+          composer: true
+        1.1.2:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.1.2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.1.2'
+          composer: true
+    '1.2':
+      stability: stable
+      downloadable: true
+      releases:
+        1.2.0-RC1:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-RC1'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-RC1'
+          composer: true
+        1.2.0-rc2:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc2'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-rc2'
+          composer: true
+        1.2.0-rc3:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc3'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-rc3'
+          composer: true
+        1.2.0-rc4:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc4'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-rc4'
+          composer: true
+        1.2.0-rc5:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc5'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-rc5'
+          composer: true
+        1.2.0-rc6:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc6'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0-rc6'
+          composer: true
+        1.2.0:
+          package_name: ''
+          git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0'
+          pear_install_command: '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/PHPCRODM-1.2.0'
           composer: true
 migrations:
   sort: 80
