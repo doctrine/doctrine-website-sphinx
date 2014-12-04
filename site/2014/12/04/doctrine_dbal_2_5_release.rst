@@ -45,8 +45,10 @@ The following list contains the major new features of DBAL:
   providers out of the box (DBAL-1050).
 - Auto detection of platform to use based on database (DBAL-757)
 - Improved SQL Server LIMIT emulation support. (Multiple tickets)
+- Improvements to HHVM Support (no full support yet)
 
-See all the changes for the 2.5.0 Release on Jira:
+See all the changes for the 2.5.0 Release on Jira, an amazing total of 316
+issues:
 
 - `DBAL 2.5.0
   <http://www.doctrine-project.org/jira/browse/DBAL/fixforversion/10523/>`_
