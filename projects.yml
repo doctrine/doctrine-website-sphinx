@@ -55,7 +55,7 @@ dbal:
   package: 'DoctrineDBAL'
   file: '%s-%s-full.tar.gz'
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
-  latest_version: '2.4'
+  latest_version: '2.5'
   is_primary: true
   issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
   browse_source_link: 'https://github.com/doctrine/dbal'
