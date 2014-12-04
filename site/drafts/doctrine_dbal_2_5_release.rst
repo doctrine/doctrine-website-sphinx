@@ -5,9 +5,9 @@ We are happy to announce the immediate availability of Doctrine DBAL 2.5.0
 Stable. This release is a landmark in making DBAL more consistent and stable
 than it ever was.
 
-DBAL 2.5 will be maintained by a new release-master `Steve Müller
+Starting with 2.5 DBAL will have a new release-master, `Steve Müller
 <https://github.com/deeky666>`_. Steve has been working
-on DBAL for much of his last year and contributed many of the big features that
+on DBAL for the last two years and contributed many of the big features that
 make up this fantastic release. He will replace Benjamin Eberlei who was the
 release master since version 2.0.
 
@@ -43,7 +43,8 @@ The following list contains the major new features of DBAL:
 - Add support for using database uris with the ``url`` parameter in
   ``DriverManager::getConnection()`` which supports several forms used by PaaS
   providers out of the box (DBAL-1050).
-- Improved SQL Server LIMIT emulation support.
+- Auto detection of platform to use based on database (DBAL-757)
+- Improved SQL Server LIMIT emulation support. (Multiple tickets)
 
 See all the changes for the 2.5.0 Release on Jira:
 
