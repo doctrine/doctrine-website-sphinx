@@ -73,6 +73,9 @@ dbal:
     '2.4':
       downloadable: false
       stability: stable
+    '2.5':
+      downloadable: false
+      stability: stable
 mongodb_odm:
   sort: 20
   slug: mongodb-odm
