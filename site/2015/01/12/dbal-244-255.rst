@@ -7,15 +7,16 @@ along with some others. DBAL 2.4.4 only contains backported bug fixes addressed 
 
 The index renaming feature introduced in DBAL 2.5.0 caused trouble for some MySQL users utilizing ORM's
 schema tool to upgrade their schemas where the schema tool was generating invalid ``DROP INDEX`` /
-``CREATE INDEX`` SQL. Fixing this issue was only possible by introducing a minor BC break, please see
-``UPGRADE.md`` for more information.
+``CREATE INDEX`` SQL. Fixing this issue was only possible by introducing a minor BC break (change in behaviour),
+please see ``UPGRADE.md`` for more information (we know that this is a patch release but we are actually reverting a BC
+break here).
 MariaDB users had problems upgrading to DBAL 2.5.0 because of the new platform detection feature not taking
 MariaDB backends into account.
-Additionally some minor bugs around schema creation / introspection and DDL in various platforms were fixed.
+Additionally, some minor bugs around schema creation / introspection and DDL in various platforms were fixed.
 
-Please note that this release does not yet include a fix for users having problems with the DBAL connection
+Please note that this release does ``not yet`` include a fix for users having problems with the DBAL connection
 not being lazy anymore since DBAL 2.5.0 when retrieving the underlying platform. Unfortunately we did not
-find a good solution for this issue yet, that we could implement directly into DBAL.
+find a good solution for this issue yet.
 Until the issue is fixed please directly set the platform version as a workaround by using the
 ``serverVersion`` configuration option described in the `documentation <http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#automatic-platform-version-detection>`_
 if you are encountering any problems.
