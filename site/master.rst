@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/01/12/dbal-244-251
    2014/12/18/annotations-122
    2014/12/16/orm-247
    2014/12/04/doctrine_dbal_2_5_release
