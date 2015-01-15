@@ -41,7 +41,7 @@ contents:
 Please report any issues you may have with the update on the mailing list or on
 `Jira <http://www.doctrine-project.org/jira>`_.
 
-.. author:: Steve Müller <deeky666@googlemail.com>
+.. author:: Marco Pivetta <ocramius@gmail.com>
 .. categories:: none
 .. tags:: none
 .. comments::
