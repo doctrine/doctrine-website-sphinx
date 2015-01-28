@@ -11,7 +11,7 @@ Please report any possible problems or incompatibilities that may have been
 introduced during development.
 
 This pre-release is not yet at feature-freeze, therefore we urge contributors to contact
-us if there is any change that requires our attention before we reach the beta (feature-free)
+us if there is any change that requires our attention before we reach the beta (feature-freeze)
 release stage.
 
 What is new in 2.5.x?
