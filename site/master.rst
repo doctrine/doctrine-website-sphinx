@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/01/25/orm-2-5-0-alpha-2
    2015/01/15/cache-1-4-0
    2015/01/12/dbal-244-251
    2014/12/18/annotations-122
