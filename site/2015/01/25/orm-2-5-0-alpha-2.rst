@@ -28,9 +28,9 @@ Release RoadMap
 
 We expect to release following versions of the ORM in the next days:
 
-- ``2.5.0-beta1`` on ``2014-02-02``
-- ``2.5.0-beta2`` on ``2014-02-09``
-- ``2.5.0`` on ``2014-02-16``
+- ``2.5.0-beta1`` on ``2015-02-02``
+- ``2.5.0-beta2`` on ``2015-02-09``
+- ``2.5.0`` on ``2015-02-16``
 
 Please note that these dates may change depending on the availability of our team.
 
