@@ -14,7 +14,7 @@ Please report any possible problems or incompatibilities that may have been
 introduced during development.
 
 Starting from this release, no more new features or breaking changes will be allowed
-in the
+into the repository until `2.6.x` development starts.
 
 What is new in 2.5.x?
 ~~~~~~~~~~~~~~~~~~~~~
