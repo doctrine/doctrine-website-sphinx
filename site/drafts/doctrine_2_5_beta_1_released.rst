@@ -1,14 +1,61 @@
-Doctrine 2.5 Beta 1 released
-============================
+Doctrine ORM 2.5.0 BETA 1 Released
+==================================
 
-We are happy to announce the Beta1 release of the forthcoming Doctrine 2.5
-release. Due to day-job related responsibilities, we are a month behind our
-schedule. Please bear with us as we prepare this new release.
+We are happy to announce the immediate availability Doctrine ORM ``2.5.0-beta1``.
 
-The following changes happend since `Alpha2
-<https://github.com/doctrine/doctrine2/releases/tag/v2.5.0-alpha2>`_:
+Due to day-job related responsibilities, we are a month behind our schedule.
+Please bear with us as we prepare this new release.
 
-- [`DDC-3452 <http://www.doctrine-project.org/jira/browse/DDC-3452>`_] Embeddables Support for ClassMetadataBuilder 
+This is a pre-release meant to allow users and contributors to try out the new
+upcoming features of the ORM.
+
+We encourage all of our users to help us by trying out this beta release.
+Please report any possible problems or incompatibilities that may have been
+introduced during development.
+
+Starting from this release, no more new features or breaking changes will be allowed
+in the
+
+What is new in 2.5.x?
+~~~~~~~~~~~~~~~~~~~~~
+
+We are currently in the process of documenting all the changes and new features that were
+introduced in Doctrine ORM 2.5.x.
+
+You can find the current state of the 2.5.0 changes overview in
+`the upgrade notes <http://docs.doctrine-project.org/en/latest/changelog/migration_2_5.html>`_.
+
+Release RoadMap
+~~~~~~~~~~~~~~~
+
+We expect to release following versions of the ORM in the next days:
+
+ - ``2.5.0-RC1`` on ``2015-03-25``
+ - ``2.5.0`` on ``2015-04-02``
+
+Please note that these dates may change depending on the availability of our team.
+
+Installation
+~~~~~~~~~~~~
+
+You can install this version of the ORM by using Composer and the
+following ``composer.json`` contents:
+
+.. code-block:: json
+
+  {
+      "require": {
+          "doctrine/orm": "2.5.0-beta2"
+      },
+      "minimum-stability": "dev"
+  }
+
+Changes since 2.5.0-alpha2
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a list of issues solved in ``2.5.0-beta2`` since ``2.5.0-alpha2``:
+
+- [`DDC-3452 <http://www.doctrine-project.org/jira/browse/DDC-3452>`_] Embeddables Support for ClassMetadataBuilder
 - [`DDC-3551 <http://www.doctrine-project.org/jira/browse/DDC-3551>`_] Load platform lazily in ClassMetadataFactory to avoid database connections.
 - [`DDC-3258 <http://www.doctrine-project.org/jira/browse/DDC-3258>`_] Improve suport for composite primary keys and assocations as keys.
 - [`DDC-3554 <http://www.doctrine-project.org/jira/browse/DDC-3554>`_] Allow to recreate DQL QueryBuilder from parts.
@@ -27,8 +74,10 @@ The following changes happend since `Alpha2
 - [`DDC-3528 <http://www.doctrine-project.org/jira/browse/DDC-3528>`_] Have ``PersistentCollection`` implement ``AbstractLazyCollection`` from `doctrine/collections <https://github.com/doctrine/collections>`_`.
 - [`DDC-3567 <http://www.doctrine-project.org/jira/browse/DDC-3567>`_] Allow access to all aliases for a QueryBuilder.
 
+Please report any issues you may have with the update on the mailing list or on
+`Jira <http://www.doctrine-project.org/jira/browse/DDC>`_.
 
-.. author:: default
+.. author:: Benjamin Eberlei, Marco Pivetta <ocramius@gmail.com>
 .. categories:: none
 .. tags:: none
 .. comments::
