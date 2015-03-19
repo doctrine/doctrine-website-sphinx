@@ -45,7 +45,7 @@ following ``composer.json`` contents:
 
   {
       "require": {
-          "doctrine/orm": "2.5.0-beta2"
+          "doctrine/orm": "2.5.0-beta1"
       },
       "minimum-stability": "dev"
   }
