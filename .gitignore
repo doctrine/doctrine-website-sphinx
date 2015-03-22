@@ -6,3 +6,6 @@ vendor
 composer.phar
 github-token.json
 site/blog
+node_modules
+npm-debug.log
+

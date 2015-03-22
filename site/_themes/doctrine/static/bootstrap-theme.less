@@ -1,0 +1,136 @@
+@import "bootstrap/less/bootstrap.less";
+@import "pygments.less";
+
+@navbar-height:                    50px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             #fff;
+@navbar-default-bg:                #2e6bc8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #fff;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #fff;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-border-color:       #ddd;
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+pre {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.navbar-brand {
+  margin-top: -8px;
+  margin-right: -10px;
+}
+
+div.year {
+  h1 {
+  }
+  ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navbar-toggle {
+  background-color: #fff;
+}
+
+.latest-release {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.older-releases {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+}
+
+.latest-version {
+  a {
+    font-weight: bold;
+  }
+}
+
+.githublink {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  display: block;
+  z-index: 1030;
+  img {
+    border: 0;
+  }
+}
+
+div.footer {
+    .host {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .donate {
+      form {
+        text-align: center;
+      }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .githublink {
+    display: none;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .githublink {
+    display: none;
+  }
+}

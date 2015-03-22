@@ -38,6 +38,10 @@
         php bin/build-projects.php
         chdir={{ document_root }}
 
+    - name: Build css
+      command: >
+        lessc site/_themes/doctrine/static/bootstrap-theme.less > site/_themes/doctrine/static/bootstrap-theme.css
+
     - name: Build Website
       command: >
         tinker -b

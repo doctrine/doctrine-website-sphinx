@@ -64,19 +64,24 @@ class DoctrineProjects(Directive):
         return utils.relative_path(None, path)
 
 def visit_doctrineprojects_html(self, node):
-    self.body.append('<li class="project" id="%s"><h3><a href="/projects/%s.html">%s</a></h3>\n' % (node['project']['slug'], node['project']['slug'], node['project']['title']) )
-    self.body.append('<p>%s</p>' % (node['project']['description']) )
+    self.body.append('<div class="panel panel-default">')
+    self.body.append('<div class="panel-heading"><h3 class="panel-title"><a href="/projects/%s.html">%s</a></h3></div>\n' % (node['project']['slug'], node['project']['title']) )
 
     if node['type'] != 'short':
-        self.body.append('<p class="centered">')
-        self.body.append('<a href="%s">Issues</a> |\n' % (node['project']['issues_link']) )
-        self.body.append('<a href="http://docs.doctrine-project.org/projects/doctrine-%s/en/latest/">Documentation</a> |\n' % (node['project']['slug']) )
-        self.body.append('<a href="/api/%s/%s/index.html">API</a> |\n' % (node['project']['slug'], node['project']['latest_version']) )
-        self.body.append('<a href="/projects/%s.html">Download</a> |\n' % (node['project']['slug']) )
-        self.body.append('<a href="%s">Browse Source</a>\n' % (node['project']['browse_source_link']) )
-        self.body.append('</p>')
+        self.body.append('<ul class="nav nav-tabs">')
+        self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
+        self.body.append('<li><a href="http://docs.doctrine-project.org/projects/doctrine-%s/en/latest/">Documentation</a></li>\n' % (node['project']['slug']) )
+        self.body.append('<li><a href="/api/%s/%s/index.html">API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
+        self.body.append('<li><a href="/projects/%s.html">Download</a></li>\n' % (node['project']['slug']) )
+        self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
+        self.body.append('</ul>')
 
-    self.body.append('</li>')
+    self.body.append('<div class="panel-body">')
+    self.body.append('%s' % (node['project']['description']) )
+    self.body.append('</div>')
+
+    self.body.append('</div>')
+
     raise nodes.SkipNode
 
 def depart_doctrineprojects_html(self, node):

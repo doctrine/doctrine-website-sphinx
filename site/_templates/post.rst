@@ -7,4 +7,3 @@
 .. categories:: {{ categories }}
 .. tags:: {{ tags }}
 .. comments::
-
