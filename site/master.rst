@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/03/22/migrations-1-0-0-alpha-3
    2015/03/18/orm-2-5-0-beta-1
    2015/01/25/orm-2-5-0-alpha-2
    2015/01/15/cache-1-4-0
