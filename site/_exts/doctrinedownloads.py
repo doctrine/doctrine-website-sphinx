@@ -65,17 +65,19 @@ class DoctrineDownloads(Directive):
 
 def visit_doctrinedownloads_html(self, node):
 
-    self.body.append('<p>%s</p>' % node['project']['description']);
-
-    self.body.append('<ul>')
-    self.body.append('<li>Latest Version: %s</li>' % (node['project']['latest_version']))
+    self.body.append('<ul class="nav nav-pills project-pills">')
+    self.body.append('<li class="latest-version"><a href="#version%s">Latest Version: %s</a></li>' % (node['project']['latest_version'], node['project']['latest_version']))
     self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
     self.body.append('<li><a href="http://docs.doctrine-project.org/projects/doctrine-%s/latest/en">Latest Documentation</a></li>\n' % (node['project']['slug']) )
     self.body.append('<li><a href="/api/%s/%s/index.html">Latest API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
     self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
     self.body.append('</ul>')
 
-    for version in node['project']['versions']:
+    self.body.append('<p class="well">%s</p>' % node['project']['description']);
+
+    projectVersions = sorted(node['project']['versions'].keys(), cmp=version_compare)
+
+    for version in projectVersions:
         self.body.append(self.starttag(node, 'div', CLASS='version'))
         versiondata = node['project']['versions'][version];
 
@@ -87,47 +89,50 @@ def visit_doctrinedownloads_html(self, node):
         else:
             stability = 'alpha'
 
-        self.body.append('<h3>Download %s (%s)</h3>' % ( version, stability ))
+        self.body.append('<div class="panel panel-default">')
+        self.body.append('<div class="panel-heading">Download %s (%s)<a name="version%s"></div>' % ( version, stability, version ))
+        self.body.append('<div class="panel-body">')
 
-        self.body.append('<ul class="release">');
+        self.body.append('<ul class="nav nav-pills version-pills">');
         self.body.append('<li><a href="http://docs.doctrine-project.org/projects/doctrine-%s/latest/en">Latest Documentation</a></li>\n' % (node['project']['slug']) )
         self.body.append('<li><a href="/api/%s/%s/index.html">API (%s)</a></li>\n' % (node['project']['slug'], version, version) )
         self.body.append('</ul>')
 
-        if 'releases' not in versiondata:
-            continue
+        if 'releases' in versiondata:
+            releaseVersions = sorted(versiondata['releases'].keys(), cmp=version_compare)
 
-        releaseVersions = sorted(versiondata['releases'].keys(), cmp=version_compare)
+            self.body.append('<div class="releases">')
+            num = 1
+            for release in releaseVersions:
+                releasedata = versiondata['releases'][release]
 
-        self.body.append('<div class="releases">')
-        num = 1
-        for release in releaseVersions:
-            releasedata = versiondata['releases'][release]
+                if num == 1:
+                    self.body.append('<h4>%s</h4>' % release)
 
-            if num == 1:
-                self.body.append('<h4>%s</h4>' % release)
+                    self.body.append('<ul class="latest-release">');
 
-                self.body.append('<ul class="release">');
+                    if 'package_name' in releasedata and versiondata['downloadable']:
+                        self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
 
-                if 'package_name' in releasedata and versiondata['downloadable']:
-                    self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
+                    if 'pear_install_command' in releasedata:
+                        self.body.append('<li><a href="http://pear.doctrine-project.org">Install via PEAR</a> <pre>%s</pre></li>' % (releasedata['pear_install_command']))
 
-                if 'pear_install_command' in releasedata:
-                    self.body.append('<li><a href="http://pear.doctrine-project.org">Install via PEAR</a>: <pre>%s</pre></li>' % (releasedata['pear_install_command']))
+                    if 'composer' in releasedata:
+                        self.body.append('<li><a href="http://www.packagist.org/packages/doctrine/%s">Composer</a> <pre>{"require": {"doctrine/%s": "%s"}}</pre>' % (node['project']['slug'], node['project']['slug'], release))
 
-                if 'composer' in releasedata:
-                    self.body.append('<li><a href="http://www.packagist.org/packages/doctrine/%s">Composer</a>: <pre>{"require": {"doctrine/%s": "%s"}}</pre>' % (node['project']['slug'], node['project']['slug'], release))
+                    self.body.append('</ul>');
+                else:
+                    if num == 2:
+                        self.body.append('<h4>Older Versions</h4><ul class="release older-releases">')
 
-                self.body.append('</ul>');
-            else:
-                if num == 2:
-                    self.body.append('<h4>Older versions:</h4><ul class="release">')
+                    self.body.append('<li>%s</li>' % (release))
 
-                self.body.append('<li>%s</li>' % (release))
+                num = num + 1
 
-            num = num + 1
+            self.body.append('</div></div>')
 
-        self.body.append('</div></div>')
+        self.body.append('</div>')
+        self.body.append('</div>')
 
     raise nodes.SkipNode
 

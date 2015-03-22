@@ -50,7 +50,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 #content h5 { margin:10px 0 20px 30px; font-weight:bold; font-size:110.0%; }
 #content ul li { margin:10px 0 0 30px; }
 #content ul { margin-bottom: 10px; }
-#content p { margin:0 30px 15px 30px; font-size:93%; line-height:182%; }
+#content p { margin:0 0 15px 30px; font-size:93%; line-height:182%; }
 #content dl { margin:0 30px 15px 30px; }
 
 #content .section a {
@@ -79,6 +79,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 
 #footer p { padding:12px 0; text-align:center; font: 85% "Helvetica Neue", verdana, sans-serif; color: white; }
 #footer { text-align: center; margin-bottom: 20px; color: white; }
+.copyright { margin-bottom: 10px; }
 
 #content em { color:#F06419; font-style:normal; }
 
@@ -482,4 +483,61 @@ input.download-button {
 input.download-button:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/** Download */
+
+.version {
+    margin: 0 0 15px 30px;
+}
+
+div.body ul.project-pills {
+    margin-left: 0;
+}
+
+ul.latest-release li a {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+ul.latest-release li pre {
+    margin-left: 0;
+}
+
+div.body ul.version-pills {
+    margin-left: 0;
+}
+
+/** Projects */
+
+.project {
+    margin: 0 0 20px 30px;
+}
+
+.project .nav-tabs {
+    margin-left: 0;
+}
+
+/** Blog Archive */
+
+#content .year h2 {
+  display: inline-block;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+#content .year li .postmeta {
+  display: none;
+}
+
+/** Blog Post */
+
+#content .postmeta {
+  margin: 0 0 20px 30px;
+}
+
+#content #disqus_thread {
+  margin: 0 0 20px 30px;
 }
