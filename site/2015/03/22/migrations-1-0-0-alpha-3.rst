@@ -1,7 +1,7 @@
 Doctrine Migrations 1.0.0-alpha3 Pre-Release
 ============================================
 
-We are happy to announce the immediate availability Doctrine Migrations ``1.0.0-alpha2``.
+We are happy to announce the immediate availability Doctrine Migrations ``1.0.0-alpha3``.
 
 This is a pre-release meant to allow users and contributors to try out the new
 upcoming features of the migrations.
