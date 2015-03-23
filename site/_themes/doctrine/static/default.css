@@ -96,7 +96,6 @@ div.bodywrapper {
 div.body {
     background-color: #ffffff;
     color: #000000;
-    max-width: 800px;
 }
 
 div.body ul {
@@ -325,7 +324,6 @@ p.admonition-title:after {
 }
 
 pre {
-    margin-top: 10px;
     padding: 5px;
     background-color: #eeffcc;
     color: #333333;
@@ -989,10 +987,10 @@ div.jsactive pre
 
 #welcome-to-the-doctrine-project {
     float: left;
-    width: 400px;
+    width: 50%;
 }
 #latest-blog-posts {
-    width: 400px;
+    width: 50%;
     float: left;
 }
 #doctrine-projects {
