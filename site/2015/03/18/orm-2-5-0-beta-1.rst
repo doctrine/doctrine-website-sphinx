@@ -53,7 +53,7 @@ following ``composer.json`` contents:
 Changes since 2.5.0-alpha2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a list of issues solved in ``2.5.0-beta2`` since ``2.5.0-alpha2``:
+This is a list of issues solved in ``2.5.0-beta1`` since ``2.5.0-alpha2``:
 
 - [`DDC-3452 <http://www.doctrine-project.org/jira/browse/DDC-3452>`_] Embeddables Support for ClassMetadataBuilder
 - [`DDC-3551 <http://www.doctrine-project.org/jira/browse/DDC-3551>`_] Load platform lazily in ClassMetadataFactory to avoid database connections.
@@ -71,7 +71,7 @@ This is a list of issues solved in ``2.5.0-beta2`` since ``2.5.0-alpha2``:
 - [`DDC-3608 <http://www.doctrine-project.org/jira/browse/DDC-3608>`_] Fix bug in EntityGenerator to XML/YML with default values.
 - [`DDC-3590 <http://www.doctrine-project.org/jira/browse/DDC-3590>`_] Fix bug in PostgreSQL with naming strategy of non-default schema tables.
 - [`DDC-3566 <http://www.doctrine-project.org/jira/browse/DDC-3566>`_] Fix bug in Second-Level Cache with association identifiers.
-- [`DDC-3528 <http://www.doctrine-project.org/jira/browse/DDC-3528>`_] Have ``PersistentCollection`` implement ``AbstractLazyCollection`` from `doctrine/collections <https://github.com/doctrine/collections>`_`.
+- [`DDC-3528 <http://www.doctrine-project.org/jira/browse/DDC-3528>`_] Have ``PersistentCollection`` implement ``AbstractLazyCollection`` from `doctrine/collections <https://github.com/doctrine/collections>`_.
 - [`DDC-3567 <http://www.doctrine-project.org/jira/browse/DDC-3567>`_] Allow access to all aliases for a QueryBuilder.
 
 Please report any issues you may have with the update on the mailing list or on
