@@ -114,9 +114,6 @@ def visit_doctrinedownloads_html(self, node):
                     if 'package_name' in releasedata and versiondata['downloadable']:
                         self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
 
-                    if 'pear_install_command' in releasedata:
-                        self.body.append('<li><a href="http://pear.doctrine-project.org">Install via PEAR</a> <pre>%s</pre></li>' % (releasedata['pear_install_command']))
-
                     if 'composer' in releasedata:
                         self.body.append('<li><a href="http://www.packagist.org/packages/doctrine/%s">Composer</a> <pre>{"require": {"doctrine/%s": "%s"}}</pre>' % (node['project']['slug'], node['project']['slug'], release))
 

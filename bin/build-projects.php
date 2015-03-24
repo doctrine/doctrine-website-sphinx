@@ -63,7 +63,6 @@ foreach ($projects as $projectName => $projectData) {
                 $release = array(
                     'package_name'         => sprintf($projectData['file'], $projectData['package'], $tag['name']),
                     'git_checkout_command' => '$ git clone git://github.com/doctrine/' . $projectData['repository'] . '.git ' . $projectData['slug'] . '<br>$ cd ' . $projectData['slug'] . '<br>$ git checkout ' . $tag['name'],
-                    'pear_install_command' => '$ pear channel-discover pear.doctrine-project.org<br>pear install doctrine/' . $projectData['package'].'-' . $tag['name'],
                     'composer'             => !isset($versionData['composer']) || (isset($version['composer']) && $version['composer']),
                 );
 
