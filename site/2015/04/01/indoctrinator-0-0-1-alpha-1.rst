@@ -1,7 +1,7 @@
 Indoctrinator 0.0.1-alpha1
 ==========================
 
-We are happy to announce the start of development on a new project called ``the indoctrinator``.
+We are happy to announce the start of development on a new project called **the indoctrinator**.
 
 What is Indoctrinator?
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -52,8 +52,11 @@ How to get Indoctrinator?
 
 Indoctrinator has its own dedicated `documentation section in the doctrine website <http://www.doctrine-project.org/projects/indoctrinator.html>`_.
 
+Reporting Issues
+~~~~~~~~~~~~~~~~
+
 Please report any issues you may have with the project on the mailing list or on
-`Jira <http://www.doctrine-project.org/jira/browse/>`_.
+`JIRA <http://www.doctrine-project.org/jira/browse/>`_.
 
 .. author:: Marco Pivetta <ocramius@gmail.com>
 .. categories:: none
