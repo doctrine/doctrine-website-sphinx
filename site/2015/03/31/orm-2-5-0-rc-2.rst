@@ -50,14 +50,14 @@ Changes since 2.5.0-RC1
 This is a list of issues solved in ``2.5.0-RC2`` since ``2.5.0-RC1``:
 
 - [`DDC-3643 <http://www.doctrine-project.org/jira/browse/DDC-3643>`_]
-   [`#1352 <https://github.com/doctrine/doctrine2/pull/1352>`_] Fix `EntityGenerator` `RegenerateEntityIfExists` logic
+  [`#1352 <https://github.com/doctrine/doctrine2/pull/1352>`_] Fix `EntityGenerator` `RegenerateEntityIfExists` logic
 - [`DDC-3645 <http://www.doctrine-project.org/jira/browse/DDC-3645>`_]
-   [`#1353 <https://github.com/doctrine/doctrine2/pull/1353>`_]
-   [`DDC-3637 <http://www.doctrine-project.org/jira/browse/DDC-3637>`_]
-   [`#1347 <https://github.com/doctrine/doctrine2/pull/1347>`_]
-   [`DDC-3642 <http://www.doctrine-project.org/jira/browse/DDC-3642>`_]
-   [`#1351 <https://github.com/doctrine/doctrine2/pull/1351>`_]
-   Paginator logic fixes (complex queries/sorting/db support>`_]
+  [`#1353 <https://github.com/doctrine/doctrine2/pull/1353>`_]
+  [`DDC-3637 <http://www.doctrine-project.org/jira/browse/DDC-3637>`_]
+  [`#1347 <https://github.com/doctrine/doctrine2/pull/1347>`_]
+  [`DDC-3642 <http://www.doctrine-project.org/jira/browse/DDC-3642>`_]
+  [`#1351 <https://github.com/doctrine/doctrine2/pull/1351>`_]
+  Paginator logic fixes (complex queries/sorting/db support>`_]
 
   parameters and caches
 
