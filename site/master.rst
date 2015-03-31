@@ -8,6 +8,7 @@ Sitemap
    2015/04/02/common-2-5-0
    2015/04/01/indoctrinator-0-0-1-alpha-1
    2015/03/31/orm-2-5-0-rc-2
+   2015/03/31/doctrine_mongo_odm_module_release_0_8_2
    2015/03/25/common-2-5-0-beta-1
    2015/03/25/orm-2-5-0-rc-1
    2015/03/22/data-fixtures-1-0-1
