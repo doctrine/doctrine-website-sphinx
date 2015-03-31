@@ -31,7 +31,6 @@ the general working concept is as following:
   $indoctrinator = new Doctrine\Indoctrinator();
 
   $indoctrinator->registerWithManager(new Doctrine\Indoctrinator\ManagerWrapper($entityManager));
-```
 
 Without going into much details, Indoctrinator hooks into common APIs used in ORM internals,
 and by using AOP (Aspect Oriented Programming), it catches common mistakes and issues and
