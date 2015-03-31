@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/03/31/orm-2-5-0-rc-2
    2015/03/25/common-2-5-0-beta-1
    2015/03/25/orm-2-5-0-rc-1
    2015/03/22/data-fixtures-1-0-1
