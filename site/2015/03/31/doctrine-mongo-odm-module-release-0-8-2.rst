@@ -1,9 +1,9 @@
 Doctrine Mongo ODM Module release 0.8.2
-====================================
+=======================================
 
 The **Zend Framework Integration Team** is happy to announce the new release of **DoctrineMongoODMModule**.  
-DoctrineMongoODMModule `0.8.2` will be the last bugfix version with support for **DoctrineModule** `0.8`, and in consequence, it is the last version that will support PHP 5.3.
-Further versions of the `0.8.*` series may still be released in case of security issues.
+DoctrineMongoODMModule ``0.8.2`` will be the last bugfix version with support for **DoctrineModule** ``0.8``, and in consequence, it is the last version that will support PHP 5.3.
+Further versions of the ``0.8.*`` series may still be released in case of security issues.
 
 Following issues were solved in this release:
 
