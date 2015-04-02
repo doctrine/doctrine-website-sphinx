@@ -62,7 +62,7 @@ following ``composer.json`` contents:
 
     {
         "require": {
-            "doctrine/orm": "2.5.0"
+            "doctrine/orm": "~2.5.0"
         }
     }
 
