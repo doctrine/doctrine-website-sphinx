@@ -62,3 +62,8 @@ New Feature
 
 Please report any issues you may have with the update on the mailing list or on
 `Jira <http://www.doctrine-project.org/jira/browse/DCOM>`_.
+
+.. author:: Marco Pivetta <ocramius@gmail.com>
+.. categories:: none
+.. tags:: none
+.. comments::
