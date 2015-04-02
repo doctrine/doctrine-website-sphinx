@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/04/02/orm-2-5-0
    2015/04/02/common-2-5-0
    2015/04/01/indoctrinator-0-0-1-alpha-1
    2015/03/31/orm-2-5-0-rc-2
