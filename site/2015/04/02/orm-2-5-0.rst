@@ -1458,3 +1458,7 @@ Documentation
 Please report any issues you may have with the update on the mailing
 list or on `JIRA <http://www.doctrine-project.org/jira/browse/DDC>`__.
 
+.. author:: Marco Pivetta <ocramius@gmail.com>
+.. categories:: none
+.. tags:: none
+.. comments::
