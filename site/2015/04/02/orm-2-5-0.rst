@@ -6,11 +6,11 @@ We are happy to announce the immediate availability of Doctrine ORM
 
 This release spans over almost 2 years of development, and is a major
 effort by the team and the community to make the ORM more robust and
-performing.
+performant.
 
 `457
 issues <http://www.doctrine-project.org/jira/browse/DDC-3322?jql=project%20%3D%20DDC%20AND%20fixVersion%20%3D%202.5%20ORDER%20BY%20status%20DESC%2C%20priority%20DESC>`__
-were solved in this release, so we are very proud of the work being done
+were resolved in this release, so we are very proud of the work being done
 by the community and the core team.
 
 What is new in 2.5.x?
@@ -18,7 +18,7 @@ What is new in 2.5.x?
 
 Doctrine ORM 2.5.0 comes with a set of major improvements:
 
--  The Second Level Cache, a component that greatly improves ORM
+-  The Second-level Cache, a component that greatly improves ORM
    performance
 -  Embeddable classes, allowing for a more fine-grained design of your
    entities without having to resort to one-to-one associations for
@@ -31,7 +31,7 @@ Doctrine ORM 2.5.0 comes with a set of major improvements:
 What has to be done to upgrade to 2.5.x?
 ----------------------------------------
 
-Some Backwards incompatible changes were also involved in this release:
+Some backwards incompatible changes were also involved in this release:
 to read them, along with a more extensive list of the 2.5.0 changes,
 please consult `the upgrade
 notes <http://docs.doctrine-project.org/en/latest/changelog/migration_2_5.html>`__.
@@ -69,7 +69,7 @@ following ``composer.json`` contents:
 Changes since 2.4.0
 -------------------
 
-This is a list of issues solved in ``2.5.0`` since ``2.4.0``:
+This is a list of issues resolved in ``2.5.0`` since ``2.4.0``:
 
 New Feature
 ~~~~~~~~~~~
