@@ -37,6 +37,6 @@ Please report any issues you may have with the update on the mailing list or on
 `Jira <http://www.doctrine-project.org/jira>`_.
 
 .. author:: Marco Pivetta <ocramius@gmail.com>
-.. categories:: none
+.. categories:: Release
 .. tags:: none
 .. comments::
