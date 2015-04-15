@@ -11,7 +11,7 @@ in the ``SQLite3`` and ``Memcache`` adapters (`#62 <https://github.com/doctrine/
 Improvements have been made to reduce the ``SQLite3`` cache adapter
 memory usage (`#64 <https://github.com/doctrine/cache/pull/64>`_).
 
-Also, if you use an opcode cache such as OPCache (available since PHP 5.5), you will
+If you use an opcode cache such as OPCache (available since PHP 5.5), you will
 get major performance improvements in read operations in the ``PhpFileCache``,
 which shouldn't cause any stat calls at all now (`#69 <https://github.com/doctrine/cache/pull/69>`_).
 
