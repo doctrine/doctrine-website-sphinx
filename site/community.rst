@@ -20,10 +20,9 @@ can browse existing pull requests or create one of your own.
 Mailing Lists
 ~~~~~~~~~~~~~
 
-The primary means for communication between Doctrine users and developers are the mailing lists hosted with Google Groups:
+The primary means for communication between Doctrine users and developers is the mailing list hosted with Google Groups:
 
 - `Doctrine User Mailing List <http://groups.google.com/group/doctrine-user>`_
-- `Doctrine Developers Mailing List <http://groups.google.com/group/doctrine-dev>`_
 
 IRC
 ~~~
