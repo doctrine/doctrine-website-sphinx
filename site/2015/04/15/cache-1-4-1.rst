@@ -15,6 +15,10 @@ Also, if you use an opcode cache such as OpCache (available since PHP 5.5), you 
 get major performance improvements in read operations in the ``PhpFileCache``,
 which shouldn't cause any stat calls at all now (`#69 <https://github.com/doctrine/cache/pull/69>`_).
 
+Multi-get support was built into the ``Redis`` adapter (`#60 <https://github.com/doctrine/cache/pull/60>`_).
+
+A new ``VoidCache`` adapter has been introduced - useful for testing (`#61 <https://github.com/doctrine/cache/pull/61>`_).
+
 You can find the complete changelog for this release in the
 `release notes <https://github.com/doctrine/cache/releases/tag/v1.4.1>`_.
 
