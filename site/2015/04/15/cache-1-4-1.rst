@@ -8,8 +8,8 @@ in the ``SQLite3`` and ``Memcache`` adapters (`#62 <https://github.com/doctrine/
 `#65 <https://github.com/doctrine/cache/pull/65>`_,
 `#67 <https://github.com/doctrine/cache/pull/67>`_).
 
-Improvements have been made to reduce the ``SQLite3`` cache memory
-adapter (`#64 <https://github.com/doctrine/cache/pull/64>`_).
+Improvements have been made to reduce the ``SQLite3`` cache adapter
+memory usage (`#64 <https://github.com/doctrine/cache/pull/64>`_).
 
 Also, if you use an opcode cache such as OpCache (available since PHP 5.5), you will
 get major performance improvements in read operations in the ``PhpFileCache``,
