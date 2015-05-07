@@ -1,13 +1,15 @@
 DoctrineORMModule release 0.9.0
 ===============================
 
-The **Zend Framework Integration Team** is happy to announce the new release of **DoctrineORMModule**.  
-DoctrineORMModule 0.9.0 is out of door!!  
+The **Zend Framework Integration Team** is happy to announce the new release of **DoctrineORMModule**.
 
-*Note* This is the last version that supports doctrine\migrations we are working to split this feature in another indipendent module.  
+DoctrineORMModule 0.9.0 is out of the door!!
+
+*Note* that this is the last version that supports `doctrine/migrations <https://github.com/doctrine/migrations>`_. We are working on extracting this feature into an independent module.
+
 Follow issue `#401 <https://github.com/doctrine/DoctrineORMModule/pull/401>`_.
 
-Following issues were solved in this release:
+The Following issues were solved in this release:
  - `[#199] Add 'entity_listener_resolver' config key <https://github.com/doctrine/DoctrineORMModule/pull/199>`_
  - `[#281] Forced failing unit test for #247 <https://github.com/doctrine/DoctrineORMModule/pull/281>`_
  - `[#306] Removing PHP 5.3.3 support <https://github.com/doctrine/DoctrineORMModule/pull/306>`_
@@ -41,7 +43,7 @@ Following issues were solved in this release:
  - `[#396] Removed unnecessary line in travis config <https://github.com/doctrine/DoctrineORMModule/pull/396>`_
  - `[#398] Composer * -update for stable version <https://github.com/doctrine/DoctrineORMModule/pull/398>`_
 
-To install this version, simply update your `composer.json`:
+To install this version, simply update your ``composer.json``:
 
 .. code-block:: json
 
