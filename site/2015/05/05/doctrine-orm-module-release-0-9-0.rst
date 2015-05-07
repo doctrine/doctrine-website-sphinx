@@ -1,10 +1,11 @@
 DoctrineORMModule release 0.9.0
-=============================
+===============================
+
 The **Zend Framework Integration Team** is happy to announce the new release of **DoctrineORMModule**.  
 DoctrineORMModule 0.9.0 is out of door!!  
 
-*Note** This is the last version that supports `doctrine\migrations` we are working to split this feature in another indipendent module.
-Follow issue #401_.
+*Note* This is the last version that supports doctrine\migrations we are working to split this feature in another indipendent module.  
+Follow issue `#401 <https://github.com/doctrine/DoctrineORMModule/pull/401>`_.
 
 Following issues were solved in this release:
  - `[#199] Add 'entity_listener_resolver' config key <https://github.com/doctrine/DoctrineORMModule/pull/199>`_
@@ -50,7 +51,6 @@ To install this version, simply update your `composer.json`:
       }
   }
 
-.. _401: https://github.com/doctrine/DoctrineORMModule/pull/401
 .. author:: Gianluca Arbezzano <gianarb92@gmail.com>
 .. categories:: none
 .. tags:: none
