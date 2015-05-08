@@ -7,6 +7,7 @@ Sitemap
    2015/05/05/doctrine-orm-module-release-0-9-0
    2015/04/16/doctrine-module-release-0-8-1
    2015/04/15/cache-1-4-1
+   2015/04/14/annotations-1-2-4
    2015/04/14/collections-1-3-0
    2015/04/02/orm-2-5-0
    2015/04/02/common-2-5-0
