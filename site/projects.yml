@@ -18,21 +18,21 @@ ormold:
       downloadable: true
       releases:
         1.2.3:
-          package_name: Doctrine-1.2.3.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.3'
           composer: false
+          package_name: Doctrine-1.2.3.tgz
         1.2.4PR1:
-          package_name: Doctrine-1.2.4PR1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.4PR1'
           composer: false
+          package_name: Doctrine-1.2.4PR1.tgz
         1.2.4:
-          package_name: Doctrine-1.2.4.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.4'
           composer: false
+          package_name: Doctrine-1.2.4.tgz
         1.2.5:
-          package_name: Doctrine-1.2.5.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine1.git ormold<br>$ cd ormold<br>$ git checkout 1.2.5'
           composer: false
+          package_name: Doctrine-1.2.5.tgz
 orm:
   sort: 0
   slug: orm
@@ -70,133 +70,133 @@ orm:
       downloadable: true
       releases:
         2.3.0-BETA1:
-          package_name: DoctrineORM-2.3.0-BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-BETA1'
           composer: true
+          package_name: DoctrineORM-2.3.0-BETA1-full.tar.gz
         2.3.0-RC1:
-          package_name: DoctrineORM-2.3.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC1'
           composer: true
+          package_name: DoctrineORM-2.3.0-RC1-full.tar.gz
         2.3.0-RC2:
-          package_name: DoctrineORM-2.3.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC2'
           composer: true
+          package_name: DoctrineORM-2.3.0-RC2-full.tar.gz
         2.3.0-RC3:
-          package_name: DoctrineORM-2.3.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC3'
           composer: true
+          package_name: DoctrineORM-2.3.0-RC3-full.tar.gz
         2.3.0-RC4:
-          package_name: DoctrineORM-2.3.0-RC4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0-RC4'
           composer: true
+          package_name: DoctrineORM-2.3.0-RC4-full.tar.gz
         2.3.0:
-          package_name: DoctrineORM-2.3.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.0'
           composer: true
+          package_name: DoctrineORM-2.3.0-full.tar.gz
         2.3.1:
-          package_name: DoctrineORM-2.3.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.1'
           composer: true
+          package_name: DoctrineORM-2.3.1-full.tar.gz
         2.3.2:
-          package_name: DoctrineORM-2.3.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.2'
           composer: true
+          package_name: DoctrineORM-2.3.2-full.tar.gz
         2.3.3:
-          package_name: DoctrineORM-2.3.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.3'
           composer: true
+          package_name: DoctrineORM-2.3.3-full.tar.gz
         2.3.4:
-          package_name: DoctrineORM-2.3.4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.4'
           composer: true
+          package_name: DoctrineORM-2.3.4-full.tar.gz
         2.3.5:
-          package_name: DoctrineORM-2.3.5-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.5'
           composer: true
+          package_name: DoctrineORM-2.3.5-full.tar.gz
         2.3.6:
-          package_name: DoctrineORM-2.3.6-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.3.6'
           composer: true
+          package_name: DoctrineORM-2.3.6-full.tar.gz
     '2.4':
       downloadable: false
       stability: stable
       releases:
         2.4.0-BETA1:
-          package_name: DoctrineORM-2.4.0-BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.0-BETA1'
           composer: true
+          package_name: DoctrineORM-2.4.0-BETA1-full.tar.gz
         2.4.0-BETA2:
-          package_name: DoctrineORM-2.4.0-BETA2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.0-BETA2'
           composer: true
+          package_name: DoctrineORM-2.4.0-BETA2-full.tar.gz
         2.4.0-RC1:
-          package_name: DoctrineORM-2.4.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.0-RC1'
           composer: true
+          package_name: DoctrineORM-2.4.0-RC1-full.tar.gz
         2.4.0-RC2:
-          package_name: DoctrineORM-2.4.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.0-RC2'
           composer: true
+          package_name: DoctrineORM-2.4.0-RC2-full.tar.gz
         2.4.0:
-          package_name: DoctrineORM-2.4.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.0'
           composer: true
+          package_name: DoctrineORM-2.4.0-full.tar.gz
         2.4.1:
-          package_name: DoctrineORM-2.4.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.1'
           composer: true
+          package_name: DoctrineORM-2.4.1-full.tar.gz
         2.4.2:
-          package_name: DoctrineORM-2.4.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.2'
           composer: true
+          package_name: DoctrineORM-2.4.2-full.tar.gz
         2.4.3:
-          package_name: DoctrineORM-2.4.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.3'
           composer: true
+          package_name: DoctrineORM-2.4.3-full.tar.gz
         2.4.4:
-          package_name: DoctrineORM-2.4.4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.4'
           composer: true
+          package_name: DoctrineORM-2.4.4-full.tar.gz
         2.4.5:
-          package_name: DoctrineORM-2.4.5-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.5'
           composer: true
+          package_name: DoctrineORM-2.4.5-full.tar.gz
         2.4.6:
-          package_name: DoctrineORM-2.4.6-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.6'
           composer: true
+          package_name: DoctrineORM-2.4.6-full.tar.gz
         2.4.7:
-          package_name: DoctrineORM-2.4.7-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.4.7'
           composer: true
+          package_name: DoctrineORM-2.4.7-full.tar.gz
     '2.5':
       downloadable: false
       stability: stable
       releases:
         2.5.0-alpha1:
-          package_name: DoctrineORM-2.5.0-alpha1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0-alpha1'
           composer: true
+          package_name: DoctrineORM-2.5.0-alpha1-full.tar.gz
         2.5.0-alpha2:
-          package_name: DoctrineORM-2.5.0-alpha2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0-alpha2'
           composer: true
+          package_name: DoctrineORM-2.5.0-alpha2-full.tar.gz
         2.5.0-beta1:
-          package_name: DoctrineORM-2.5.0-beta1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0-beta1'
           composer: true
+          package_name: DoctrineORM-2.5.0-beta1-full.tar.gz
         2.5.0-RC1:
-          package_name: DoctrineORM-2.5.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0-RC1'
           composer: true
+          package_name: DoctrineORM-2.5.0-RC1-full.tar.gz
         2.5.0-RC2:
-          package_name: DoctrineORM-2.5.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0-RC2'
           composer: true
+          package_name: DoctrineORM-2.5.0-RC2-full.tar.gz
         2.5.0:
-          package_name: DoctrineORM-2.5.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/doctrine2.git orm<br>$ cd orm<br>$ git checkout 2.5.0'
           composer: true
+          package_name: DoctrineORM-2.5.0-full.tar.gz
 dbal:
   sort: 10
   slug: dbal
@@ -226,137 +226,137 @@ dbal:
       downloadable: true
       releases:
         2.2.0-beta1:
-          package_name: DoctrineDBAL-2.2.0-beta1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-beta1'
           composer: true
+          package_name: DoctrineDBAL-2.2.0-beta1-full.tar.gz
         2.2.0-RC3:
-          package_name: DoctrineDBAL-2.2.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.0-RC3'
           composer: true
+          package_name: DoctrineDBAL-2.2.0-RC3-full.tar.gz
         2.2.1:
-          package_name: DoctrineDBAL-2.2.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.1'
           composer: true
+          package_name: DoctrineDBAL-2.2.1-full.tar.gz
         2.2.2:
-          package_name: DoctrineDBAL-2.2.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.2.2'
           composer: true
+          package_name: DoctrineDBAL-2.2.2-full.tar.gz
     '2.3':
       stability: stable
       downloadable: true
       releases:
         2.3.0-BETA1:
-          package_name: DoctrineDBAL-2.3.0-BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-BETA1'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-BETA1-full.tar.gz
         2.3.0-RC1:
-          package_name: DoctrineDBAL-2.3.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC1'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-RC1-full.tar.gz
         2.3.0-RC2:
-          package_name: DoctrineDBAL-2.3.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC2'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-RC2-full.tar.gz
         2.3.0-RC3:
-          package_name: DoctrineDBAL-2.3.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC3'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-RC3-full.tar.gz
         2.3.0-RC4:
-          package_name: DoctrineDBAL-2.3.0-RC4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0-RC4'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-RC4-full.tar.gz
         2.3.0:
-          package_name: DoctrineDBAL-2.3.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.0'
           composer: true
+          package_name: DoctrineDBAL-2.3.0-full.tar.gz
         2.3.1:
-          package_name: DoctrineDBAL-2.3.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.1'
           composer: true
+          package_name: DoctrineDBAL-2.3.1-full.tar.gz
         2.3.2:
-          package_name: DoctrineDBAL-2.3.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.2'
           composer: true
+          package_name: DoctrineDBAL-2.3.2-full.tar.gz
         2.3.3:
-          package_name: DoctrineDBAL-2.3.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.3'
           composer: true
+          package_name: DoctrineDBAL-2.3.3-full.tar.gz
         2.3.4:
-          package_name: DoctrineDBAL-2.3.4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.4'
           composer: true
+          package_name: DoctrineDBAL-2.3.4-full.tar.gz
         2.3.5:
-          package_name: DoctrineDBAL-2.3.5-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.3.5'
           composer: true
+          package_name: DoctrineDBAL-2.3.5-full.tar.gz
     '2.4':
       downloadable: false
       stability: stable
       releases:
         2.4.0-BETA1:
-          package_name: DoctrineDBAL-2.4.0-BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.0-BETA1'
           composer: true
+          package_name: DoctrineDBAL-2.4.0-BETA1-full.tar.gz
         2.4.0-BETA2:
-          package_name: DoctrineDBAL-2.4.0-BETA2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.0-BETA2'
           composer: true
+          package_name: DoctrineDBAL-2.4.0-BETA2-full.tar.gz
         2.4.0-RC1:
-          package_name: DoctrineDBAL-2.4.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.0-RC1'
           composer: true
+          package_name: DoctrineDBAL-2.4.0-RC1-full.tar.gz
         2.4.0-RC2:
-          package_name: DoctrineDBAL-2.4.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.0-RC2'
           composer: true
+          package_name: DoctrineDBAL-2.4.0-RC2-full.tar.gz
         2.4.0:
-          package_name: DoctrineDBAL-2.4.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.0'
           composer: true
+          package_name: DoctrineDBAL-2.4.0-full.tar.gz
         2.4.1:
-          package_name: DoctrineDBAL-2.4.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.1'
           composer: true
+          package_name: DoctrineDBAL-2.4.1-full.tar.gz
         2.4.2:
-          package_name: DoctrineDBAL-2.4.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.2'
           composer: true
+          package_name: DoctrineDBAL-2.4.2-full.tar.gz
         2.4.3:
-          package_name: DoctrineDBAL-2.4.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.3'
           composer: true
+          package_name: DoctrineDBAL-2.4.3-full.tar.gz
         2.4.4:
-          package_name: DoctrineDBAL-2.4.4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.4.4'
           composer: true
+          package_name: DoctrineDBAL-2.4.4-full.tar.gz
     '2.5':
       downloadable: false
       stability: stable
       releases:
         2.5.0-BETA2:
-          package_name: DoctrineDBAL-2.5.0-BETA2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.0-BETA2'
           composer: true
+          package_name: DoctrineDBAL-2.5.0-BETA2-full.tar.gz
         2.5.0-BETA3:
-          package_name: DoctrineDBAL-2.5.0-BETA3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.0-BETA3'
           composer: true
+          package_name: DoctrineDBAL-2.5.0-BETA3-full.tar.gz
         2.5.0-RC1:
-          package_name: DoctrineDBAL-2.5.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.0-RC1'
           composer: true
+          package_name: DoctrineDBAL-2.5.0-RC1-full.tar.gz
         2.5.0-RC2:
-          package_name: DoctrineDBAL-2.5.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.0-RC2'
           composer: true
+          package_name: DoctrineDBAL-2.5.0-RC2-full.tar.gz
         2.5.0:
-          package_name: DoctrineDBAL-2.5.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.0'
           composer: true
+          package_name: DoctrineDBAL-2.5.0-full.tar.gz
         2.5.1:
-          package_name: DoctrineDBAL-2.5.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/dbal.git dbal<br>$ cd dbal<br>$ git checkout 2.5.1'
           composer: true
+          package_name: DoctrineDBAL-2.5.1-full.tar.gz
 mongodb_odm:
   sort: 20
   slug: mongodb-odm
@@ -376,65 +376,65 @@ mongodb_odm:
       downloadable: true
       releases:
         1.0.0ALPHA1:
-          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA1'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
         1.0.0BETA1:
-          package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA1'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0BETA1.tgz
         1.0.0ALPHA2:
-          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0ALPHA2'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA2.tgz
         1.0.0BETA2:
-          package_name: DoctrineMongoDBODM-1.0.0BETA2.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA2'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0BETA2.tgz
         1.0.0BETA3:
-          package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0BETA3'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0BETA3.tgz
         1.0.0-BETA4:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA4.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA4'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA4.tgz
         1.0.0-BETA5:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA5.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA5'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA5.tgz
         1.0.0-BETA6:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA6.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA6'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA6.tgz
         1.0.0-BETA7:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA7.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA7'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA7.tgz
         1.0.0-BETA8:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA8.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA8'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA8.tgz
         1.0.0-BETA9:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA9.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA9'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA9.tgz
         1.0.0-BETA10:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA10.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA10'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA10.tgz
         1.0.0-BETA11:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA11.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA11'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA11.tgz
         1.0.0-BETA12:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA12.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA12'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA12.tgz
         1.0.0-BETA13:
-          package_name: DoctrineMongoDBODM-1.0.0-BETA13.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb-odm.git mongodb-odm<br>$ cd mongodb-odm<br>$ git checkout 1.0.0-BETA13'
           composer: true
+          package_name: DoctrineMongoDBODM-1.0.0-BETA13.tgz
 couchdb_odm:
   sort: 50
   slug: couchdb-odm
@@ -454,13 +454,13 @@ couchdb_odm:
       downloadable: true
       releases:
         1.0.0ALPHA2:
-          package_name: CouchDBODM-1.0.0ALPHA2.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/couchdb-odm.git couchdb-odm<br>$ cd couchdb-odm<br>$ git checkout 1.0.0ALPHA2'
           composer: true
+          package_name: CouchDBODM-1.0.0ALPHA2.tgz
         1.0.0alpha1:
-          package_name: CouchDBODM-1.0.0alpha1.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/couchdb-odm.git couchdb-odm<br>$ cd couchdb-odm<br>$ git checkout 1.0.0alpha1'
           composer: true
+          package_name: CouchDBODM-1.0.0alpha1.tgz
 phpcr_odm:
   sort: 40
   slug: phpcr-odm
@@ -480,43 +480,33 @@ phpcr_odm:
       downloadable: true
       releases:
         1.2.0-RC1:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-RC1'
           composer: true
         1.2.0-rc2:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc2'
           composer: true
         1.2.0-rc3:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc3'
           composer: true
         1.2.0-rc4:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc4'
           composer: true
         1.2.0-rc5:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc5'
           composer: true
         1.2.0-rc6:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0-rc6'
           composer: true
         1.2.0:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.0'
           composer: true
         1.2.1:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.1'
           composer: true
         1.2.2:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.2'
           composer: true
         1.2.3:
-          package_name: ''
           git_checkout_command: '$ git clone git://github.com/doctrine/phpcr-odm.git phpcr-odm<br>$ cd phpcr-odm<br>$ git checkout 1.2.3'
           composer: true
 migrations:
@@ -562,140 +552,261 @@ common:
       downloadable: true
       releases:
         2.1.0RC3:
-          package_name: DoctrineCommon-2.1.0RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.0RC3'
           composer: false
+          package_name: DoctrineCommon-2.1.0RC3-full.tar.gz
         2.1.1:
-          package_name: DoctrineCommon-2.1.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.1'
           composer: false
+          package_name: DoctrineCommon-2.1.1-full.tar.gz
         2.1.2:
-          package_name: DoctrineCommon-2.1.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.2'
           composer: false
+          package_name: DoctrineCommon-2.1.2-full.tar.gz
         2.1.3:
-          package_name: DoctrineCommon-2.1.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.3'
           composer: false
+          package_name: DoctrineCommon-2.1.3-full.tar.gz
         2.1.4:
-          package_name: DoctrineCommon-2.1.4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.1.4'
           composer: false
+          package_name: DoctrineCommon-2.1.4-full.tar.gz
     '2.2':
       stability: stable
       downloadable: true
       releases:
         2.2.0BETA1:
-          package_name: DoctrineCommon-2.2.0BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0BETA1'
           composer: true
+          package_name: DoctrineCommon-2.2.0BETA1-full.tar.gz
         2.2.0BETA2:
-          package_name: DoctrineCommon-2.2.0BETA2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0BETA2'
           composer: true
+          package_name: DoctrineCommon-2.2.0BETA2-full.tar.gz
         2.2.0-RC1:
-          package_name: DoctrineCommon-2.2.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC1'
           composer: true
+          package_name: DoctrineCommon-2.2.0-RC1-full.tar.gz
         2.2.0-RC2:
-          package_name: DoctrineCommon-2.2.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC2'
           composer: true
+          package_name: DoctrineCommon-2.2.0-RC2-full.tar.gz
         2.2.0-RC3:
-          package_name: DoctrineCommon-2.2.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC3'
           composer: true
+          package_name: DoctrineCommon-2.2.0-RC3-full.tar.gz
         2.2.0-RC4:
-          package_name: DoctrineCommon-2.2.0-RC4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC4'
           composer: true
+          package_name: DoctrineCommon-2.2.0-RC4-full.tar.gz
         2.2.0-RC5:
-          package_name: DoctrineCommon-2.2.0-RC5-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0-RC5'
           composer: true
+          package_name: DoctrineCommon-2.2.0-RC5-full.tar.gz
         2.2.0:
-          package_name: DoctrineCommon-2.2.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.0'
           composer: true
+          package_name: DoctrineCommon-2.2.0-full.tar.gz
         2.2.1:
-          package_name: DoctrineCommon-2.2.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.1'
           composer: true
+          package_name: DoctrineCommon-2.2.1-full.tar.gz
         2.2.2:
-          package_name: DoctrineCommon-2.2.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.2'
           composer: true
+          package_name: DoctrineCommon-2.2.2-full.tar.gz
         2.2.3:
-          package_name: DoctrineCommon-2.2.3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.2.3'
           composer: true
+          package_name: DoctrineCommon-2.2.3-full.tar.gz
     '2.3':
       stability: stable
       downloadable: true
       releases:
         2.3.0-BETA1:
-          package_name: DoctrineCommon-2.3.0-BETA1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-BETA1'
           composer: true
+          package_name: DoctrineCommon-2.3.0-BETA1-full.tar.gz
         2.3.0-RC1:
-          package_name: DoctrineCommon-2.3.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC1'
           composer: true
+          package_name: DoctrineCommon-2.3.0-RC1-full.tar.gz
         2.3.0-RC2:
-          package_name: DoctrineCommon-2.3.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC2'
           composer: true
+          package_name: DoctrineCommon-2.3.0-RC2-full.tar.gz
         2.3.0-RC3:
-          package_name: DoctrineCommon-2.3.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0-RC3'
           composer: true
+          package_name: DoctrineCommon-2.3.0-RC3-full.tar.gz
         2.3.0:
-          package_name: DoctrineCommon-2.3.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.3.0'
           composer: true
+          package_name: DoctrineCommon-2.3.0-full.tar.gz
     '2.4':
       downloadable: false
       stability: stable
       releases:
         2.4.0-RC1:
-          package_name: DoctrineCommon-2.4.0-RC1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.0-RC1'
           composer: true
+          package_name: DoctrineCommon-2.4.0-RC1-full.tar.gz
         2.4.0-RC2:
-          package_name: DoctrineCommon-2.4.0-RC2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.0-RC2'
           composer: true
+          package_name: DoctrineCommon-2.4.0-RC2-full.tar.gz
         2.4.0-RC3:
-          package_name: DoctrineCommon-2.4.0-RC3-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.0-RC3'
           composer: true
+          package_name: DoctrineCommon-2.4.0-RC3-full.tar.gz
         2.4.0-RC4:
-          package_name: DoctrineCommon-2.4.0-RC4-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.0-RC4'
           composer: true
+          package_name: DoctrineCommon-2.4.0-RC4-full.tar.gz
         2.4.0:
-          package_name: DoctrineCommon-2.4.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.0'
           composer: true
+          package_name: DoctrineCommon-2.4.0-full.tar.gz
         2.4.1:
-          package_name: DoctrineCommon-2.4.1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.1'
           composer: true
+          package_name: DoctrineCommon-2.4.1-full.tar.gz
         2.4.2:
-          package_name: DoctrineCommon-2.4.2-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.4.2'
           composer: true
+          package_name: DoctrineCommon-2.4.2-full.tar.gz
     '2.5':
       downloadable: false
       stability: stable
       releases:
         2.5.0-beta1:
-          package_name: DoctrineCommon-2.5.0-beta1-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.5.0-beta1'
           composer: true
+          package_name: DoctrineCommon-2.5.0-beta1-full.tar.gz
         2.5.0:
-          package_name: DoctrineCommon-2.5.0-full.tar.gz
           git_checkout_command: '$ git clone git://github.com/doctrine/common.git common<br>$ cd common<br>$ git checkout 2.5.0'
+          composer: true
+          package_name: DoctrineCommon-2.5.0-full.tar.gz
+collections:
+  sort: 32
+  slug: collections
+  package: Collections
+  repository: collections
+  title: Collections
+  short_title: COL
+  description: 'Collections Abstraction library'
+  latest_version: '1.3'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'https://github.com/doctrine/common'
+  versions:
+    '1.0':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.0':
+          git_checkout_command: '$ git clone git://github.com/doctrine/collections.git collections<br>$ cd collections<br>$ git checkout 1.0'
+          composer: true
+    '1.1':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.1':
+          git_checkout_command: '$ git clone git://github.com/doctrine/collections.git collections<br>$ cd collections<br>$ git checkout 1.1'
+          composer: true
+    '1.2':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.2':
+          git_checkout_command: '$ git clone git://github.com/doctrine/collections.git collections<br>$ cd collections<br>$ git checkout 1.2'
+          composer: true
+        1.2.1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/collections.git collections<br>$ cd collections<br>$ git checkout 1.2.1'
+          composer: true
+    '1.3':
+      stability: stable
+      downloadable: true
+      releases:
+        1.3.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/collections.git collections<br>$ cd collections<br>$ git checkout 1.3.0'
+          composer: true
+cache:
+  sort: 33
+  slug: cache
+  package: Cache
+  repository: cache
+  title: Cache
+  short_title: CACHE
+  description: 'Cache component extracted from the Doctrine Common project.'
+  latest_version: '1.4'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'https://github.com/doctrine/common'
+  versions:
+    '1.0':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.0':
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.0'
+          composer: true
+    '1.1':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.1':
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.1'
+          composer: true
+    '1.2':
+      stability: stable
+      downloadable: true
+      releases:
+        1.2.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.2.0'
+          composer: true
+    '1.3':
+      stability: stable
+      downloadable: true
+      releases:
+        1.3.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.3.0'
+          composer: true
+        1.3.1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.3.1'
+          composer: true
+    '1.4':
+      stability: stable
+      downloadable: true
+      releases:
+        1.4.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.4.0'
+          composer: true
+        1.4.1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/cache.git cache<br>$ cd cache<br>$ git checkout 1.4.1'
+          composer: true
+inflector:
+  sort: 35
+  slug: inflector
+  package: Inflector
+  repository: inflector
+  title: Inflector
+  short_title: INF
+  description: 'Doctrine Inflector is a small library that can perform string manipulations with regard to upper-/lowercase and singular/plural forms of words.'
+  latest_version: '1.0'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'https://github.com/doctrine/inflector'
+  versions:
+    '1.0':
+      stability: stable
+      downloadable: true
+      releases:
+        '1.0':
+          git_checkout_command: '$ git clone git://github.com/doctrine/inflector.git inflector<br>$ cd inflector<br>$ git checkout 1.0'
+          composer: true
+        1.0.1:
+          git_checkout_command: '$ git clone git://github.com/doctrine/inflector.git inflector<br>$ cd inflector<br>$ git checkout 1.0.1'
           composer: true
 orientdb_odm:
   sort: 200
@@ -717,14 +828,14 @@ orientdb_odm:
       downloadable: true
       releases:
         1.0.0-beta5:
-          package_name: DoctrineOrientDBODM-1.0.0-beta5.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/orientdb-odm.git orientdb-odm<br>$ cd orientdb-odm<br>$ git checkout 1.0.0-beta5'
           composer: false
+          package_name: DoctrineOrientDBODM-1.0.0-beta5.tgz
         1.0.0-beta6:
-          package_name: DoctrineOrientDBODM-1.0.0-beta6.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/orientdb-odm.git orientdb-odm<br>$ cd orientdb-odm<br>$ git checkout 1.0.0-beta6'
           composer: false
+          package_name: DoctrineOrientDBODM-1.0.0-beta6.tgz
         1.0.0-beta7:
-          package_name: DoctrineOrientDBODM-1.0.0-beta7.tgz
           git_checkout_command: '$ git clone git://github.com/doctrine/orientdb-odm.git orientdb-odm<br>$ cd orientdb-odm<br>$ git checkout 1.0.0-beta7'
           composer: false
+          package_name: DoctrineOrientDBODM-1.0.0-beta7.tgz
