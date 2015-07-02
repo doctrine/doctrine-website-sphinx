@@ -41,25 +41,30 @@
     - name: Build Website
       command: >
         tinker -b
-        chdir={{ document_root }}/site
+        chdir={{ document_root }}/site-new
 
     - name: Create API Directory
       file: >
-        path={{ document_root }}/site/blog/html/api
+        path={{ document_root }}/site-new/blog/html/api
         state=directory
 
     - name: Generate API Documentation
       command: >
-        php bin/build-apidocs.php site/blog/html/api
+        php bin/build-apidocs.php site-new/blog/html/api
         chdir={{ document_root }}
 
     - name: Copy Favicon
       command: >
-        cp favicon.ico site/blog/html/favicon.ico
+        cp favicon.ico site-new/blog/html/favicon.ico
         chdir={{ document_root }}
 
     - name: Link RSS Feed to .xml file
       file: >
-        src={{ document_root }}/site/blog/html/rss.html
-        dest={{ document_root }}/site/blog/html/rss.xml
+        src={{ document_root }}/site-new/blog/html/rss.html
+        dest={{ document_root }}/site-new/blog/html/rss.xml
         state=link
+
+    - name: "Move over old site"
+      command: >
+        mv -f {{ document_root }}/site-new/* {{ document_root }}/site/
+        chdir={{ document_root }}
