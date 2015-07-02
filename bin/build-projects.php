@@ -61,10 +61,13 @@ foreach ($projects as $projectName => $projectData) {
         foreach ($tagData as $tag) {
             if (strpos($tag['name'], $version) === 0) {
                 $release = array(
-                    'package_name'         => sprintf($projectData['file'], $projectData['package'], $tag['name']),
                     'git_checkout_command' => '$ git clone git://github.com/doctrine/' . $projectData['repository'] . '.git ' . $projectData['slug'] . '<br>$ cd ' . $projectData['slug'] . '<br>$ git checkout ' . $tag['name'],
                     'composer'             => !isset($versionData['composer']) || (isset($version['composer']) && $version['composer']),
                 );
+
+                if (isset($projectData['file'])) {
+                    $release['package_name'] = sprintf($projectData['file'], $projectData['package'], $tag['name']);
+                }
 
                 $projects[$projectName]['versions'][$version]['releases'][$tag['name']] = $release;
             }
