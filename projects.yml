@@ -144,6 +144,7 @@ migrations:
   versions:
     '2.0':
       stability: alpha
+
 common:
   sort: 30
   slug: common
@@ -175,6 +176,25 @@ common:
       downloadable: false
       stability: stable
 
+annotations:
+  sort: 31
+  slug: annotations
+  package: Annotations
+  repository: annotations
+  title: "Annotations"
+  short_title: "ANN"
+  description: "Docblock Annotations Parser library"
+  latest_version: "1.2"
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'https://github.com/doctrine/annotations'
+  versions:
+    '1.0':
+        stability: stable
+    '1.1':
+        stability: stable
+    '1.2':
+        stability: stable
+
 collections:
   sort: 32
   slug: collections
@@ -186,7 +206,7 @@ collections:
   latest_version: '1.3'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-  browse_source_link: 'https://github.com/doctrine/common'
+  browse_source_link: 'https://github.com/doctrine/collections'
   versions:
     '1.0':
         stability: stable
@@ -208,7 +228,7 @@ cache:
   latest_version: '1.4'
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
-  browse_source_link: 'https://github.com/doctrine/common'
+  browse_source_link: 'https://github.com/doctrine/cache'
   versions:
     '1.0':
         stability: stable
@@ -233,6 +253,22 @@ inflector:
   is_primary: false
   issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/inflector'
+  versions:
+    '1.0':
+      stability: stable
+
+lexer:
+  sort: 36
+  slug: lexer
+  package: Lexer
+  repository: lexer
+  title: Lexer
+  short_title: "LEXER"
+  description: "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers."
+  latest_version: '1.0'
+  is_primary: false
+  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+  browse_source_link: 'https://github.com/doctrine/lexer'
   versions:
     '1.0':
       stability: stable
