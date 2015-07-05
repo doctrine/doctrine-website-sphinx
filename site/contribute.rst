@@ -238,7 +238,7 @@ appropriate:
     To git@github.com:hobodave/doctrine2.git
         * [new branch]      DDC-588 -> DDC-588</pre>
 
-Now you are read to send a pull request from this branch, and
+Now you are ready to send a pull request from this branch, and
 update JIRA, to let a collaborator know your branch can be merged.
 
 Topic Branch Cleanup
