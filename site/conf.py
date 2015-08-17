@@ -21,7 +21,7 @@ description = 'The Doctrine Project is the home of a selected set of PHP librari
 author = 'Doctrine Team'
 
 # Change this to your copyright string
-copyright = '2006-2014, ' + author
+copyright = '2006-2015, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
 website = 'http://www.doctrine-project.org/'
