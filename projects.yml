@@ -136,14 +136,14 @@ migrations:
   file: '%s-%s-full.tar.gz'
   short_title: Migrations
   description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
-  latest_version: '2.0'
+  latest_version: '1.0'
   is_primary: false
   namespace: Doctrine\DBAL\Migrations
   issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
   browse_source_link: 'https://github.com/doctrine/migrations'
   versions:
-    '2.0':
-      stability: alpha
+    '1.0':
+      stability: stable
 
 common:
   sort: 30
