@@ -2,6 +2,12 @@ Sitemap
 =======
 
 .. toctree::
+   :hidden:
+
+   404.rst
+   403.rst
+
+.. toctree::
    :maxdepth: 1
 
    2015/05/22/doctrine-mongodb-odm-release-1-0-0-beta13
