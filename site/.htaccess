@@ -216,4 +216,3 @@ redirect 301 /blog/what-to-expect-from-doctrine-1.html /2010/03/15/what-to-expec
 redirect 301 /blog/who-is-behind-doctrine.html /2008/07/25/who-is-behind-doctrine.rst
 redirect 301 /blog/wow-1000-tickets.html /2008/04/30/wow-1000-tickets.rst
 redirect 301 /blog/your-own-orm-doctrine2.html /2010/07/19/your-own-orm-doctrine2.rst
-redirect 301 /schemas/migrations/configuration.xsd /_static_/schemas/migrations/configuration.xsd
