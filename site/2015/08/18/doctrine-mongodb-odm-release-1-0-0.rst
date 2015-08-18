@@ -17,6 +17,15 @@ features and straightening ODM's behaviour in certain cases. To ensure pleasant 
 you with most important changes that may require your attention. Full list of closed issues and pull requests can be
 found on the GitHub under `1.0.0 milestone <https://github.com/doctrine/mongodb-odm/issues?q=milestone%3A1.0.0>`__.
 
+doctrine/mongodb 1.2.0 behind the scenes
+----------------------------------------
+
+We are also happy to announce the immediate availability of 1.2.0 version of underlying doctrine/mongodb abstraction
+layer. With this release you are given brand new `Aggregation Builder <https://github.com/doctrine/mongodb/pull/213>`__,
+Query builder support for `update<https://github.com/doctrine/mongodb/pull/212>`__ and
+`$text<https://github.com/doctrine/mongodb/pull/184>`__ operators introduced by MongoDB 2.6. For the full list of closed
+issues and pull requests please see `release notes on GitHub<https://github.com/doctrine/mongodb/releases/tag/1.2.0>`__.
+
 Stop fooling around, I want my BETA back!
 -----------------------------------------
 
