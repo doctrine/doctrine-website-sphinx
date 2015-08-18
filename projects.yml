@@ -96,6 +96,29 @@ mongodb_odm:
     '1.0':
       downloadable: false
       stability: stable
+mongodb:
+  sort: 21
+  slug: mongodb
+  package: DoctrineMongoDB
+  repository: mongodb
+  file: '%s-%s.tgz'
+  title: 'MongoDB Abstraction Layer'
+  short_title: MongoDB
+  description: 'The Doctrine MongoDB project is a library that provides a wrapper around the native PHP Mongo PECL extension to provide additional functionality.'
+  latest_version: '1.2'
+  is_primary: false
+  issues_link: 'https://github.com/doctrine/mongodb/issues'
+  browse_source_link: 'https://github.com/doctrine/mongodb'
+  versions:
+    '1.0':
+      downloadable: false
+      stability: stable
+    '1.1':
+      downloadable: false
+      stability: stable
+    '1.2':
+      downloadable: false
+      stability: stable
 couchdb_odm:
   sort: 50
   slug: couchdb-odm
