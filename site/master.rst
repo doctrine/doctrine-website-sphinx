@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/08/19/doctrine_orm_2_5_1_and_2_4_8_released
    2015/08/18/doctrine-mongodb-odm-release-1-0-0
    2015/05/22/doctrine-mongodb-odm-release-1-0-0-beta13
    2015/05/05/doctrine-orm-module-release-0-9-0
