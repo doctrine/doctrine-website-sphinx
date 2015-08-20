@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  roles:
+    - role: mysql
+      mysql_users:
+          - { user: '{{ jira_database_username }}', password: '{{ jira_database_password }}' }
+      mysql_databases:
+          - { name: '{{ jira_database_name }}', collation: 'utf8_bin' }
+    - jira
