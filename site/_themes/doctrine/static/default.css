@@ -1004,6 +1004,8 @@ div.jsactive pre
 }
 .githublink img {
     border: 0;
+    width: 130px;
+    height: 130px;
 }
 
 
