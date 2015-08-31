@@ -2,11 +2,18 @@ Doctrine ORM 2.5.1 and 2.4.8 released
 =====================================
 
 We are happy to announce the immediate availabilty of Doctrine ORM 2.5.1 and
-2.4.8. Here are the changelogs:
+2.4.8.
+
+This versions include a fix for the `Security Misconfiguration Vulnerability
+<http://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html>`_
+described in an earlier blog post today.
+
+Here are the changelogs:
 
 Changelog 2.5.1
 ---------------
 
+- DCOM-293: Fix for Security Misconfiguration Vulnerability
 - DDC-3831: Fixed issue when paginator orders by a subselect expression
 - DDC-3699: Fix bug in EntityManager#merge: Skipping properties if they are listed after a not loaded relation
 - DDC-3684: Fix bug ClassMetadata#wakeupReflection when used with embeddables and Static Reflection
@@ -20,6 +27,7 @@ This release contains several fixes that have been in 2.5.0 already and are
 just backported to 2.4 for convenience. This is the last release in the 2.4
 branch and you should upgrade to 2.5.
 
+- DCOM-293: Fix for Security Misconfiguration Vulnerability
 - DDC-3551: Fix difference between DBAL 2.4 and 2.5 concerning platform initialization and version detection.
 - DDC-3240: EntityGenerator: Fix inheritance in Code-Generation
 - DDC-3502: EntityGenerator: Fixed parsing for php 5.5 "::class" syntax

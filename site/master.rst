@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/08/31/doctrine_orm_2_5_1_and_2_4_8_released
    2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects
    2015/08/19/doctrine_orm_2_5_1_and_2_4_8_released
    2015/08/18/doctrine-mongodb-odm-release-1-0-0
