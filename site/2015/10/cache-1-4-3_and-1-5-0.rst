@@ -23,6 +23,29 @@ unless ``CacheProvider#deleteAll()`` was called at least once
 You can find the complete changelog for this release in the
 `v1.4.3 release notes <https://github.com/doctrine/cache/releases/tag/v1.4.3>`_.
 
+Cache 1.5.0
+~~~~~~~~~~~
+
+This release includes all the changes released with version 1.4.3, as well
+as further bug fixes and improvements that will require you to clean your
+caches (if file-based) during the upgrade.
+
+PHP7 support is now guaranteed (`#92 <https://github.com/doctrine/cache/pull/92>`_).
+
+File based caches now use a much lower number of directories
+(`#94 <https://github.com/doctrine/cache/pull/94>`_).
+
+Proper support for wincache multi-get was added
+(`#97 <https://github.com/doctrine/cache/pull/97>`_).
+
+Predis cache adapter now relies on the ``Predis\ClientInterface``
+(`#87 <https://github.com/doctrine/cache/pull/87>`_).
+
+You can find the complete changelog for this release in the
+`v1.5.0 release notes <https://github.com/doctrine/cache/releases/tag/v1.5.0>`_.
+
+Installation
+~~~~~~~~~~~~
 
 You can install the Cache component using Composer either of the following
 ``composer.json`` definitions:
