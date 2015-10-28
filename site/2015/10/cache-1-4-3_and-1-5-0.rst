@@ -65,7 +65,7 @@ You can install the Cache component using Composer either of the following
 
   {
       "require": {
-          "doctrine/cache": "1.4.1"
+          "doctrine/cache": "~1.4.1"
       }
   }
 
@@ -73,7 +73,7 @@ You can install the Cache component using Composer either of the following
 
   {
       "require": {
-          "doctrine/cache": "1.5.0"
+          "doctrine/cache": "~1.5.0"
       }
   }
 
