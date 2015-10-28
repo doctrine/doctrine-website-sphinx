@@ -53,7 +53,7 @@ and especially:
 
  - Tobias `Tobion <https://github.com/Tobion>`_ Schultze
  - Krzysztof `Crozin <https://github.com/Crozin>`_ Łabuś
- - Steve `Crozin <https://github.com/kamermans>`_ Kamerman
+ - Steve `kamermans <https://github.com/kamermans>`_ Kamerman
 
 Installation
 ~~~~~~~~~~~~
