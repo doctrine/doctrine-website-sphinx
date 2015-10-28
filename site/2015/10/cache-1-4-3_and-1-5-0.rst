@@ -44,6 +44,17 @@ Predis cache adapter now relies on the ``Predis\ClientInterface``
 You can find the complete changelog for this release in the
 `v1.5.0 release notes <https://github.com/doctrine/cache/releases/tag/v1.5.0>`_.
 
+Credits
+~~~~~~~
+
+We would like to thank all contributors that patiently supported us
+in fixing the file-based cache directory structure long-standing issues,
+and especially:
+
+ - Tobias `Tobion <https://github.com/Tobion>`_ Schultze
+ - Krzysztof `Crozin <https://github.com/Crozin>`_ Łabuś
+ - Steve `Crozin <https://github.com/kamermans>`_ Kamerman
+
 Installation
 ~~~~~~~~~~~~
 
