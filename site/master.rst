@@ -10,6 +10,8 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/11/02/cache-1-4-4_and-1-5-1
+   2015/10/28/cache-1-4-3_and-1-5-0
    2015/09/16/doctrine_dbal_2_5_2_released
    2015/08/31/doctrine_orm_2_5_1_and_2_4_8_released
    2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects
