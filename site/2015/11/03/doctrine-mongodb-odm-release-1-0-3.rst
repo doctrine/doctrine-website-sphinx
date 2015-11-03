@@ -44,9 +44,9 @@ for brief list of goodies that we intend to ship next. If you would like to
 suggest additional features or, better yet, help in with development, please
 get in touch. Currently, we are looking forward to implementing
 `hydrated aggregation results <https://github.com/doctrine/mongodb-odm/pull/1263>`__,
-support for MongoDB 3.2's
+support especially now that MongoDB announced
 `$lookup operator <https://www.mongodb.com/blog/post/revisiting-usdlookup>`__,
-and
+available for everybody in 3.2 and
 `custom collection classes <https://github.com/doctrine/mongodb-odm/pull/1219>`__
 for ``EmbedMany`` and ``ReferenceMany`` associations.
 
