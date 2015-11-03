@@ -7,6 +7,7 @@
       git: >
         repo=git@github.com:doctrine/doctrine-website-sphinx.git
         dest={{ document_root }}
+        force=yes
 
     - name: Install Sphinx Dependencies
       apt: >
