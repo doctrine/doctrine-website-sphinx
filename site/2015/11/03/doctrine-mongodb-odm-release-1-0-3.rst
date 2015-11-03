@@ -2,14 +2,14 @@ Doctrine MongoDB ODM release 1.0.3
 ==================================
 
 We are happy to announce the immediate availability of Doctrine MongoDB ODM
-`1.0.3 <https://github.com/doctrine/cache/releases/tag/v1.0.3>`__.
+`1.0.3 <https://github.com/doctrine/mongodb-odm/releases/tag/1.0.3>`__.
 
 Reusing embedded documents
 --------------------------
 
 Until now, we have advised developers to deep clone embedded documents when
 changing owning documents; otherwise,
-`strange <https://github.com/doctrine/mongodb-odm/issues/1229`__
+`strange <https://github.com/doctrine/mongodb-odm/issues/1229>`__
 `things <https://github.com/doctrine/mongodb-odm/issues/1169>`__
 `could <https://github.com/doctrine/mongodb-odm/issues/478>`__
 `happen <https://www.youtube.com/watch?v=dQw4w9WgXcQ>`__. The reason being
