@@ -22,7 +22,7 @@ following ``composer.json`` contents:
 Changes since 2.5.1
 -------------------
 
-This is a list of issues resolved in ``2.5.0`` since ``2.4.0``:
+This is a list of issues resolved in ``2.5.2`` since ``2.4.1``:
 
 Bug Fixes
 ~~~~~~~~~
