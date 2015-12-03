@@ -6,7 +6,7 @@ In observance of August 18th, the day that Jon Wage tagged Doctrine MongoDB ODM'
 we've come together for a big celebration. From humble beginnings as a weekend
 hack to port Doctrine 2's data mapper pattern to NoSQL, the ODM quickly became a
 beast of a project and cut its teeth on production servers early on as a core
-ependency of the very first Symfony2 startups. Today, after five years of
+dependency of the very first Symfony2 startups. Today, after five years of
 adoption, improvements, refactoring, and
 `countless jokes <https://twitter.com/jmikola/status/583047759160336384?lang=en>`__…
 we are very happy to announce the immediate availability of Doctrine MongoDB ODM

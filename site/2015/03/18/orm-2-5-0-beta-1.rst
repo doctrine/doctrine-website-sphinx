@@ -57,7 +57,7 @@ This is a list of issues solved in ``2.5.0-beta1`` since ``2.5.0-alpha2``:
 
 - [`DDC-3452 <http://www.doctrine-project.org/jira/browse/DDC-3452>`_] Embeddables Support for ClassMetadataBuilder
 - [`DDC-3551 <http://www.doctrine-project.org/jira/browse/DDC-3551>`_] Load platform lazily in ClassMetadataFactory to avoid database connections.
-- [`DDC-3258 <http://www.doctrine-project.org/jira/browse/DDC-3258>`_] Improve suport for composite primary keys and assocations as keys.
+- [`DDC-3258 <http://www.doctrine-project.org/jira/browse/DDC-3258>`_] Improve suport for composite primary keys and associations as keys.
 - [`DDC-3554 <http://www.doctrine-project.org/jira/browse/DDC-3554>`_] Allow to recreate DQL QueryBuilder from parts.
 - [`DDC-3461 <http://www.doctrine-project.org/jira/browse/DDC-3461>`_] Allow setting association as primary key in ClassMetadataBuilder API with ``makePrimaryKey()``.
 - [`DDC-3587 <http://www.doctrine-project.org/jira/browse/DDC-3587>`_] Added programmatical support to define indexBy on root aliases.

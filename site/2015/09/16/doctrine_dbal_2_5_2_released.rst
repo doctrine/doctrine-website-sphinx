@@ -1,7 +1,7 @@
 Doctrine DBAL 2.5.2 released
 ============================
 
-We are happy to announce the immediate availabilty of Doctrine DBAL 2.5.2.
+We are happy to announce the immediate availability of Doctrine DBAL 2.5.2.
 
 This version fixes a regression where dropping a database on PostgreSQL didn't work properly anymore
 as well as several other issues.

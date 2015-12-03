@@ -1,7 +1,7 @@
 Doctrine ORM 2.5.1 and 2.4.8 released
 =====================================
 
-We are happy to announce the immediate availabilty of Doctrine ORM 2.5.1 and
+We are happy to announce the immediate availability of Doctrine ORM 2.5.1 and
 2.4.8.
 
 This versions include a fix for the `Security Misconfiguration Vulnerability
