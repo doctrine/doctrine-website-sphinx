@@ -21,7 +21,7 @@ objects to be distinct instances.
 *Manual cloning is no longer needed!*
 
 With this relase, ODM will now do all the heavy lifting for you. Documents
-found to have been resused during a ``persist`` or ``flush`` lifecycle event
+found to have been reused during a ``persist`` or ``flush`` lifecycle event
 shall be cloned by ``UnitOfWork`` automatically and updated on the parent
 document or collection.
 

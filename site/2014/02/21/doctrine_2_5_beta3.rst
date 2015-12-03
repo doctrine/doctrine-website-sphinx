@@ -3,7 +3,7 @@ Doctrine DBAL 2.5 BETA3
 
 We have released the BETA3 of DBAL 2.5 after some more work on the many new
 features. For early testers, we have refactored the Exception support again and
-removed the constants in favour of a nicely designed Exception hierachy.  Many
+removed the constants in favour of a nicely designed Exception hierarchy.  Many
 other issues were fixed and we hope this will be the last beta release before a
 release candidate in early March and a final release in March as well.
 

@@ -8,7 +8,7 @@ capabilities we have to expose you to the risk of SQL injections.
 
 Doctrine cannot prevent you from building SQL injections into your applications
 and so can no other DBAL, because it would require hiding SQL completely. But hiding
-SQL completly is not wanted, because it is such a powerful language.
+SQL completely is not wanted, because it is such a powerful language.
 
 Therefore it is still your responsibility to make sure that you are using
 Doctrine correctly when working with SQL.
@@ -36,17 +36,17 @@ the assumptions we make about tables and columns and our reasoning:
 
 - Quoting identifiers is bad, because it changes them from case-insensitive to
   case-sensitive. Even more weird, Oracle unquoted identifiers are uppercased,
-  PostgreSQL unquoted identifires are lowercased. MySQL casing is based on a
+  PostgreSQL unquoted identifiers are lowercased. MySQL casing is based on a
   config option. Doctrine 1.* had various unfixable bugs because of identifier
   quoting, which is why we decided that Doctrine will not use automatic
   identifier quoting.
 
 - The APIs of ``Connection#insert()``, ``Connection#update()`` and
-  ``Connection#delete()`` therfore accept both quoted and unquoted table/column
+  ``Connection#delete()`` therefore accept both quoted and unquoted table/column
   identifiers, because quoting is the users choice.
 
 - A mechanism to detect SQL injection in strings that can be either quoted
-  or unquoted is impossible to write completly secure. There are too many
+  or unquoted is impossible to write completely secure. There are too many
   edge cases to consider and there is a realistic chance to miss one of them.
 
 - If you provide an API that is just secure in 99.999% of all cases, then
@@ -63,7 +63,7 @@ kind of database abstraction layers can never fully protect you from SQL
 injection, because it does not know the context you are using it in.
 
 To avoid  secret knowledge about our security assumptions we are now starting
-to be completly explicit about these issues. Both DBAL and ORM now contain a
+to be completely explicit about these issues. Both DBAL and ORM now contain a
 `SECURITY.md` file, which contains basic information about security and links
 to much more detailed documentation chapters on Doctrine security.
 
