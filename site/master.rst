@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/12/02/doctrine-module-0.10-0
    2015/11/23/doctrine-orm-2-5-2
    2015/11/06/doctrine-inflector-1-1-0
    2015/11/03/doctrine-mongodb-odm-release-1-0-3
