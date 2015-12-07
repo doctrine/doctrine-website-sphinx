@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/12/07/jira-issues-migration
    2015/12/02/doctrine-module-0.10-0
    2015/12/03/cache-1-5-2
    2015/11/23/orm-2-5-2
