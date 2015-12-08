@@ -16,25 +16,21 @@ maintenance and operations overhead and more tightly integrate with the tooling
 we already have.
 
 For now Common, DBAL and ORM issues have been imported into Github using the
-[amazing Importer API](https://gist.github.com/jonmagic/5282384165e0f86ef105).
+`amazing Importer API <https://gist.github.com/jonmagic/5282384165e0f86ef105>`_.
 Even though this API is still in Beta, it works quite flawlessly. If you are
-interested in our migration scripts see [this repository in
-Github](https://github.com/doctrine/jira-github-issues). They are very
+interested in our migration scripts see `this repository in
+Github <https://github.com/doctrine/jira-github-issues>`_. They are very
 low-level and procedural but get the job done.
 
 Jira has been changed into Read-Only mode for Common, DBAL and ORM projects,
 please use the Github based issue trackers instead from now on:
 
-- [ORM](https://github.com/doctrine/doctrine2/issues)
-- [DBAL](https://github.com/doctrine/dbal/issues)
-- [Common](https://github.com/doctrine/common/issues)
+- `ORM <https://github.com/doctrine/doctrine2/issues>`_
+- `DBAL <https://github.com/doctrine/dbal/issues>`_
+- `Common <https://github.com/doctrine/common/issues>`_
 
 What is still missing?
 ----------------------
-
-- Doctrine Migrations issues might need to be imported. We are currently
-  checking if there is any necessary content in this issue tracker that is
-  worth keeping.
 
 - Versions from Jira need to be exported and imported into Github releases with
   their release date, changelog and description.
