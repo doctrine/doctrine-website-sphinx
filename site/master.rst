@@ -12,7 +12,6 @@ Sitemap
 
    2015/12/08/jira-issues-migration
    2015/12/04/common-2-5-2-and-2-6-0
-   2015/12/02/doctrine-module-0.10-0
    2015/12/03/cache-1-5-2
    2015/12/02/doctrine-module-0.10-0
    2015/11/23/orm-2-5-2
