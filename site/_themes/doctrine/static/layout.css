@@ -541,3 +541,13 @@ div.body ul.version-pills {
 #content #disqus_thread {
   margin: 0 0 20px 30px;
 }
+
+/** sponsors */
+
+.sponsors a {
+  width: 20em;
+}
+
+.sponsors img {
+  max-height: 15em;
+}
