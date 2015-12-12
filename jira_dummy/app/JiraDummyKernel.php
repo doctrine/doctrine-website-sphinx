@@ -70,7 +70,7 @@ class JiraDummyKernel extends Kernel
             throw new NotFoundHttpException("No project " . $project . " found.");
         }
 
-        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues/' . $issueMap[$issue]['id']);
+        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues/' . $issueMap[$issue]);
     }
 
     public function onException($event)
