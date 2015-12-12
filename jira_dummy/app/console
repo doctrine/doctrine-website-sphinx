@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
 use Symfony\Bundle\FrameworkBundle\Console\Application;
-use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
 
 // if you don't want to setup permissions the proper way, just uncomment the following PHP line
@@ -15,14 +14,6 @@ set_time_limit(0);
 $loader = require __DIR__.'/../vendor/autoload.php';
 require_once 'JiraDummyKernel.php';
 
-$input = new ArgvInput();
-$env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
-$debug = getenv('SYMFONY_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-debug', '')) && $env !== 'prod';
-
-if ($debug) {
-    Debug::enable();
-}
-
-$kernel = new JiraDummyKernel($env, $debug);
+$kernel = new JiraDummyKernel('prod', false);
 $application = new Application($kernel);
-$application->run($input);
+$application->run();
