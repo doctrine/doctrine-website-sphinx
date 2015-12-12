@@ -58,6 +58,10 @@ class JiraDummyKernel extends Kernel
 
     public function issueRedirectAction($issue)
     {
+        if (isset($this->projects[$issue])) {
+            return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$issue] . '/issues');
+        }
+
         $issueMap = json_decode(file_get_contents(__DIR__ . "/../config/issues.json"), true);
 
         if (!isset($issueMap[$issue]) || strpos($issue, "-") === false) {
