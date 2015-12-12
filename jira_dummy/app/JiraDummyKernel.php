@@ -50,7 +50,7 @@ class JiraDummyKernel extends Kernel
     public function projectRedirectAction($project)
     {
         if (!isset($this->projects[$project])) {
-            throw new NotFoundHttpException();
+            throw new NotFoundHttpException("No project " . $project . " found.");
         }
 
         return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues');
@@ -61,10 +61,14 @@ class JiraDummyKernel extends Kernel
         $issueMap = json_decode(file_get_contents(__DIR__ . "/../config/issues.json"), true);
 
         if (!isset($issueMap[$issue]) || strpos($issue, "-") === false) {
-            throw new NotFoundHttpException();
+            throw new NotFoundHttpException("Issue " . $issue . " was not migrated.");
         }
 
         list($project, $number) = explode('-', $issue);
+
+        if (!isset($this->projects[$project])) {
+            throw new NotFoundHttpException("No project " . $project . " found.");
+        }
 
         return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues/' . $issueMap[$issue]['id']);
     }
@@ -73,6 +77,7 @@ class JiraDummyKernel extends Kernel
     {
         $exception = $event->getException();
         $statusCode = ($exception instanceof HttpException) ? $exception->getStatusCode() : 500;
+        syslog($statusCode >= 500 ? LOG_ERR : LOG_WARNING, get_class($exception) . ": " . $exception->getMessage());
 
         $content = file_get_contents(__DIR__ . "/../templates/notfound.html");
         $event->setResponse(new Response($content, $statusCode));
