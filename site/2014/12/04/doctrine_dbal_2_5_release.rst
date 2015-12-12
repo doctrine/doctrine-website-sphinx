@@ -53,7 +53,7 @@ issues:
 - `DBAL 2.5.0
   <http://www.doctrine-project.org/jira/browse/DBAL/fixforversion/10523/>`_
 
-If you find any problems or backwards compatbililty breaks with this release
+If you find any problems or backwards compatibility breaks with this release
 please report them on JIRA or open up Pull Requests on Github.
 
 .. author:: Benjamin Eberlei 

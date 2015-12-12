@@ -10,6 +10,20 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/12/08/jira-issues-migration
+   2015/12/04/common-2-5-2-and-2-6-0
+   2015/12/03/cache-1-5-2
+   2015/12/02/doctrine-module-0.10-0
+   2015/11/23/orm-2-5-2
+   2015/11/06/doctrine-inflector-1-1-0
+   2015/11/03/doctrine-mongodb-odm-release-1-0-3
+   2015/11/02/cache-1-4-4_and-1-5-1
+   2015/10/28/cache-1-4-3_and-1-5-0
+   2015/09/16/doctrine_dbal_2_5_2_released
+   2015/08/31/doctrine_orm_2_5_1_and_2_4_8_released
+   2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects
+   2015/08/19/doctrine_orm_2_5_1_and_2_4_8_released
+   2015/08/18/doctrine-mongodb-odm-release-1-0-0
    2015/05/22/doctrine-mongodb-odm-release-1-0-0-beta13
    2015/05/05/doctrine-orm-module-release-0-9-0
    2015/04/16/doctrine-module-release-0-8-1

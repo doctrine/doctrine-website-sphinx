@@ -1,0 +1,81 @@
+---
+- name: "Create Jira Group"
+  group: name=jira
+
+- name: "Create Jira User"
+  user: name=jira group=jira
+
+- name: "Prepare Directories"
+  file: >
+    path=/home/jira/{{ item }}
+    state=directory
+    owner=jira
+  with_items:
+      - "downloads"
+      - ".jirahome"
+
+- name: "Download Jira"
+  get_url: >
+      url=https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-{{ jira_version }}.bin
+      dest=/home/jira/downloads/atlassian-jira-{{ jira_version }}.bin
+  register: download_jira
+
+- name: "Make Jira Binary executable"
+  file: path=/home/jira/downloads/atlassian-jira-{{ jira_version }}.bin mode="u+x"
+
+- name: "Stop Current Jira if installed new version"
+  service: name=jira1 state=stopped
+  when: download_jira|changed
+
+- name: "Fix File Owning from potential jira1 user"
+  file: >
+      path=/home/jira/{{ item }}
+      owner=jira
+      group=jira
+      recurse=yes
+  with_items:
+      - ".jirahome"
+      - "jira-{{ jira_version }}"
+
+- name: "Upload unattented installation response file"
+  template: src=response_install.j2 dest=/home/jira/response_install
+
+- name: "Install Jira"
+  command: >
+      /home/jira/downloads/atlassian-jira-{{ jira_version }}.bin -q -varfile /home/jira/response_install
+      creates=/home/jira/jira-{{ jira_version }}/bin/start-jira.sh
+
+- name: "Download MySQL Java Connector"
+  get_url: >
+    url=http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-{{ jira_mysql_connector_version }}.tar.gz
+    dest=/home/jira/downloads/mysql-connector-java-{{ jira_mysql_connector_version }}.tar.gz
+
+- name: "Unarchive MySQL Java Connector"
+  command:  >
+    tar xzvf /home/jira/downloads/mysql-connector-java-{{ jira_mysql_connector_version }}.tar.gz
+    chdir=/home/jira/downloads
+
+- name: "Copy MySQL Java Connector"
+  command: >
+      cp /home/jira/downloads/mysql-connector-java-{{ jira_mysql_connector_version }}/mysql-connector-java-{{ jira_mysql_connector_version }}-bin.jar /home/jira/jira-{{ jira_version }}/lib/mysql-connector-java-{{ jira_mysql_connector_version }}-bin.jar
+
+- name: "Generate init script"
+  template: src=init.j2 dest=/etc/init.d/jira1
+
+- name: "Generate dbconfig.xml"
+  template: src=dbconfig.xml.j2 dest=/home/jira/.jirahome/dbconfig.xml
+  notify: Restart Jira
+
+- name: "Configure Jira User"
+  lineinfile: >
+      dest=/home/jira/jira-{{ jira_version }}/bin/user.sh
+      regexp="^JIRA_USER="
+      line="JIRA_USER=jira"
+  notify: Restart Jira
+
+- name: "Configure Tomcat/Catalina to use /jira path"
+  lineinfile: >
+    dest=/home/jira/jira-{{ jira_version }}/conf/server.xml
+    regexp="<Context "
+    line='<Context docBase="${catalina.home}/atlassian-jira" path="/jira" reloadable="false" useHttpOnly="true">'
+  notify: Restart Jira
