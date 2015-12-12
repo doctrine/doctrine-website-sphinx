@@ -53,13 +53,13 @@ class JiraDummyKernel extends Kernel
             throw new NotFoundHttpException("No project " . $project . " found.");
         }
 
-        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues');
+        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues', 301);
     }
 
     public function issueRedirectAction($issue)
     {
         if (isset($this->projects[$issue])) {
-            return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$issue] . '/issues');
+            return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$issue] . '/issues', 301);
         }
 
         $issueMap = json_decode(file_get_contents(__DIR__ . "/../config/issues.json"), true);
@@ -74,7 +74,7 @@ class JiraDummyKernel extends Kernel
             throw new NotFoundHttpException("No project " . $project . " found.");
         }
 
-        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues/' . $issueMap[$issue]);
+        return new RedirectResponse('https://github.com/doctrine/' . $this->projects[$project] . '/issues/' . $issueMap[$issue], 301);
     }
 
     public function onException($event)
