@@ -38,8 +38,8 @@ class JiraDummyKernel extends Kernel
 
     protected function configureRoutes(RouteCollectionBuilder $routes)
     {
-        $routes->add('/jira/projects/{project}', 'kernel:projectRedirectAction');
-        $routes->add('/jira/browse/{issue}', 'kernel:issueRedirectAction');
+        $routes->add('/projects/{project}', 'kernel:projectRedirectAction');
+        $routes->add('/browse/{issue}', 'kernel:issueRedirectAction');
     }
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
