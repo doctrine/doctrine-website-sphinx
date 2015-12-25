@@ -9,7 +9,7 @@ Common 2.5.3
 ~~~~~~~~~~~~
 
 This release corrects an issue with the precedence of namespaces being
-matched by the ``SymfonyFileLocator```#367 <https://github.com/doctrine/common/pull/367>`_.
+matched by the ``SymfonyFileLocator`` `#367 <https://github.com/doctrine/common/pull/367>`_.
 
 Common 2.6.1
 ~~~~~~~~~~~~
