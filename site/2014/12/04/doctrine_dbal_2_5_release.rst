@@ -13,13 +13,8 @@ release master since version 2.0.
 
 You can install DBAL through Composer:
 
-.. code-block:: json
-
-    {
-        "require": {
-            "doctrine/dbal": "2.5.0"
-        }
-    }
+.. code-block:: shell
+    composer require doctrine/dbal:~2.5
 
 This version is mostly backwards compatible with only some minor breaks, when
 using PDO IBM, creating a custom platform or using non-default DateTime
