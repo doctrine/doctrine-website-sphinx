@@ -59,13 +59,15 @@ foreach ($projects as $projectName => $projectData) {
 
         $projects[$projectName]['versions'][$version]['releases'] = array();
         foreach ($tagData as $tag) {
+            $urlParts = explode('/', $tag['tarball_url']);
+            $trueTag = $urlParts[count($urlParts) - 1];
             if (strpos($tag['name'], $version) === 0) {
                 $release = array(
-                    'git_checkout_command' => '$ git clone git://github.com/doctrine/' . $projectData['repository'] . '.git ' . $projectData['slug'] . '<br>$ cd ' . $projectData['slug'] . '<br>$ git checkout ' . $tag['name'],
+                    'git_checkout_command' => '$ git clone git://github.com/doctrine/' . $projectData['repository'] . '.git ' . $projectData['slug'] . '<br>$ cd ' . $projectData['slug'] . '<br>$ git checkout ' . $trueTag,
                     'composer'             => !isset($versionData['composer']) || (isset($version['composer']) && $version['composer']),
                 );
 
-                $projects[$projectName]['versions'][$version]['releases'][$tag['name']] = $release;
+                $projects[$projectName]['versions'][$version]['releases'][$trueTag] = $release;
             }
         }
     }
