@@ -11,7 +11,9 @@ except ImportError:
     from yaml import Loader, Dumper
 
 def version_compare(a, b):
-    if parse_version(a) < parse_version(b):
+    aStrippedFromStartingV = ''.join(a.split('v', 1))
+    bStrippedFromStartingV = ''.join(b.split('v', 1))
+    if parse_version(aStrippedFromStartingV) < parse_version(bStrippedFromStartingV):
         return 1
     else:
         return -1
