@@ -151,6 +151,8 @@ phpcr_odm:
   versions:
     '1.2':
       stability: stable
+    '1.3':
+      stability: stable
 
 migrations:
   sort: 80
