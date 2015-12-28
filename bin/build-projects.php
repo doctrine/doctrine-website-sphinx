@@ -65,10 +65,6 @@ foreach ($projects as $projectName => $projectData) {
                     'composer'             => !isset($versionData['composer']) || (isset($version['composer']) && $version['composer']),
                 );
 
-                if (isset($projectData['file'])) {
-                    $release['package_name'] = sprintf($projectData['file'], $projectData['package'], $tag['name']);
-                }
-
                 $projects[$projectName]['versions'][$version]['releases'][$tag['name']] = $release;
             }
         }
