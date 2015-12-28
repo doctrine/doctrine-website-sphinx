@@ -111,8 +111,8 @@ def visit_doctrinedownloads_html(self, node):
 
                     self.body.append('<ul class="latest-release">');
 
-                    if 'package_name' in releasedata and versiondata['downloadable']:
-                        self.body.append('<li><a href="http://www.doctrine-project.org/downloads/%s">Download Archive</a></li>' % (releasedata['package_name']))
+                    if release :
+                        self.body.append('<li><a href="https://github.com/doctrine/%s/archive/%s.zip">Download Archive</a></li>' % (node['project']['repository'], release))
 
                     if 'composer' in releasedata:
                         self.body.append('<li><a href="http://www.packagist.org/packages/doctrine/%s">Composer</a> <pre>{"require": {"doctrine/%s": "%s"}}</pre>' % (node['project']['slug'], node['project']['slug'], release))
