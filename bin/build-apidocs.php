@@ -8,7 +8,8 @@
 require_once __DIR__ . "/../vendor/autoload.php";
 
 if (!isset($argv[1])) {
-    echo "missing argument\n";
+    echo "missing argument.\n" .
+        "You need to pass a folder to generate the api in.\n";
     exit(1);
 }
 
