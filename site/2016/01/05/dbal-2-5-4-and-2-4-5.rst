@@ -41,7 +41,7 @@ You can install the DBAL component using Composer:
 
 .. code-block:: shell
 
-  composer require doctrine/dbal:~2.5.3
+  composer require doctrine/dbal:~2.5.4
 
 Please report any issues you may have with the update on the
 `issue tracker <https://github.com/doctrine/dbal/issues>`_.
