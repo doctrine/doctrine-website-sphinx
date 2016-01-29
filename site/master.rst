@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2016/02/02/doctrine_module_1_0_0_stable_release
    2016/01/05/dbal-2-5-4-and-2-4-5
    2016/01/05/orm-2-5-4
    2015/12/31/cache-1-6-0
