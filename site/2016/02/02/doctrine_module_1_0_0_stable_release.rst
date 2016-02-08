@@ -10,6 +10,7 @@ dates back to the date Oct 22, 2011 after 4 years, we are ready.
 Thanks at all for yours contributions!
 
 Update your composer configuration to use the stable version of this project.
+
 .. code:: json
 
 
