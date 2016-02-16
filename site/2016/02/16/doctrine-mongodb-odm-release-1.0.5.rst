@@ -36,7 +36,7 @@ The new driver should be properly supported once we release versions 1.1 and 1.3
 underlying `Doctrine MongoDB <https://github.com/doctrine/mongodb>`__ library, respectively.
 This is all possible thanks to our Andreas Braun's (`@alcaeus <https://twitter.com/alcaeus>`__) work on
 `mongo-php-adapter <https://github.com/alcaeus/mongo-php-adapter>`__ which implements ``ext-mongo's``
-API atop ``ext-mongodb`` and ``mongodb-php-library <https://github.com/mongodb/mongo-php-library>``__."
+API atop ``ext-mongodb`` and `mongodb-php-library <https://github.com/mongodb/mongo-php-library>`__."
 If you can't wait to give ODM a test flight on PHP 7, now is the time! Also, if you happen to meet
 Andreas be sure to buy him a beer :)
 
