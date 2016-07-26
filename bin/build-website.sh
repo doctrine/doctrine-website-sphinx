@@ -11,18 +11,17 @@ then
 
     php composer.phar install --ignore-platform-reqs
 
-    pushd
-
     cd vendor/apigen/apigen
 
     php ../../../composer.phar install --ignore-platform-reqs
 
-    popd
-
+    cd /var/www/doctrine-website-sphinx
     php bin/build-projects.php
 
+    cd /var/www/doctrine-website-sphinx/site
     tinker -b
 
+    cd /var/www/doctrine-website-sphinx
     mkdir -p site/blog/html/api
 
     cp favicon.ico site/blog/html/favicon.ico
