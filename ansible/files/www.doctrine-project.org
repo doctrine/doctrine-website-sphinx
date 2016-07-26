@@ -1,7 +1,7 @@
 server {
 	listen *:80 default_server;
 
-	root /var/www/doctrine-website-sphinx/site/blog/html;
+	root /var/www/doctrine-website-sphinx/public;
 
 	index index.html index.htm index.nginx-debian.html;
 

@@ -22,8 +22,10 @@ then
     tinker -b
 
     cd /var/www/doctrine-website-sphinx
-    mkdir -p site/blog/html/api
+    mkdir -p public/api
 
-    cp favicon.ico site/blog/html/favicon.ico
-    cp site/blog/html/rss.html site/blog/html/rss.xml
+    rsync -avz /var/www/doctrine-website-sphinx/site/blog/html/ /var/www/doctrine-website-sphinx/public
+
+    cp favicon.ico public/favicon.ico
+    cp public/rss.html public/rss.xml
 fi

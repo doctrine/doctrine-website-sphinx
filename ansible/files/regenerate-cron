@@ -1,2 +1,2 @@
 */15 * * * * doctrine /var/www/doctrine-website-sphinx/bin/build-website.sh
-0 0 * * * doctrine php bin/build-apidocs.php /var/www/doctrine-website-sphinx/site/blog/html/api
+0 0 * * * doctrine php bin/build-apidocs.php /var/www/doctrine-website-sphinx/public

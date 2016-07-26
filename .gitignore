@@ -8,3 +8,4 @@ github-token.json
 site/blog
 regenerate
 ansible/*.retry
+public/
