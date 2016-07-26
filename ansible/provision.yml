@@ -48,6 +48,11 @@
           dest=/etc/nginx/sites-enabled/www.doctrine-project.org
       notify: Restart Nginx
 
+    - name: Install cronjob
+      copy: >
+          src=regenerate.cron
+          dest=/etc/cron.d/doctrine-regenerate
+
   handlers:
     - name: Restart Nginx
       service: name=nginx state=restarted
