@@ -7,3 +7,13 @@ server {
 
 	server_name www.doctrine-project.org doctrine-project.org;
 }
+
+server {
+  server_name www.doctrine-project.com doctrine-project.com;
+  return 301 http://www.doctrine-project.org$request_uri;
+}
+
+server {
+  server_name www.doctrine-project.net doctrine-project.net;
+  return 301 http://www.doctrine-project.org$request_uri;
+}
