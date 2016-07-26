@@ -1,0 +1,30 @@
+server {
+	listen *:80 default_server;
+
+	root /var/www/doctrine-website-sphinx/hooks;
+
+	index index.php;
+
+	server_name localhost;
+
+	location / {
+		# if file exists return it right away
+		if (-f $request_filename) {
+			break;
+		}
+
+		# otherwise rewrite it
+		if (!-e $request_filename) {
+			rewrite ^(.+)$ /index.php$1 last;
+			break;
+		}
+	}
+
+	location ~ \.php {
+		fastcgi_index  index.php;
+		include        fastcgi_params;
+		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+
+        fastcgi_param SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+	}
+}

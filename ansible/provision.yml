@@ -46,8 +46,11 @@
 
     - name: Install vhosts
       copy: >
-          src=www.doctrine-project.org
-          dest=/etc/nginx/sites-enabled/www.doctrine-project.org
+          src={{ item }}
+          dest=/etc/nginx/sites-enabled/{{ item }}
+      with_items:
+          - www.doctrine-project.org
+          - hooks.doctrine-project.org
       notify: Restart Nginx
 
     - name: Install cronjob
