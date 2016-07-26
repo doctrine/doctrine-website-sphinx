@@ -55,6 +55,17 @@
           src=regenerate-cron
           dest=/etc/cron.d/doctrine-regenerate
 
+    - name: Checkout Website
+      git: >
+        repo=https://github.com/doctrine/doctrine-website-sphinx.git
+        dest=/var/www/doctrine-website-sphinx
+        accept_hostkey=true
+        force=yes
+
+    - user: name=doctrine shell=/bin/bash home=/var/www/doctrine-website-sphinx
+
+    - file: path=/var/www/doctrine-website-sphinx owner=doctrine recurse=yes
+
   handlers:
     - name: Restart Nginx
       service: name=nginx state=restarted

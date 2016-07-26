@@ -1,1 +1,2 @@
-* * * * * www-data /var/www/doctrine-website-sphinx/build-website.sh
+*/15 * * * * doctrine /var/www/doctrine-website-sphinx/bin/build-website.sh
+0 0 * * * doctrine php bin/build-apidocs.php site/blog/html/api

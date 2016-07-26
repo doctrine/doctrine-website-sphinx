@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f "/var/www/doctrine-website-sphinx/regenerate" ];
-then 
+then
     rm /var/www/doctrine-website-sphinx/regenerate
 
     cd /var/www/doctrine-website-sphinx
@@ -25,7 +25,6 @@ then
 
     mkdir -p site/blog/html/api
 
-    php bin/build-apidocs.php site/blog/html/api
     cp favicon.ico site/blog/html/favicon.ico
-    cp site/blog/html/rss.html site/blog/html/rss.xml 
-elif
+    cp site/blog/html/rss.html site/blog/html/rss.xml
+fi
