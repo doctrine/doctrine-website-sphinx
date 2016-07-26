@@ -5,19 +5,10 @@
   tasks:
     - name: Checkout Website
       git: >
-        repo=git@github.com:doctrine/doctrine-website-sphinx.git
+        repo=https://github.com/doctrine/doctrine-website-sphinx.git
         dest={{ document_root }}
+        accept_hostkey=true
         force=yes
-
-    - name: Install Sphinx Dependencies
-      apt: >
-        pkg={{ item }}
-      with_items:
-        - python-pip
-        - python-yaml
-
-    - name: Install Tinkerer
-      pip: name=tinkerer
 
     - name: Download Composer
       get_url: >
@@ -26,12 +17,12 @@
 
     - name: Install Composer Dependencies
       command: >
-        php composer.phar install
+        php composer.phar install --ignore-platform-reqs
         chdir={{ document_root }}
 
     - name: Update Composer for Apigen
       command: >
-        php ../../../composer.phar install
+        php ../../../composer.phar install --ignore-platform-reqs
         chdir={{ document_root }}/vendor/apigen/apigen
 
     - name: Regenerate projects.yml from Github Data

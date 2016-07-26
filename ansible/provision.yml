@@ -1,0 +1,53 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Remove old packages
+      apt: pkg={{ item }} state=absent update_cache=yes
+      with_items:
+        - libapache2-mod-php7.0
+        - apache2
+
+    - name: Install Packages
+      apt: >
+        pkg={{ item }}
+      with_items:
+        - php7.0-fpm
+        - php7.0-cli
+        - php7.0-opcache
+        - php7.0-mcrypt
+        - php7.0-curl
+        - nginx
+        - python-pip
+        - python-yaml
+        - python2.7-dev
+        - git
+        - gcc
+        - build-essential
+        - autoconf
+        - zlib1g-dev
+
+    - name: Enable PHP mods
+      command: phpenmod {{ item }}
+      with_items:
+          - mcrypt
+          - opcache
+          - curl
+
+    - name: Install Tinkerer
+      pip: name=tinkerer
+
+    - name: Remove default nginx vhost
+      file: >
+          path=/etc/nginx/sites-enabled/default
+          state=absent
+      notify: Restart Nginx
+
+    - name: Install vhosts
+      copy: >
+          src=www.doctrine-project.org
+          dest=/etc/nginx/sites-enabled/www.doctrine-project.org
+      notify: Restart Nginx
+
+  handlers:
+    - name: Restart Nginx
+      service: name=nginx state=restarted

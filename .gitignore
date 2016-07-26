@@ -6,3 +6,4 @@ vendor
 composer.phar
 github-token.json
 site/blog
+regenerate
