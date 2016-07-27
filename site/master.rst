@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2016/07/27/doctrine-mongodb-odm-release-1.1.1
    2016/06/19/data-fixtures-1-2-0
    2016/06/09/odm-1-1-0-and-1-0-6
    2016/02/16/doctrine-mongodb-odm-release-1.0.5
