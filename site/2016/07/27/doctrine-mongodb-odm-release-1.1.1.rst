@@ -29,10 +29,10 @@ Future Releases
 ---------------
 
 Work on the much anticipated 2.0 version of MongoDB ODM with support for the new MongoDB driver is
-beginning, however we are unable to set a release date yet. Likely this will take some time thus we
-decided to schedule a 1.2 version to be released before 2.0. This release will have all features of
-2.0 that can be introduced in a backward compatible way as well as more deprecation notices to ease
-further migration to 2.0 as much as possible.
+beginning; however we are unable to set a release date yet. Development will likely take some time
+and thus we have scheduled a 1.2 version to be released before 2.0. Version 1.2 will include all
+features planned for 2.0 that can be introduced in a backward compatible way as well as new
+deprecation notices for functionality we plan to remove in 2.0, which we hope will ease future migration.
 
 Doctrine MongoDB ODM release 1.0.7
 ----------------------------------
