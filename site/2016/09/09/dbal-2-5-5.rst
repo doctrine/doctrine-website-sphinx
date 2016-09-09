@@ -22,7 +22,7 @@ This release contains a huge amount of fixes, specifically:
  - Moving DB2 pagination (query modification) offset/limit count result to the end of the results `#2310 <https://github.com/doctrine/common/pull/2310>`_
  - Handling ``Throwable`` exceptions thrown in ``Connection#transactional()`` `#2390 <https://github.com/doctrine/common/pull/2390>`_
  - Correcting logging of parameters passed to a statement via ``bindParam()``  `#2440 <https://github.com/doctrine/common/pull/2440>`_
- - Allowing installation of ``symfony/console:^3.0` `#2484 <https://github.com/doctrine/common/pull/2484>`_
+ - Allowing installation of ``symfony/console:^3.0`` `#2484 <https://github.com/doctrine/common/pull/2484>`_
  - Correcing MySQLi statements, which were returning ``null`` instead of ``false`` on no results `#2497 <https://github.com/doctrine/common/pull/2497>`_
 
 Installation
