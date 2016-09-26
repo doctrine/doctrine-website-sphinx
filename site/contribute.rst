@@ -333,7 +333,6 @@ Now add the **doctrine** remote for collaborators:
 
 ::
 
-    $ cd doctrine2
     $ git remote add doctrine git@github.com:doctrine/doctrine2.git
 
 Adjust your branch to track the doctrine master remote branch, by
