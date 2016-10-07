@@ -8,21 +8,19 @@ We are happy to announce the immediate availability of Doctrine MongoDB ODM
 MongoDB ODM 1.0.8
 -----------------
 
-- calling ``dropCollections()`` in SchemaManager did not drop GridFS collections.
-This has been fixed in `#1468 <https://github.com/doctrine/mongodb-odm/pull/1468>`_.
+- calling ``dropCollections()`` in the SchemaManager did not drop GridFS
+collections. `#1468 <https://github.com/doctrine/mongodb-odm/pull/1468>`_
 - calling ``clear()`` on an uninitialized collection with ``orphanRemoval``
-enabled failed to remove orphaned documents. This has been fixed in
-`#1500 <https://github.com/doctrine/mongodb-odm/pull/1500>`_.
+enabled failed to remove orphaned documents. `#1500 <https://github.com/doctrine/mongodb-odm/pull/1500>`_
 - Documents with identifiers evaluating to ``false`` (e.g. empty string or 0)
-could not be reference using ``createDbRef()`` in DocumentManager. This edge case
-has been fixed in `#1503 <https://github.com/doctrine/mongodb-odm/pull/1503>`_.
+could not be reference using ``createDbRef()`` in DocumentManager. `#1503 <https://github.com/doctrine/mongodb-odm/pull/1503>`_
 
 MongoDB ODM 1.1.2
 -----------------
 
+- This release contains the bugfixes outlined for ODM 1.0.8 above
 - Querying for referenced objects in ``findBy()`` or ``findOneBy()`` did not work
-properly due to incorrect preparation of the DbRef objects. This was fixed in
-`#1481 <https://github.com/doctrine/mongodb-odm/pull/1481>`_.
+properly due to incorrect preparation of the DbRef objects. `#1481 <https://github.com/doctrine/mongodb-odm/pull/1481>`_
 
 Installation
 ------------
