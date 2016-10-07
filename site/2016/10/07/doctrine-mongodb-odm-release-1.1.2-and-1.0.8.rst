@@ -13,14 +13,14 @@ collections. `#1468 <https://github.com/doctrine/mongodb-odm/pull/1468>`_
 - calling ``clear()`` on an uninitialized collection with ``orphanRemoval``
 enabled failed to remove orphaned documents. `#1500 <https://github.com/doctrine/mongodb-odm/pull/1500>`_
 - Documents with identifiers evaluating to ``false`` (e.g. empty string or 0)
-could not be reference using ``createDbRef()`` in DocumentManager. `#1503 <https://github.com/doctrine/mongodb-odm/pull/1503>`_
+could not be reference using ``createDBRef()`` in DocumentManager. `#1503 <https://github.com/doctrine/mongodb-odm/pull/1503>`_
 
 MongoDB ODM 1.1.2
 -----------------
 
 - This release contains the bugfixes outlined for ODM 1.0.8 above
 - Querying for referenced objects in ``findBy()`` or ``findOneBy()`` did not work
-properly due to incorrect preparation of the DbRef objects. `#1481 <https://github.com/doctrine/mongodb-odm/pull/1481>`_
+properly due to incorrect preparation of the DBRef objects. `#1481 <https://github.com/doctrine/mongodb-odm/pull/1481>`_
 
 Installation
 ------------
