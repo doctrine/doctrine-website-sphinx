@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -f "/var/www/doctrine-website-sphinx/regenerate" ];
+if [ -f "/var/www/doctrine-website-sphinx/notify/regenerate" ];
 then
-    rm /var/www/doctrine-website-sphinx/regenerate
+    rm /var/www/doctrine-website-sphinx/notify/regenerate
 
     cd /var/www/doctrine-website-sphinx
     git fetch

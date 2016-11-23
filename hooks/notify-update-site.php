@@ -28,6 +28,6 @@ if ($payload['ref'] != 'refs/changes/master') {
     exit(0);
 }
 
-touch("/var/www/doctrine-website-sphinx/regenerate");
+$ret = touch("/var/www/doctrine-website-sphinx/notify/regenerate");
 
-echo json_encode(array('ok' => true));
+echo json_encode(array('regenerate' => $ret));

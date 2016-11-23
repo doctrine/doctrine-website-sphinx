@@ -51,6 +51,7 @@
       with_items:
           - www.doctrine-project.org
           - hooks.doctrine-project.org
+          - pear.doctrine-project.org
       notify: Restart Nginx
 
     - name: Install cronjob
