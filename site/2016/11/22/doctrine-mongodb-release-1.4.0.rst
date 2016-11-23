@@ -57,7 +57,7 @@ A full list of issues and pull requests included in this release may be found in
 PHP version support
 -------------------
 
-With this release, we have dropped support for PHP 5.6. Users using PHP 5.5 or
+With this release, we have dropped support for PHP 5.5. Users using PHP 5.5 or
 older are encouraged to upgrade to a newer PHP version. If you are using PHP 7.0
 or 7.1, you can use this library by adding a polyfill for ``ext-mongo``, like
 `mongo-php-adapter <https://github.com/alcaeus/mongo-php-adapter>`__.
