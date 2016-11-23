@@ -380,7 +380,7 @@ mongodb:
   title: 'MongoDB Abstraction Layer'
   short_title: MongoDB
   description: 'The Doctrine MongoDB project is a library that provides a wrapper around the native PHP Mongo PECL extension to provide additional functionality.'
-  latest_version: '1.2'
+  latest_version: '1.3'
   is_primary: false
   issues_link: 'https://github.com/doctrine/mongodb/issues'
   browse_source_link: 'https://github.com/doctrine/mongodb'
@@ -474,6 +474,16 @@ mongodb:
           composer: true
         1.2.1:
           git_checkout_command: '$ git clone git://github.com/doctrine/mongodb.git mongodb<br>$ cd mongodb<br>$ git checkout 1.2.1'
+          composer: true
+        1.2.2:
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb.git mongodb<br>$ cd mongodb<br>$ git checkout 1.2.2'
+          composer: true
+    '1.3':
+      downloadable: false
+      stability: stable
+      releases:
+        1.3.0:
+          git_checkout_command: '$ git clone git://github.com/doctrine/mongodb.git mongodb<br>$ cd mongodb<br>$ git checkout 1.3.0'
           composer: true
 couchdb_odm:
   sort: 50
