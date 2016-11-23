@@ -23,7 +23,7 @@ if (!isset($payload['ref'])) {
     exit(0);
 }
 
-if ($payload['ref'] != 'refs/changes/master') {
+if ($payload['ref'] != 'refs/heads/master') {
     header("HTTP/1.1 204 Empty");
     exit(0);
 }
