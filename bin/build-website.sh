@@ -5,8 +5,10 @@ then
     rm /var/www/doctrine-website-sphinx/notify/regenerate
 
     cd /var/www/doctrine-website-sphinx
+    git checkout -- .
+    git checkout master
     git fetch
-    git checkout origin/master
+    git merge origin/master
     wget -Ocomposer.phar http://getcomposer.org/composer.phar
 
     php composer.phar install --ignore-platform-reqs
