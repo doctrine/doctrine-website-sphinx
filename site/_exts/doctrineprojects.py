@@ -68,8 +68,7 @@ def visit_doctrineprojects_html(self, node):
     self.body.append('<div class="panel-heading"><a href="/projects/%s.html">%s</a></div>\n' % (node['project']['slug'], node['project']['title']) )
 
     if node['type'] != 'short':
-        self.body.append('<ul class="nav nav-tabs">')
-        self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
+        self.body.append('<ul class="nav nav-tabs">')       
         self.body.append('<li><a href="http://docs.doctrine-project.org/projects/doctrine-%s/en/latest/">Documentation</a></li>\n' % (node['project']['slug']) )
         self.body.append('<li><a href="/api/%s/%s/index.html">API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
         self.body.append('<li><a href="/projects/%s.html">Download</a></li>\n' % (node['project']['slug']) )

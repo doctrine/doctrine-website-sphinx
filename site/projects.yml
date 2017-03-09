@@ -9,7 +9,6 @@ ormold:
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
   latest_version: '1.2'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DC'
   browse_source_link: 'https://github.com/doctrine/doctrine1'
   versions:
     '1.2':
@@ -40,7 +39,6 @@ orm:
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
   latest_version: '2.5'
   is_primary: true
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
   browse_source_link: 'https://github.com/doctrine/doctrine2'
   versions:
     '2.0':
@@ -174,7 +172,6 @@ dbal:
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
   latest_version: '2.5'
   is_primary: true
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
   browse_source_link: 'https://github.com/doctrine/dbal'
   versions:
     '2.0':
@@ -304,7 +301,6 @@ mongodb_odm:
   description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: true
-  issues_link: 'https://github.com/doctrine/mongodb-odm/issues'
   browse_source_link: 'https://github.com/doctrine/mongodb-odm'
   versions:
     '1.0':
@@ -382,7 +378,6 @@ mongodb:
   description: 'The Doctrine MongoDB project is a library that provides a wrapper around the native PHP Mongo PECL extension to provide additional functionality.'
   latest_version: '1.3'
   is_primary: false
-  issues_link: 'https://github.com/doctrine/mongodb/issues'
   browse_source_link: 'https://github.com/doctrine/mongodb'
   versions:
     '1.0':
@@ -496,7 +491,6 @@ couchdb_odm:
   description: 'Doctrine CouchDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/CODM'
   browse_source_link: 'https://github.com/doctrine/couchdb-odm'
   versions:
     '1.0':
@@ -523,7 +517,6 @@ phpcr_odm:
   latest_version: '1.2'
   is_primary: false
   namespace: Doctrine\ODM\PHPCR
-  issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
   browse_source_link: 'https://github.com/doctrine/phpcr-odm'
   versions:
     '1.2':
@@ -599,7 +592,6 @@ migrations:
   latest_version: 1.2.1
   is_primary: false
   namespace: Doctrine\DBAL\Migrations
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
   browse_source_link: 'https://github.com/doctrine/migrations'
   versions:
     '1.0':
@@ -649,7 +641,6 @@ common:
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
   latest_version: '2.5'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/common'
   versions:
     '2.0':
@@ -771,7 +762,6 @@ annotations:
   short_title: ANN
   description: 'Docblock Annotations Parser library'
   latest_version: '1.2'
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/annotations'
   versions:
     '1.0':
@@ -832,7 +822,6 @@ collections:
   description: 'Collections Abstraction library'
   latest_version: '1.3'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/collections'
   versions:
     '1.0':
@@ -876,7 +865,6 @@ cache:
   description: 'Cache component extracted from the Doctrine Common project.'
   latest_version: '1.4'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/cache'
   versions:
     '1.0':
@@ -942,7 +930,6 @@ inflector:
   description: 'Doctrine Inflector is a small library that can perform string manipulations with regard to upper-/lowercase and singular/plural forms of words.'
   latest_version: '1.0'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/inflector'
   versions:
     '1.0':
@@ -965,7 +952,6 @@ lexer:
   description: 'Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.'
   latest_version: '1.0'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
   browse_source_link: 'https://github.com/doctrine/lexer'
   versions:
     '1.0':
@@ -989,7 +975,6 @@ orientdb_odm:
   description: 'Doctrine OrientDB Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
   latest_version: '1.0'
   is_primary: false
-  issues_link: 'http://www.doctrine-project.org/jira/browse/ORIENTODM'
   browse_source_link: 'https://github.com/doctrine/orientdb-odm'
   versions:
     '1.0':
