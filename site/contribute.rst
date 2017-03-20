@@ -452,68 +452,22 @@ version constraint in composer.json and run:
 
     $ composer update
 
-Phing Build Process
-===================
+
+Running Tests
+=============
 
 Prerequisites
 -------------
 
 
--  You must have PEAR installed.
--  You must have `Phing <http://phing.info/trac>`_ installed. The
-   easiest way is through
-   `pear <http://phing.info/docs/guide/stable/chapters/Setup.html#Setup.PearInstall>`_.
--  You must have the
-   `d51PearPkg2Task <http://pear.domain51.com/svn/Phing_d51PearPkg2Task/trunk/src/phing/tasks/ext/d51PearPkg2Task.php>`_
-   added to the core Phing tasks.
--  Copy the **build.properties.dev** file to **build.properties**
-   and adjust any properties to your local environment, if necessary.
+-  You must have installed the library with composer and the dev dependencies (default).
 
-Building
---------
+Tests
+~~~~~
 
-Clone the Doctrine project that you want to build and from within
-the root directory of the project (where the build.xml resides) run
-one of the following commands.
+To run the tests :
 
 ::
 
-    $ git clone git://github.com/doctrine/doctrine2.git doctrine2-orm
-    $ cd doctrine2-orm
-
-
-Basic Build
-~~~~~~~~~~~
-
-You can simply run ``phing`` and it will build the sources that are
-packaged for distribution:
-
-::
-
-    $ phing
-
-After a successful build you will find the prepared code that will
-be packaged for distribution in the **build** directory.
-
-Distributable Archives
-~~~~~~~~~~~~~~~~~~~~~~
-
-If you want to produce a distributable PEAR archive run:
-
-::
-
-    $ phing build-packages
-
-After a successful build you will find the distributable archive(s)
-in the **dist** directory.
-
-Running Tests
-~~~~~~~~~~~~~
-
-The tests will be run automatically by most other targets but you
-can also run them directly:
-
-::
-
-    $ phing test
+    $ ./vendor/bin/phpunit
 
