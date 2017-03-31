@@ -6,30 +6,30 @@ and had an extensive insight into what `Guilherme <https://twitter.com/guilherme
 tens of megabytes of IRC logs of internal discussion we felt we owe you an update on where Doctrine is and where
 it's heading to:
 
-Doctrine 3 is no more!
+Doctrine 3 Is No More!
 ----------------------
 
 Rest assured, we are in no way ditching all the code Guilherme hacked so far or any of the ideas that sprung
 for the next major release. We are still looking into leveraging all goodies that were given to us with PHP 7.
-We want the next Doctrine version to be an extremely stable and realiable piece of software. We are also still trying to figure out how to maintain all projects under Doctrine's umbrella effectively. To recap,
+We want the next Doctrine version to be an extremely stable and reliable piece of software. We are also still trying to figure out how to maintain all projects under Doctrine's umbrella effectively. To recap,
 Doctrine is not only the ORM you all know, we are also maintaining a number of ODM projects (`MongoDB <https://github.com/doctrine/mongodb-odm>`__
-or `CouchDB <https://github.com/doctrine/couchdb-odm>`__ to name few) which all share basic concepts and code.
+and `CouchDB <https://github.com/doctrine/couchdb-odm>`__ to name few) which all share basic concepts and code.
 Some of them also face a major rewrite, like the much anticipated MongoDB ODM 2.0 with support for new MongoDB driver.
 
 Joining Forces
 --------------
 
-Instead of having each team iterate on its own, implementing the same concepts multiple times across various libraries,
+Instead of having each team work independently and implement the same concepts multiple times across various libraries,
 we decided it's for the best if we all work on one project and make it as good and robust as possible.
-We decided it's time to break boundaries so Doctrine 4 will be all about interoperability. **Doctrine 4 will support
+In the spirit of breaking boundaries, Doctrine 4 will be all about interoperability. **Doctrine 4 will support
 both RDBMS and NoSQL databases at the same time!**
 
-Following latest trends
+Following Latest Trends
 -----------------------
 
-A really big thing we want to (re)introduce is an Active Record pattern. We've ran a poll on the #doctrine IRC
-channel and it turned out that 68% of developers are dying a little bit each time they are injecting a service which
-barely saves data to a database and miss simplicity of having an entity save itself.
+A really big thing we want to (re)introduce is an Active Record pattern. We recently ran a poll on the #doctrine IRC
+channel and it turned out that 68% of developers die a little bit each time they inject a service, which
+barely saves data to a database anyway, and miss the simplicity of having an entity save itself.
 
 .. code-block:: php
 
@@ -53,17 +53,17 @@ barely saves data to a database and miss simplicity of having an entity save its
     $user->login = 'malarzm';
     $user->save();
 
-Thanks to ``@Doctrine\ActiveRecord`` annotation you're able to query for and save your entities easily. Please
-notice, that `User` class does not extend any internal Doctrine class - you are still decoupled from the ORM!
+Thanks to the ``@Doctrine\ActiveRecord`` annotation you're able to query for and save your entities easily. Please
+notice that the `User` class does not extend any internal Doctrine class - you are still decoupled from the ORM!
 
-We strongly believe that getting back to Active Record pattern is the way to go for us. We weren't able to
-fully get rid of old fashioned Data Mapper but you can expect its deprecation in one of first bug-fix releases
-and full removal shortly after.
+We strongly believe that getting back to the Active Record pattern is the way to go for us. We weren't able to
+fully get rid of the old fashioned Data Mapper pattern but you can expect its deprecation in one of first bug-fix releases
+and full removal in a subsequent patch release (Active Record is replacing semantic versioning, too!)
 
 Another big step towards the highly expected Developer eXperience was initially painful, as it required many
 of us to come out of the Java bubble we live in, but we know it will be for the best. With the re-introduction of
 Active Record the obvious next step is making all Doctrine utilities available in an easy and sane way: please welcome
-facades AND short method names!
+façades AND short method names!
 
 .. code-block:: php
 
@@ -75,15 +75,15 @@ facades AND short method names!
     $user = new User(); // this is stored in MSSql
     $user = 'malarzm';
     $user->save(); // not saved yet
-    $log = new MongoLog($user, 'was created'); // this will be stored in Mongo
+    $log = new MongoLog($user, 'was created'); // this will be "stored" in MongoDB
     $log->save(); // but not yet
-    Doctrine::em()->commit(); // commit a transaction ACROSS storages
+    Doctrine::em()->commit(); // commit a transaction ACROSS multiple storage engines
 
-Big shout out goes to `Marco <https://twitter.com/Ocramius>`__, who initially had a heart attack when he
-heard the idea, but now after using the feature is a big proponent of facades. Be sure to watch for updates
-in all his libraries in the near future!
+Big shout out goes to `Marco <https://twitter.com/Ocramius>`__. Although he initially had a heart attack when first
+hearing about this idea, he's come full circle after using the feature and is now a big proponent of façades. Be sure
+to watch for updates to all of his libraries in the near future!
 
-Try it out now!
+Try It Out Now!
 ---------------
 
 Uniting forces of all Doctrine developers has enabled us to ship an usable "alpha" version way sooner than originally
