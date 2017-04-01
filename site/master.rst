@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2017/04/01/announcing-doctrine-4
    2016/11/22/doctrine-mongodb-release-1.4.0
    2016/10/07/doctrine-mongodb-odm-release-1.1.2-and-1.0.8
    2016/09/10/orm-2-5-5
