@@ -322,12 +322,11 @@ fork locally:
     $ git clone git@github.com:username/doctrine2.git doctrine2-orm
     $ cd doctrine2-orm
 
-Fetch dependencies using git submodules:
+Fetch dependencies using `composer <https://getcomposer.org/>`_:
 
 ::
 
-    $ git submodule init
-    $ git submodule update
+    $ composer install
 
 Now add the **doctrine** remote for collaborators:
 
@@ -439,161 +438,36 @@ Project Dependencies
 ====================
 
 Project dependencies between Doctrine projects are handled through
-git submodules. The code of the particular Doctrine project you
+composer. The code of the particular Doctrine project you
 have cloned is located under **lib/Doctrine**. The source code of
-dependencies to other projects resides under **lib/vendor**. If you
-have a local clone of a Doctrine project that you use directly and
-this project has dependencies to other (Doctrine) projects, you
-must run the following commands in order for the git submodules to
-be loaded:
-
-::
-
-    $ git submodule init
-    $ git submodule update
-
-Alternatively, consider using a packaged release from the
-`Doctrine Website <http://www.doctrine-project.org>`_ that contains
-everything you need already.
+dependencies to other projects resides under **vendor/**.
 
 Bumping Versions
 ----------------
 
-To bump/upgrade a dependency version you just need to follow a few
-simple steps:
+To bump/upgrade a dependency version you just need to update the
+version constraint in composer.json and run:
 
 ::
 
-    $ cd lib/vendor/doctrine-dbal
-    $ git checkout 2.0.0BETA2
-    $ cd ../../../
-    $ git commit
-    $ git push
+    $ composer update
 
-Testing Different Versions
---------------------------
 
-Testing another version is much the same as bumping the version
-except that you must not forget to go back to the old version when
-you're done otherwise if you git ``commit -a`` you will push the
-new version you were testing. Here is an example:
-
-::
-
-    $ cd lib/vendor/doctrine-dbal
-    $ git checkout 2.0.0BETA2
-    $ cd ../../../
-
-Now you can run the tests against the DoctrineDBAL-2.0.0BETA2
-version to test that the new version of the dependency doesn't
-break anything:
-
-::
-
-    $ cd tests
-    $ phpunit Doctrine/Tests/AllTests.php
-
-Now don't forget to change back the version after testing if you
-are not going to bump it permanently and commit it:
-
-::
-
-    cd lib/vendor/doctrine-dbal
-    git checkout 2.0.0-BETA1
-
-Checking Submodule Tag
-----------------------
-
-If you want to check what tag a submodule is currently at you can
-use something like this from the submodule root directory:
-
-::
-
-    $ cd lib/vendor/doctrine-dbal
-
-To get the status of the submodule:
-
-::
-
-    $ git submodule status
-
-Then use the SHA that is shown in the following command to show the
-name of the tag:
-
-::
-
-    $ git show-ref --tags | grep SHA
-
-Phing Build Process
-===================
+Running Tests
+=============
 
 Prerequisites
 -------------
 
 
--  You must have PEAR installed.
--  You must have `Phing <http://phing.info/trac>`_ installed. The
-   easiest way is through
-   `pear <http://phing.info/docs/guide/stable/chapters/Setup.html#Setup.PearInstall>`_.
--  You must have the
-   `d51PearPkg2Task <http://pear.domain51.com/svn/Phing_d51PearPkg2Task/trunk/src/phing/tasks/ext/d51PearPkg2Task.php>`_
-   added to the core Phing tasks.
--  Copy the **build.properties.dev** file to **build.properties**
-   and adjust any properties to your local environment, if necessary.
+-  You must have installed the library with composer and the dev dependencies (default).
 
-Building
---------
+Tests
+~~~~~
 
-Clone the Doctrine project that you want to build and from within
-the root directory of the project (where the build.xml resides) run
-one of the following commands.
+To run the tests :
 
 ::
 
-    $ git clone git://github.com/doctrine/doctrine2.git doctrine2-orm
-    $ cd doctrine2-orm
-
-As mentioned previously, Doctrine uses submodules with git to make
-sure the required dependencies are present. You can initialize
-these dependencies using the following commands:
-
-::
-
-    $ git submodule init
-    $ git submodule update
-
-Basic Build
-~~~~~~~~~~~
-
-You can simply run ``phing`` and it will build the sources that are
-packaged for distribution:
-
-::
-
-    $ phing
-
-After a successful build you will find the prepared code that will
-be packaged for distribution in the **build** directory.
-
-Distributable Archives
-~~~~~~~~~~~~~~~~~~~~~~
-
-If you want to produce a distributable PEAR archive run:
-
-::
-
-    $ phing build-packages
-
-After a successful build you will find the distributable archive(s)
-in the **dist** directory.
-
-Running Tests
-~~~~~~~~~~~~~
-
-The tests will be run automatically by most other targets but you
-can also run them directly:
-
-::
-
-    $ phing test
+    $ ./vendor/bin/phpunit
 
