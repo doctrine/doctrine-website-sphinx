@@ -1,6 +1,10 @@
 Announcing Doctrine 4
 =====================
 
+.. note:: 
+
+    This article is an April Fools joke.
+
 It has been few months since we shed some light on the `future of Doctrine project <https://github.com/doctrine/doctrine2/issues/6211>`__
 and had an extensive insight into what `Guilherme <https://twitter.com/guilhermeblanco>`__ had been up to. Adding
 tens of megabytes of IRC logs of internal discussion we felt we owe you an update on where Doctrine is and where
