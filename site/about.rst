@@ -328,7 +328,7 @@ blog post for more information on the DBAL.
         'host' => 'localhost',
         'driver' => 'pdo_mysql',
     );
-    $conn = DriverManager::getConnection($connectionParams, $config);
+    $conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
 
     $articles = $conn->fetchAll('select * from articles');
 
