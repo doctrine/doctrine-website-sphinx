@@ -154,7 +154,7 @@ Here is what the ``AbstractLexer`` provided by Doctrine looks like:
     }
 
 To implement a lexer just extend the
-``Doctrine\Common\Lexer\AbstractParser`` class and implement the
+``Doctrine\Common\Lexer\AbstractLexer`` class and implement the
 ``getCatchablePatterns``, ``getNonCatchablePatterns``, and ``getType``
 methods. Here is a very simple example lexer implementation named
 ``CharacterTypeLexer``. It tokenizes a string to ``T_UPPER``,
@@ -164,7 +164,7 @@ methods. Here is a very simple example lexer implementation named
 
     <?php
 
-    use Doctrine\Common\Lexer\AbstractParser;
+    use Doctrine\Common\Lexer\AbstractLexer;
 
     class CharacterTypeLexer extends AbstractLexer
     {
