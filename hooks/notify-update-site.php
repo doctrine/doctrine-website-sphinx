@@ -29,5 +29,6 @@ if ($payload['ref'] != 'refs/heads/master') {
 }
 
 $ret = touch("/var/www/doctrine-website-sphinx/notify/regenerate");
+chmod("/var/www/doctrine-website-sphinx/notify/regenerate", 0660);
 
 echo json_encode(array('regenerate' => $ret));
