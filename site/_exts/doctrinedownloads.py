@@ -69,7 +69,8 @@ def visit_doctrinedownloads_html(self, node):
 
     self.body.append('<ul class="nav nav-pills project-pills">')
     self.body.append('<li class="latest-version"><a href="#version%s">Latest Version: %s</a></li>' % (node['project']['latest_version'], node['project']['latest_version']))
-    self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
+    if 'issues_link' in node['project']:
+        self.body.append('<li><a href="%s">Issues</a></li>\n' % (node['project']['issues_link']) )
     self.body.append('<li><a href="http://docs.doctrine-project.org/projects/doctrine-%s/en/latest">Latest Documentation</a></li>\n' % (node['project']['slug']) )
     self.body.append('<li><a href="/api/%s/%s/index.html">Latest API</a></li>\n' % (node['project']['slug'], node['project']['latest_version']) )
     self.body.append('<li><a href="%s">Browse Source</a></li>\n' % (node['project']['browse_source_link']) )
