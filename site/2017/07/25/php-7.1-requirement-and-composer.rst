@@ -3,6 +3,7 @@ PHP 7.1 requirement for Doctrine packages
 
 A few days ago, the Doctrine team released new versions of many packages, dropping
 support for PHP 5.6 and 7.0, as well as HHVM. The affected packages are:
+
 - doctrine/common 2.8.0
 - doctrine/dbal 2.6.0
 - doctrine/collections 1.5.0
@@ -49,10 +50,11 @@ a developer machine (with PHP 7.1) might happily pull in an update that simply
 won't work when deployed on a production machine running PHP 5.6.
 
 To make sure this doesn't happen to you, there are two choices:
-- run ``composer update`` on a machine with the same PHP version that you use
-in production
-- use the `platform.config <https://getcomposer.org/doc/06-config.md#platform>`__
-config setting in ``composer.json`` to override your local PHP version.
+
+-  run ``composer update`` on a machine with the same PHP version that you use
+   in production
+-  use the `platform.config <https://getcomposer.org/doc/06-config.md#platform>`__
+   config setting in ``composer.json`` to override your local PHP version.
 
 Why dropping PHP support in a minor version is not a BC break
 -------------------------------------------------------------
