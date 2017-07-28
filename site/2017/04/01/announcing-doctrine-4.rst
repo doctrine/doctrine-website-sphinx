@@ -67,7 +67,7 @@ and full removal in a subsequent patch release (Active Record is replacing seman
 Another big step towards the highly expected Developer eXperience was initially painful, as it required many
 of us to come out of the Java bubble we live in, but we know it will be for the best. With the re-introduction of
 Active Record the obvious next step is making all Doctrine utilities available in an easy and sane way: please welcome
-façades AND short method names!
+static registries AND short method names!
 
 .. code-block:: php
 
@@ -84,7 +84,7 @@ façades AND short method names!
     Doctrine::em()->commit(); // commit a transaction ACROSS multiple storage engines
 
 Big shout out goes to `Marco <https://twitter.com/Ocramius>`__. Although he initially had a heart attack when first
-hearing about this idea, he's come full circle after using the feature and is now a big proponent of façades. Be sure
+hearing about this idea, he's come full circle after using the feature and is now a big proponent of static registries. Be sure
 to watch for updates to all of his libraries in the near future!
 
 Try It Out Now!
