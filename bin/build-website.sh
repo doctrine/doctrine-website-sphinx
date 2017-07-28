@@ -26,8 +26,9 @@ then
     cd /var/www/doctrine-website-sphinx
     mkdir -p public/api
 
-    rsync -avz /var/www/doctrine-website-sphinx/site/blog/html/ /var/www/doctrine-website-sphinx/public
+    rsync -az /var/www/doctrine-website-sphinx/site/blog/html/ /var/www/doctrine-website-sphinx/public
 
     cp favicon.ico public/favicon.ico
     cp public/rss.html public/rss.xml
+    echo "www.doctrine-project.org deployed succesfully!"
 fi
