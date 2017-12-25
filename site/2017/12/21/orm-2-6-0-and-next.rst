@@ -16,13 +16,13 @@ This release contains almost 3 years of active development and it provides sever
 
 `changelog <https://github.com/doctrine/doctrine2/releases/tag/v2.6.0>`_.
 
-Next ?
-------
+Next?
+-----
 
-This release mark the feature freeze of the 2.x version.
+This release marks the feature freeze of the 2.x version.
 
-If you need to improve please work on the develop branch that will become the 3.0 version.
-The change are already to numerous to easily rebase a feature from the 2.x branch to the develop one.
+If you need to improve please work on the develop branch that will become the 3.0 branch in the coming days.
+The changes are already too numerous to easily rebase a feature from the 2.x branch to the develop one.
 
 .. author:: Mike Simonson <mike@simonson.be>
 .. categories:: none
