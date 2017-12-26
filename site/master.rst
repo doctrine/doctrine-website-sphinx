@@ -10,6 +10,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2017/12/21/orm-2-6-0-and-next
    2017/10/24/odm-1-2-0-and-1-1-7
    2017/07/25/php-7.1-requirement-and-composer
    2017/04/01/announcing-doctrine-4
