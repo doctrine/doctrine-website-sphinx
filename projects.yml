@@ -23,7 +23,7 @@ orm:
   package: 'DoctrineORM'
   short_title: ORM
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
-  latest_version: '2.5'
+  latest_version: '2.6'
   is_primary: true  
   browse_source_link: 'https://github.com/doctrine/doctrine2'
   versions:
@@ -47,6 +47,9 @@ orm:
     '2.5':
       downloadable: false
       stability: stable
+    '2.6':
+      downloadable: false
+      stability: stable
 dbal:
   sort: 10
   slug: dbal
@@ -56,7 +59,7 @@ dbal:
   package: 'DoctrineDBAL'
   file: '%s-%s-full.tar.gz'
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
-  latest_version: '2.5'
+  latest_version: '2.6'
   is_primary: true
   browse_source_link: 'https://github.com/doctrine/dbal'
   versions:
@@ -76,6 +79,9 @@ dbal:
     '2.5':
       downloadable: false
       stability: stable
+    '2.6':
+      downloadable: false
+      stability: stable
 mongodb_odm:
   sort: 20
   slug: mongodb-odm
@@ -85,7 +91,7 @@ mongodb_odm:
   title: 'MongoDB Object Document Mapper'
   short_title: MongoDBODM
   description: 'Doctrine MongoDB Object Document Mapper is built for PHP 5.6+ and provides transparent persistence for PHP objects.'
-  latest_version: '1.1'
+  latest_version: '1.2'
   is_primary: true
   browse_source_link: 'https://github.com/doctrine/mongodb-odm'
   versions:
@@ -93,6 +99,9 @@ mongodb_odm:
       downloadable: false
       stability: stable
     '1.1':
+      downloadable: false
+      stability: stable
+    '1.2':
       downloadable: false
       stability: stable
 mongodb:
@@ -104,7 +113,7 @@ mongodb:
   title: 'MongoDB Abstraction Layer'
   short_title: MongoDB
   description: 'The Doctrine MongoDB project is a library that provides a wrapper around the native PHP Mongo PECL extension to provide additional functionality.'
-  latest_version: '1.3'
+  latest_version: '1.6'
   is_primary: false
   browse_source_link: 'https://github.com/doctrine/mongodb'
   versions:
@@ -118,6 +127,15 @@ mongodb:
       downloadable: false
       stability: stable
     '1.3':
+      downloadable: false
+      stability: stable
+    '1.4':
+      downloadable: false
+      stability: stable
+    '1.5':
+      downloadable: false
+      stability: stable
+    '1.6':
       downloadable: false
       stability: stable
 couchdb_odm:
@@ -161,7 +179,7 @@ migrations:
   file: '%s-%s-full.tar.gz'
   short_title: Migrations
   description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
-  latest_version: '1.2.1'
+  latest_version: '1.6'
   is_primary: false
   namespace: Doctrine\DBAL\Migrations
   browse_source_link: 'https://github.com/doctrine/migrations'
@@ -171,6 +189,14 @@ migrations:
     '1.1':
       stability: stable
     '1.2':
+      stability: stable
+    '1.3':
+      stability: stable
+    '1.4':
+      stability: stable
+    '1.5':
+      stability: stable
+    '1.6':
       stability: stable
 
 common:
@@ -182,7 +208,7 @@ common:
   title: 'Common'
   short_title: Common
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
-  latest_version: '2.5'
+  latest_version: '2.8'
   is_primary: false
   browse_source_link: 'https://github.com/doctrine/common'
   versions:
@@ -202,6 +228,15 @@ common:
     '2.5':
       downloadable: false
       stability: stable
+    '2.6':
+      downloadable: false
+      stability: stable
+    '2.7':
+      downloadable: false
+      stability: stable
+    '2.8':
+      downloadable: false
+      stability: stable
 
 annotations:
   sort: 31
@@ -211,7 +246,7 @@ annotations:
   title: "Annotations"
   short_title: "ANN"
   description: "Docblock Annotations Parser library"
-  latest_version: "1.2"
+  latest_version: "1.6"
   browse_source_link: 'https://github.com/doctrine/annotations'
   versions:
     '1.0':
@@ -219,6 +254,14 @@ annotations:
     '1.1':
         stability: stable
     '1.2':
+        stability: stable
+    '1.3':
+        stability: stable
+    '1.4':
+        stability: stable
+    '1.5':
+        stability: stable
+    '1.6':
         stability: stable
 
 collections:
@@ -229,7 +272,7 @@ collections:
   title: "Collections"
   short_title: "COL"
   description: Collections Abstraction library
-  latest_version: '1.3'
+  latest_version: '1.5'
   is_primary: false
   browse_source_link: 'https://github.com/doctrine/collections'
   versions:
@@ -241,6 +284,10 @@ collections:
         stability: stable
     '1.3':
         stability: stable
+    '1.4':
+        stability: stable
+    '1.5':
+        stability: stable
 
 cache:
   sort: 33
@@ -250,7 +297,7 @@ cache:
   title: "Cache"
   short_title: "CACHE"
   description: Cache component extracted from the Doctrine Common project.
-  latest_version: '1.4'
+  latest_version: '1.7'
   is_primary: false
   browse_source_link: 'https://github.com/doctrine/cache'
   versions:
@@ -264,6 +311,12 @@ cache:
         stability: stable
     '1.4':
         stability: stable
+    '1.5':
+        stability: stable
+    '1.6':
+        stability: stable
+    '1.7':
+        stability: stable
 
 inflector: 
   sort: 35
@@ -273,11 +326,17 @@ inflector:
   title: "Inflector"
   short_title: INF
   description: 'Doctrine Inflector is a small library that can perform string manipulations with regard to upper-/lowercase and singular/plural forms of words.'
-  latest_version: '1.0'
+  latest_version: '1.3'
   is_primary: false
   browse_source_link: 'https://github.com/doctrine/inflector'
   versions:
     '1.0':
+      stability: stable
+    '1.1':
+      stability: stable
+    '1.2':
+      stability: stable
+    '1.3':
       stability: stable
 
 lexer:
