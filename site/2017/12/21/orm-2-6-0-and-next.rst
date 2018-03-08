@@ -2,7 +2,7 @@ Doctrine ORM 2.6 and Next (3.0)
 =============================================
 
 We are happy to announce the immediate availability of Doctrine ORM 2.6
-`2.6.0 <https://github.com/doctrine/doctrine2/releases/tag/2.6.0>`.
+`2.6.0 <https://github.com/doctrine/doctrine2/releases/tag/v2.6.0>`.
 
 ORM 2.6.0
 ---------
